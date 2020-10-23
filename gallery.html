@@ -52,17 +52,30 @@
         <!------------------------- CONTENT --------------------------------->
         <section id="content" class="d-flex align-items-center justify-content-center">
             <!--LEFT BLOCK-->
-            <div id="leftSide" class="mr-2" style="background-image: url(./svg/HomeDeco.svg); background-repeat: no-repeat; background-position: center; background-size: contain;">
-                    <h1 class="contentMarginLeft contentMarginTop">Galerie photo</h1>
+            <div id="leftSide" class="mr-2 d-flex flex-column" style="background-image: url(); background-repeat: no-repeat; background-position: center; background-size: contain;">
+                <!--DECO TOP-->
+                <div class="deco">
+                    <img src="./svg/decoTopNew.svg" alt="decoTop" style="width: 80%; height: 100%; margin-left: 10%;">
+                </div>
+                <!--DECO TOP END-->
+                <!--TEXT BLOCK-->
+                <div style="height: 40%;">
+                    <h1 class="contentMarginLeft">Galerie photo</h1>
                     <p id="aboutText" class="contentMarginLeft pt-3">Nous avons collectés quelques clichés pour une première mise en bouche virtuelle <br>
                         À très bientôt dans nos restaurants !</p>
                 </div>
+                <!--TEXT BLOCK END-->
+                <!--DECO BOTTOM-->
+                <div class="deco">
+                    <img src="./svg/decoBottomNew.svg" alt="decoTop" style="width: 80%; height: 100%; margin-left: 10%;">
+                </div>
+                <!--DECO BOTTOM END-->
             </div>
             <!--LEFT BLOCK END-->
             <!--RIGHT BLOCK-->
             <div id="rightSide" class="ml-5 d-flex align-items-center">
                 <div class="carousel slide m-0" data-ride="carousel" style="width: 100%; height: 100%;"> <!------------------------- CAROUSEL CONTAINER V-CENTERED --------------------------------->
-                    <ol class="carousel-indicators">
+                    <ol class="carousel-indicators mb-0">
                         <li data-target="#rightSide" data-slide-to="0" class="active mx-3"></li>
                         <li data-target="#rightSide" data-slide-to="1" class="mx-3"></li>
                         <li data-target="#rightSide" data-slide-to="2" class="mx-3"></li>
