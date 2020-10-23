@@ -1,0 +1,200 @@
+:root{
+    --green: #254500;
+    --orange: #d68538;
+    --black: #373737;
+
+}
+
+@font-face {
+    font-family: titlesFont;
+    src: url(./fonts/Rochester-Regular.ttf);
+}
+
+@font-face {
+    font-family: bodyFont;
+    src: url(./fonts/Asap-Regular.ttf);
+}
+
+body{
+    font-family: bodyFont;
+    font-size: 0.95rem;
+    letter-spacing: 0.8px;
+    color: var(--black);
+}
+
+ol, ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+#laCarte li{
+    font-size: 1.2rem;
+    margin: 30px 0;
+}
+.primaryButton{
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color:  var(--orange);
+    color: white;
+}
+
+.selectedPage{
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.secondaryButton{
+    width: 180px;
+    height: 50px;
+    border: solid 2px var(--orange);
+    border-radius: 30px;
+    background-color: white;
+    color:  var(--orange);
+}
+
+button:hover, input[type=submit]:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) ;
+    transition: all 0.25s;
+}
+
+h1{
+    font-family: titlesFont;
+    letter-spacing: 0;
+    font-size: 3rem;
+}
+
+#loc1 h2, #loc2 h2, #loc3 h2{
+    color: var(--orange);    
+}
+
+a{
+    text-decoration: none;
+    color: var(--green);
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: bold;
+}
+
+header{
+    position: fixed;
+    height: 80px;
+    color: var(--green);
+    background-color: white;
+    padding-top: 30px;
+}
+
+#socialNetwork{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+#content{
+    padding: 75px 0 0;
+    height: 100vh;
+}
+
+#leftSide, #rightSide{
+    height: 550px;
+}
+
+#leftSide, #rightSide{
+    width: 40%;
+}
+
+.contentMarginTop{
+    padding-top: 23%;
+}
+.contentMarginTop2{
+    padding-top: 30px;
+}
+
+.contentMarginLeft{
+    margin-left: 15%;
+}
+
+.presText{
+    font-size: 1.2rem;
+}
+
+#leftSide h2:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.galleryPic{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.picTitle{
+    height:30px
+}
+
+.carouselBlockText{
+    text-align: center;
+}
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--orange);
+}
+
+.inputStyle{
+    height: 35px;
+    border-radius: 5px;
+    border: solid 1px var(--orange);
+}
+
+textarea{
+    resize: none;
+}
+
+.menuItem{
+    height: 120px;
+}
+
+.menuHeadDeco{
+    background-color: var(--green);
+    height: 1px;
+    width: 40%;
+}
+
+.menuSubList:not(:target){
+    display:none;
+}
+
+.menuSubList:target {
+    display:block;
+}
+
+#restoID{
+    height: 30px;
+    cursor: pointer;
+
+}
+
+#restoID *{
+    font-size: 12px;
+}
+
+#locChange{
+    padding: 5px 10px;
+    color: var(--green);
+    border-radius: 5px;
+    background-color: white;
+    display: inline;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#eleMenu1{
+    color: var(--orange);
+    font-weight: bold;
+
+}

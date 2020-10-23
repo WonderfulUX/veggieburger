@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Veggie Burger</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="styleVeggieBurger.css">      
+    </head>
+    <body>
+        <!------------------------- HEADER --------------------------------->
+        <header class="container-fluid">
+            <div id="headerContainer" class="d-flex align-items-center">
+                <!-- LOGO AND LOCATION -->
+                <div class="mr-5 d-inline-flex flex-column align-items-center">
+                    <div style="height:70px; min-width: 110px; text-align: center;">
+                        <a href="./index.html"><img id="logo" src="./svg/LogoVeggieBurger.svg" style="height:70px;"></a>
+                    </div>
+                    <div id="restoID" class="mt-4 d-flex align-items-center dropdown">
+                        <div class="dropdown-toggle" id="actual" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Baie-Mahault</div>
+                        <div class="dropdown-menu rounded" aria-labelledby="dropdownMenuButton">
+                            <span class="dropdown-item" onclick="changeLoc(this)">Abymes</span>
+                            <span class="dropdown-item" onclick="changeLoc(this)">Baie-Mahault</span>
+                            <span class="dropdown-item" onclick="changeLoc(this)">Pointe-à-Pitre</span>
+                          </div>
+                    </div>
+                </div>
+                <!-- LOGO AND LOCATION END-->
+                <!-- HEADER LINKS -->
+                <div id="headerLinks" style="margin-bottom: 52px;" class="container-fluid d-flex align-items-center justify-content-between pl-0">
+                    <!-- MENU LIST -->
+                    <div id="menu" class="d-inline-block">
+                        <span class="mr-4"><a href="./menu.html#Burger">La carte</a></span>
+                        <span class="mr-4"><a href="./order.html">Commander</a></span>
+                        <span class="mr-4"><a href="./book.html">Réserver</a></span>
+                        <span class="mr-4"><a href="./gallery.html">Galerie</a></span>
+                        <span class="mr-4"><a href="./about.html">Notre vision</a></span>
+                        <span class="mr-4"><a href="">Livre d'or</a></span>
+                    </div>
+                    <!-- MENU LIST END-->
+                    <!-- CART INFO CONTACT --> 
+                    <div id="mainAction" class="d-inline-block">
+                        <span class="ml-4"><a href="./cart.html"><img src="./svg/Icon_panier.svg" alt="panier" onmouseover="src='./svg/Icon_panier_hover.svg'" onmouseout="src='./svg/Icon_panier.svg'"></a></span>
+                        <span class="ml-4"><a href="./infos.html"><img src="./svg/Icon_info.svg" alt="infos" onmouseover="src='./svg/Icon_info_hover.svg'" onmouseout="src='./svg/Icon_info.svg'"></a></span>
+                        <span class="ml-4"><a href="./contact.html"><img src="./svg/Icon_contact.svg" alt="contact" onmouseover="src='./svg/Icon_contact_hover.svg'" onmouseout="src='./svg/Icon_contact.svg'"></a></span>
+                    </div>
+                    <!-- CART INFO CONTACT END--> 
+                </div> 
+                <!-- HEADER LINKS -->  
+            </div>
+        </header>
+        <!------------------------- CONTENT --------------------------------->
+        <section id="content" class="d-flex align-items-center justify-content-center">
+            <!--LEFT BLOCK-->
+            <div id="leftSide" class="mr-2" style="background-image: url(./svg/HomeDeco.svg); background-repeat: no-repeat; background-position: center; background-size: contain;">
+                <h1 class=" contentMarginTop contentMarginLeft">Veggie Burger</h1>
+                <p id="intro" class="contentMarginLeft pt-3 presText">Le meilleur du Burger Vegan en Guadeloupe <br>
+                    Produit 100% locaux pour des mêts de qualité </p>
+                <div class="contentMarginLeft pt-5">
+                    <button class="primaryButton mr-4">Commander</button>
+                    <button class="secondaryButton">Réserver</button>
+                </div>
+            </div>
+            <!--LEFT BLOCK END-->
+            <!--RIGHT BLOCK-->
+            <div id="rightSide" class="ml-5" style="background-image: url(./images/Illu_Home.jpg); background-position: center; background-size: cover; border-radius: 10px; width: 40%;">
+            </div>
+            <!--RIGHT BLOCK END-->
+        </section>
+        <!------------------------- FOOTER --------------------------------->
+        <footer>
+            <div id="socialNetwork" class="d-flex flex-column-reverse">
+                <span class="mt-4"><a href=""><img src="./svg/Icon_facebook.svg" alt="Facebook" onmouseover="src='./svg/Icon_facebook_hover.svg'" onmouseout="src='./svg/Icon_facebook.svg'"></a></span>
+                <span><a href=""><img src="./svg/Icon_instagram.svg" alt="Instagram" onmouseover="src='./svg/Icon_instagram_hover.svg'" onmouseout="src='./svg/Icon_instagram.svg'"></a></span>
+            </div>
+        </footer>
+        <script src="./functions.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
