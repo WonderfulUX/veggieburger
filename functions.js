@@ -1,4 +1,4 @@
-var actualLocation = document.getElementById('actual');
+var actualLocation = document.getElementById('actualLoc');
 
 function changeLoc(newLoc) {
     let newLocValue = newLoc.innerText;
