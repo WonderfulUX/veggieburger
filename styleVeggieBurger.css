@@ -100,17 +100,14 @@ footer{
 }
 #content{
     position: fixed;
-    top: 150px;
-    height: 580px;
+    top: 175px;
+    height: 70%;
     width: 100%;
     z-index: -100;
 }
 
 #leftSide, #rightSide{
     height: 100%;
-}
-
-#leftSide, #rightSide{
     width: 40%;
 }
 
