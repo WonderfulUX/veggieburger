@@ -145,6 +145,15 @@ footer{
 .carouselBlockText{
     text-align: center;
 }
+
+.carouselBlockItem {
+    margin-bottom: 20px;
+}
+
+.carouselBlockItem *{
+    margin: 0 auto;
+}
+
 .carousel-indicators li{
     width: 15px;
     height: 15px;
@@ -254,9 +263,4 @@ tr,td, th{
     border-top: 1px solid var(--grey);
     text-align: center;
     height: 35px;
-}
-
-.table{
-    overflow: auto;
-    height: 100px;
 }
