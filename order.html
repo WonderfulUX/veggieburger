@@ -53,114 +53,473 @@
         <section id="content" class="d-flex align-items-center justify-content-center">
             <!--LEFT BLOCK-->
             <div id="leftSide" class="mr-2">
-                <h1 class="contentMarginLeft mb-5">Mon panier</h1>
-
-                       
+                <div class="contentMarginLeft">
+                    <h1 class="mb-3">Mon panier</h1>
+                    <div id="instructionsPanier" class="instructions">
+                        <span>Cliquez sur une ligne du tableau pour l’éditer</span> <div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;" onclick="closeRemove(this)"><img src="./svg/closeAlert.svg" alt="closeAlert"></div>
+                    </div>
+                    <!--<table class="w-100">
+                        <tr style="border: none;">
+                            <th colspan="col-5" style="border: none; text-align: left;">Produit</th>
+                            <th colspan="col-2" style="border: none;">Quantité</th>
+                            <th colspan="col-2" style="border: none;">Prix</th>
+                            <th colspan="col-1" style="border: none;"></th>
+                        </tr>
+                        <tr>
+                            <td colspan="col-5" style="text-align: left;">Le Black</td>
+                            <td colspan="col-2">1</td>
+                            <td colspan="col-2">7,00 €</td>
+                            <td colspan="col-1"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="col-5" style="text-align: left;">Le DoubleMush</td>
+                            <td colspan="col-2">1</td>
+                            <td colspan="col-2">9,50 €</td>
+                            <td colspan="col-1"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="col-5" style="text-align: left;">Frites de patates douces</td>
+                            <td colspan="col-2">1</td>
+                            <td colspan="col-2">3,50 €</td>
+                            <td colspan="col-1"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="col-5" style="text-align: left;">Fried Aspargus</td>
+                            <td colspan="col-2">1</td>
+                            <td colspan="col-2">5,00 €</td>
+                            <td colspan="col-1"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="col-5" style="text-align: left;">Sauce BBQ Maison</td>
+                            <td colspan="col-2">1</td>
+                            <td colspan="col-2">0,50 €</td>
+                            <td colspan="col-1"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="col-5" style="text-align: left;">Moutarde Maison</td>
+                            <td colspan="col-2">2</td>
+                            <td colspan="col-2">1,00 €</td>
+                            <td colspan="col-1"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="col-5" style="text-align: left;">Kombucha Rose </td>
+                            <td colspan="col-2">1</td>
+                            <td colspan="col-2">2,50 €</td>
+                            <td colspan="col-1"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="col-5" style="text-align: left;">Kéfir Citron Spiruline</td>
+                            <td colspan="col-2">1</td>
+                            <td colspan="col-2">15,00 €</td>
+                            <td colspan="col-1"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></td>
+                        </tr>
+                        <tr>
+                            <th colspan="col-5" style="border: none; text-align: left;"></th>
+                            <th colspan="col-2" style="border: none;">Total</th>
+                            <th colspan="col-2" style="border: none;">32,00 €</th>
+                            <th colspan="col-1" style="border: none;"></th>
+                        </tr>
+                    </table>-->
+                    <table class="table table-sm">
+                        <thead style="border-bottom: none;">
+                          <tr style="border: none; border-bottom: none;">
+                            <th colspan="3" style="text-align: left; border: none;">First</th>
+                            <th style="border: none;">Last</th>
+                            <th style="border: none;">Handle</th>
+                            <th style="border: none; visibility: hidden;"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr style="border-top: none; vertical-align: center;">
+                            <td colspan="3" style="text-align: left;">Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td style="border-top: none;"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></td>
+                          </tr>
+                          <tr>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <td>@twitter</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+                </div>             
             </div>
             <!--LEFT BLOCK END-->
             <!--RIGHT BLOCK-->
             <div id="rightSide" class="ml-5 d-flex flex-column align-items-center justify-content-center">
-                <!--BURGERS LIST-->
-                <section id="Burger" style="overflow: auto;">
-                    <!--LIST HEADER-->
-                    <div class="mSectionHeader container-fluid d-flex align-items-center justify-content-between pl-0 mb-5">
-                        <div class="menuHeadDeco"></div>
-                        <h3 class="h5"><b>Burger</b></h3>
-                        <div class="menuHeadDeco"></div>
-                    </div>
-                    <!--LIST HEADER END-->
-                    <!--LIST ITEM-->
-                    <div class="mb-4 menuItem pr-2">
-                        <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_1.jpg); background-position: center; background-size: cover; border-radius: 10px; background-size: contain;"></div>
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="h6">Le veggie</h4> <span>6,00 €</span>
+                <div id="instructionsMenu" class="instructions">
+                    <span>Sélectionnez votre produit puis la quantité désirée pour l’ajouter à votre sélection</span> <div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;" onclick="closeRemove(this)"><img src="./svg/closeAlert.svg" alt="closeAlert"></div>
+                </div>
+                <!--MENU LIST-->
+                <section id="menuList" style="overflow: auto;">
+                    <!------------ BURGER LIST ---------->
+                    <div id="Burger" >
+                        <!--LIST HEADER-->
+                        <div class="mSectionHeader container-fluid d-flex align-items-center justify-content-between pl-0 mb-5">
+                            <div class="col" style="background-color: var(--green); height: 1px;"></div>
+                            <h3 class="h6 mx-3 mb-0"><b>Burgers</b></h3>
+                            <div class="col" style="background-color: var(--green); height: 1px;"></div>
                         </div>
-                        <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
-                    </div>
-                    <!--LIST ITEM END-->
-                    <!--LIST ITEM-->
-                    <div class="mb-4 menuItem pr-2">
-                        <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="h6">Le veggie</h4> <span>6,50 €</span>
+                        <!--LIST HEADER END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le veggie</h4> <span>6,00 €</span>
+                            </div>
+                            <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
                         </div>
-                        <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
-                    </div>
-                    <!--LIST ITEM END-->
-                    <!--LIST ITEM-->
-                    <div class="mb-4 menuItem pr-2">
-                        <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="h6">Le veggie</h4> <span>7,00 €</span>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le Red</h4> <span>6,50 €</span>
+                            </div>
+                            <p>Salade, steak de Tofu, fromage, poivron, ketchup dans un pain à la tomate</p>
                         </div>
-                        <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
-                    </div>
-                    <!--LIST ITEM END-->
-                     <!--LIST ITEM-->
-                     <div class="mb-4 menuItem pr-2">
-                        <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="h6">Le veggie</h4> <span>7,50 €</span>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le Black</h4> <span>7,00 €</span>
+                            </div>
+                            <p>Steak de Tofu, concombre, salade, fromage, sauce verte maison dans un pain à l’encre de seiche</p>
                         </div>
-                        <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
-                    </div>
-                    <!--LIST ITEM END-->
-                    <!--LIST ITEM-->
-                    <div class="mb-4 menuItem pr-2">
-                        <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_5.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="h6">Le veggie</h4> <span>7,00 €</span>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le TruffledMush</h4> <span>7,50 €</span>
+                            </div>
+                            <p>Champignons de paris, huile de truffe, échalotte, mayonnaise, parmesan et roquette</p>
                         </div>
-                        <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
-                    </div>
-                    <!--LIST ITEM END-->
-                    <!--LIST ITEM-->
-                    <div class="mb-4 menuItem pr-2">
-                        <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_6.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="h6">Le veggie</h4> <span>7,50 €</span>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_5.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le Jackfruit</h4> <span>8,00 €</span>
+                            </div>
+                            <p>Fruit du jacquier, choux rouge, carottes, salade, pomme, sauce BBQ et coriandre</p>
                         </div>
-                        <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
-                    </div>
-                    <!--LIST ITEM END-->
-                     <!--LIST ITEM-->
-                     <div class="mb-4 menuItem pr-2">
-                        <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="h6">Le veggie</h4> <span>7,00 €</span>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_6.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le SpicyLents</h4> <span>8,50 €</span>
+                            </div>
+                            <p>Steak de lentilles, oignons rouge, laitue tomate coriandre pâte de gingembre, pâte d'ail et sauce aigre douce </p>
                         </div>
-                        <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
-                    </div>
-                    <!--LIST ITEM END-->
-                    <!--LIST ITEM-->
-                    <div class="mb-4 menuItem pr-2">
-                        <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_8.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="h6">Le veggie</h4> <span>7,50 €</span>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le DoubleMush</h4> <span>9,00 €</span>
+                            </div>
+                            <p>Champignons double, sauce à l’ail, cornichons, roquette, et tomate séchées</p>
                         </div>
-                        <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
-                    </div>
-                    <!--LIST ITEM END-->
-                    <!--LIST ITEM-->
-                    <div class="mb-4 menuItem pr-2">
-                        <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_9.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="h6">Le veggie</h4> <span>7,00 €</span>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_8.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le JerkHalloumi</h4> <span>9,50 €</span>
+                            </div>
+                            <p>Halloumi assaisonné à l’épice jerk grillé mayonnaise roquette poivron rouge, et oignon rouge dans un pain brioché</p>
                         </div>
-                        <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
-                    </div>
-                    <!--LIST ITEM END-->
-                     <!--LIST ITEM-->
-                     <div class="mb-4 menuItem pr-2">
-                        <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_10.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
-                        <div class="d-flex justify-content-between mb-3">
-                            <h4 class="h6">Le veggie</h4> <span>7,50 €</span>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_9.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le MushHalloumi</h4> <span>10,00 €</span>
+                            </div>
+                            <p>Halloumi, champignons avocat harissa mayonnaise oignons rouges et epinards</p>
                         </div>
-                        <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_10.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le Green</h4> <span>10,50 €</span>
+                            </div>
+                            <p>Steak de Tofu, salade, tomates, ketchup, concombre et poivrons dans un pain au basilic</p>
+                        </div>
+                        <!--LIST ITEM END-->
                     </div>
-                    <!--LIST ITEM END-->
-                    
-                    
+                    <!------------ BURGER LIST END---------->
+                    <!------------ SIDES LIST ---------->
+                    <div id="Accompagnements" class="pt-3">
+                        <!--LIST HEADER-->
+                        <div class="mSectionHeader container-fluid d-flex align-items-center justify-content-between pl-0 mb-5">
+                            <div class="col" style="background-color: var(--green); height: 1px;"></div>
+                            <h3 class="h6 mx-3 mb-0"><b>Accompagnements</b></h3>
+                            <div class="col" style="background-color: var(--green); height: 1px;"></div>
+                        </div>
+                        <!--LIST HEADER END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Les frites classiques</h4> <span>3,00 €</span>
+                            </div>
+                            <p>Frites maison salées aux herbes</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Les frites de patate douce</h4> <span>3,50 €</span>
+                            </div>
+                            <p>Frites de patate douce maison salées aux herbes</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Les Kale Crisps</h4> <span>4,00 €</span>
+                            </div>
+                            <p>Chips de choux frisés</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Les zucchini crisps</h4> <span>4,00 €</span>
+                            </div>
+                            <p>Chips de courgettes</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_5.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Les fried pickles</h4> <span>4,00 €</span>
+                            </div>
+                            <p>Morceaux de choux au paprika frits</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_6.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Les fried pickles</h4> <span>4,50 €</span>
+                            </div>
+                            <p>Cornichons frits</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Les beetroot crisps</h4> <span>4,50 €</span>
+                            </div>
+                            <p>Chips de bétrave</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_8.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Les fried Aspargus</h4> <span>5,00 €</span>
+                            </div>
+                            <p>Frites d'asperges</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                    </div>
+                    <!------------ SIDES LIST END---------->
+                    <!------------ SAUCES LIST ---------->
+                    <div id="Sauces" class="pt-3">
+                        <!--LIST HEADER-->
+                        <div class="mSectionHeader container-fluid d-flex align-items-center justify-content-between pl-0 mb-5">
+                            <div class="col" style="background-color: var(--green); height: 1px;"></div>
+                            <h3 class="h6 mx-3 mb-0"><b>Sauces</b></h3>
+                            <div class="col" style="background-color: var(--green); height: 1px;"></div>
+                        </div>
+                        <!--LIST HEADER END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Sauce_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le Ketchup maison</h4> <span>0,50 €</span>
+                            </div>
+                            <p></p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Sauce_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">La mayonnaise maison</h4> <span>0,50 €</span>
+                            </div>
+                            <p></p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Sauce_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">La sauce BBQ maison</h4> <span>0,50 €</span>
+                            </div>
+                            <p></p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Sauce_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">La moutarde maison</h4> <span>0,50 €</span>
+                            </div>
+                            <p></p>
+                        </div>
+                        <!--LIST ITEM END-->
+                    </div>
+                    <!------------ SAUCES LIST END---------->
+                    <!------------ BEVERAGES LIST ---------->
+                    <div id="Burger" class="pt-3">
+                        <!--LIST HEADER-->
+                        <div class="mSectionHeader container-fluid d-flex align-items-center justify-content-between pl-0 mb-5">
+                            <div class="col" style="background-color: var(--green); height: 1px;"></div>
+                            <h3 class="h6 mx-3 mb-0"><b>Boissons</b></h3>
+                            <div class="col" style="background-color: var(--green); height: 1px;"></div>
+                        </div>
+                        <!--LIST HEADER END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Kombucha Original</h4> <span>2,50 €</span>
+                            </div>
+                            <p>Thé fermenté</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Kombucha Rose</h4> <span>2,50 €</span>
+                            </div>
+                            <p>Thé fermenté aux épices chaï et à l’hibiscus</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Kombucha Orange</h4> <span>2,50 €</span>
+                            </div>
+                            <p>Thé fermenté au curcuma carottes et citron</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Kombucha Jaune</h4> <span>2,50 €</span>
+                            </div>
+                            <p>Thé fermenté au citron et au gingembre</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_5.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Kéfir Citron Spiruline</h4> <span>3,00 €</span>
+                            </div>
+                            <p>Boisson fermentée pétillante au citron et à la spiruline</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_6.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Kéfir Coco Citron</h4> <span>3,00 €</span>
+                            </div>
+                            <p>Boisson fermentée pétillante au coco et au citron</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Kéfir Hibiscus Citron</h4> <span>3,00 €</span>
+                            </div>
+                            <p>Boisson fermentée pétillante au citron et à l’hibiscus</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_8.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Kéfir Pomme Menthe</h4> <span>3,00 €</span>
+                            </div>
+                            <p>Boisson fermentée pétillante à la pomme et à la menthe</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                    </div>
+                    <!------------ BEVERAGES LIST END---------->
+                    <!------------ DESERTS LIST ---------->
+                    <div id="Burger" class="pt-3">
+                        <!--LIST HEADER-->
+                        <div class="mSectionHeader container-fluid d-flex align-items-center justify-content-between pl-0 mb-5">
+                            <div class="col" style="background-color: var(--green); height: 1px;"></div>
+                            <h3 class="h6 mx-3 mb-0"><b>Desserts</b></h3>
+                            <div class="col" style="background-color: var(--green); height: 1px;"></div>
+                        </div>
+                        <!--LIST HEADER END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Dessert_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Pudding graines de chia</h4> <span>5,00 €</span>
+                            </div>
+                            <p>Pudding hyper protéiné aux framboises et graines de chia</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Dessert_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Crème végétale vanille</h4> <span>6,00 €</span>
+                            </div>
+                            <p>Crème végétal au sirop d’agave, avec de la noix de coco rapée et de l’extrait de vanille</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Dessert_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Gâteau végétal au citron</h4> <span>7,00 €</span>
+                            </div>
+                            <p>Gâteau au citron lait de soja et margarine végétale</p>
+                        </div>
+                        <!--LIST ITEM END-->
+                        <!--LIST ITEM-->
+                        <div class="mb-4 menuItem pr-2">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Dessert_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Panacotta Maracudja</h4> <span>8,00 €</span>
+                            </div>
+                            <p>Panacotta végétale au fruit de la passion, crème de soja nature, agar-agar et sans gelatine </p>
+                        </div>
+                        <!--LIST ITEM END-->
+                    </div>
+                    <!------------ DESERTS LIST END---------->                
                 </section>
                 <!--ACCOMPAGNEMENTS-->
                 <section id="Accompagnements">

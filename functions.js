@@ -17,3 +17,9 @@ function activeSubMenu(item) {
     item.style.color= " #d68538";
     item.style.fontWeight= "bold";
 }
+
+function closeRemove(button){
+    let block = button.parentNode;
+    console.log(block);
+    block.style.display="none";
+}
