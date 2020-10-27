@@ -23,3 +23,16 @@ function closeRemove(button){
     console.log(block);
     block.style.display="none";
 }
+
+/*
+function displayChoiceDetails(radioButton){
+    let id = radioButton.getAttribute("id");
+    id = id + "Block";
+    let vector = document.querySelectorAll(deliveryDetails);
+    for (i=0; i< vector.lenght; i++){
+        let block = document.getElementById(vector[i]);
+        block.style.display="none;"
+    }
+    document.getElementById(id).style.display="none";
+}
+*/

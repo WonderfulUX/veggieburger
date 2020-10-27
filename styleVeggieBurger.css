@@ -4,6 +4,7 @@
     --black: #373737;
     --lightOrange:#F5E4CD;
     --grey: #C4C4C4;
+    --aWhite: #F6F6F6;
 
 }
 
@@ -109,18 +110,23 @@ footer{
 
 #leftSide, #rightSide{
     height: 580px;
-    width: 40%;
+    width: 35%;
 }
 
-.contentMarginTop{
-    padding-top: 23%;
-}
-.contentMarginTop2{
-    padding-top: 30px;
+@media screen and (min-width: 1000px) and (max-height: 720px){
+    #leftSide, #rightSide{
+        height: 550px;
+    }
 }
 
-.contentMarginLeft{
-    margin-left: 15%;
+@media screen and (min-width: 1000px) and (min-height: 800px){
+    #leftSide, #rightSide{
+        height: 700px;
+    }
+    .galleryPic{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .presText{
@@ -147,11 +153,16 @@ footer{
 }
 
 .carouselBlockItem {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .carouselBlockItem *{
     margin: 0 auto;
+}
+
+.carouselBlockItem p{
+    padding-top: 5px;
+    height: 50px;
 }
 
 .carousel-indicators li{
@@ -159,6 +170,10 @@ footer{
     height: 15px;
     border-radius: 50%;
     background-color: var(--orange);
+}
+
+.carousel-item{
+    margin-bottom: 20px;
 }
 
 .inputStyle{
@@ -244,7 +259,6 @@ textarea{
     font-size: 12px;
     border-radius: 5px;
     background-color: var(--lightOrange);
-    /*border: 1px solid var(--orange);*/
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -267,4 +281,28 @@ tr,td, th{
 
 #instructionRecap{
     color: var(--orange);
+}
+
+
+.choice *:hover{
+    color: var(--black);
+    font-weight: bold;
+    cursor: pointer;
+}
+/*
+input[type=radio]:checked:after{
+    outline: red;
+} */
+
+.deliveryDetails:not(:target){
+    display:none;
+}
+
+.deliveryDetails:target{
+    display:block;
+}
+
+input:focus{
+    background-color: var(--aWhite);
+    outline: 0;
 }
