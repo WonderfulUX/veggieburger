@@ -289,10 +289,6 @@ tr,td, th{
     font-weight: bold;
     cursor: pointer;
 }
-/*
-input[type=radio]:checked:after{
-    outline: red;
-} */
 
 .deliveryDetails:not(:target){
     display:none;
@@ -302,7 +298,25 @@ input[type=radio]:checked:after{
     display:block;
 }
 
-input:focus{
+input:focus, textarea:focus{
     background-color: var(--aWhite);
     outline: 0;
+}
+
+.smallInput{
+    width: 200px;
+}
+
+.largeInput{
+    width: 435px;
+}
+.ml30{
+    margin-left: 30px;
+}
+.mb15{
+    margin-bottom: 15px;
+}
+
+.mb30{
+    margin-bottom: 30px;
 }

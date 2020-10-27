@@ -55,21 +55,31 @@
             <div id="leftSide" class="mr-2">
                 <h1>Réserver une table</h1>
                 <p style="color: red; font-style: italic; font-size: 12px;">Un acompte de 10€ vous sera demandé pour la validation de votre réservation <br>Cet acompte sera déduit de la note finale</p>
-                    <form action="get" class="mt-4 row">
-                        <input type="text" id="fname" name="fname" class="inputStyle smallInput col-5" placeholder="Restaurant *">
-                        <input type="text" id="lname" name="lname" class="inputStyle smallInput col-5  offset-1 " placeholder="Espace *">
-                        <input type="text" id="email" name="email" class="inputStyle smallInput mt-3 col-5" placeholder="Nombre d'adultes *">
-                        <input type="text" id="tel" name="tel" class="inputStyle smallInput mt-3 col-5 offset-1 " placeholder="Nombre d'enfants *">
-                        <input type="text" id="fname" name="fname" class="inputStyle smallInput mt-3 col-5" placeholder="Date *">
-                        <input type="text" id="lname" name="lname" class="inputStyle smallInput mt-3 col-5  offset-1 " placeholder="Heure *">
-                        <input type="text" id="email" name="email" class="inputStyle smallInput mt-3 col-5" placeholder="Prénom *">
-                        <input type="text" id="tel" name="tel" class="inputStyle smallInput mt-3 col-5 offset-1 " placeholder="Nom *">
-                        <input type="text" id="tel" name="tel" class="inputStyle smallInput mt-3 col-5 " placeholder="Email *">
-                        <input type="text" id="tel" name="tel" class="inputStyle smallInput mt-3 col-5 offset-1 " placeholder="Téléphone *">
-                        <textarea id="w3review" name="w3review" class="inputStyle mt-3 col-11" placeholder="Message" style="height: 100px;"></textarea>
-                        <div class="col-11 d-flex justify-content-end p-0">
-                            <input type="submit" value="Régler l'acompte" class="primaryButton mt-4">
-                        </div>
+                    <form action="get" class="mt-4 container-fluid p-0">
+                        <div class="d-flex">
+                            <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Restaurant *">
+                            <input type="text" id="lname" name="lname" class="inputStyle col mb15 ml30" placeholder="Espace *">
+                        </div>                         
+                        <div class="d-flex">
+                            <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Nombre d'adultes *">
+                            <input type="text" id="lname" name="lname" class="inputStyle col mb15 ml30" placeholder="Nombre d'enfants *">
+                        </div> 
+                        <div class="d-flex">
+                            <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Date *">
+                            <input type="text" id="lname" name="lname" class="inputStyle col mb15 ml30" placeholder="Heure *">
+                        </div> 
+                        <div class="d-flex">
+                            <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Prénom *">
+                            <input type="text" id="lname" name="lname" class="inputStyle col mb15 ml30" placeholder="Nom *">
+                        </div> 
+                        <div class="d-flex">
+                            <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Email *">
+                            <input type="text" id="lname" name="lname" class="inputStyle col mb15 ml30" placeholder="Téléphone *">
+                        </div> 
+                        <textarea id="w3review" name="w3review" class="inputStyle mb30 col-12" placeholder="Message" style="height: 100px;"></textarea>
+                        <div class="d-flex justify-content-end">
+                            <input type="submit" value="Régler l'acompte" class="primaryButton">
+                        </div> 
                     </form>
             </div>
             <!--LEFT BLOCK END-->
