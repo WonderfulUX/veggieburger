@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Veggie Burger</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="styleVeggieBurger.css">        
+    </head>
+    <body>
+        <!------------------------- HEADER --------------------------------->
+        <header class="container-fluid">
+            <div id="headerContainer" class="d-flex align-items-center">
+                <!-- LOGO AND LOCATION -->
+                <div class="mr-5 d-inline-flex flex-column align-items-center">
+                    <div style="height:70px; min-width: 110px; text-align: center;">
+                        <a href="./index.html"><img id="logo" src="./svg/LogoVeggieBurger.svg" style="height:70px;"></a>
+                    </div>
+                    <div id="restoID" class="mt-4 d-flex align-items-center dropdown">
+                        <div class="dropdown-toggle" id="actualLoc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Baie-Mahault</div>
+                        <div class="dropdown-menu rounded" aria-labelledby="dropdownMenuButton">
+                            <span class="dropdown-item" onclick="changeLoc(this)">Abymes</span>
+                            <span class="dropdown-item" onclick="changeLoc(this)">Baie-Mahault</span>
+                            <span class="dropdown-item" onclick="changeLoc(this)">Pointe-à-Pitre</span>
+                          </div>
+                    </div>
+                </div>
+                <!-- LOGO AND LOCATION END-->
+                <!-- HEADER LINKS -->
+                <div id="headerLinks" style="margin-bottom: 52px;" class="container-fluid d-flex align-items-center justify-content-between pl-0">
+                    <!-- MENU LIST -->
+                    <div id="menu" class="d-inline-block">
+                        <span class="mr-4"><a href="./menu.html#Burger">La carte</a></span>
+                        <span class="mr-4"><a href="./order.html">Commander</a></span>
+                        <span class="mr-4"><a href="./book.html">Réserver</a></span>
+                        <span class="mr-4"><a href="./gallery.html">Galerie</a></span>
+                        <span class="mr-4"><a href="./about.html">Notre vision</a></span>
+                        <span class="mr-4"><a href="">Livre d'or</a></span>
+                    </div>
+                    <!-- MENU LIST END-->
+                    <!-- CART INFO CONTACT --> 
+                    <div id="mainAction" class="d-inline-block">
+                        <span class="ml-4"><a href="./cart.html"><img src="./svg/Icon_panier.svg" alt="panier"  onmouseover="src='./svg/Icon_panier_hover.svg'" onmouseout="src='./svg/Icon_panier.svg'"></a></span>
+                        <span class="ml-4"><a href="./infos.html"><img src="./svg/Icon_info.svg" alt="infos" onmouseover="src='./svg/Icon_info_hover.svg'" onmouseout="src='./svg/Icon_info.svg'"></a></span>
+                        <span class="ml-4"><a href="./contact.html"><img src="./svg/Icon_contact.svg" alt="contact" onmouseover="src='./svg/Icon_contact_hover.svg'" onmouseout="src='./svg/Icon_contact.svg'"></a></span>
+                    </div>
+                    <!-- CART INFO CONTACT END--> 
+                </div> 
+                <!-- HEADER LINKS -->  
+            </div>
+        </header>
+        <!------------------------- CONTENT --------------------------------->   
+        <section id="content" class="d-flex justify-content-center">
+            <div id="leftSide" class="d-flex flex-column align-items-center justify-content-center w-100">
+                <h1 class="mb100">Merci Boris</h1>
+                <p class="mb50"> Nous vous remercion pour votre confiance! À bientôt dans nos restaurants</p>
+                <button class="primaryButton" onclick="window.location.href='./index.html'">Retour à l'accueil</button>
+            </div>
+            
+        </section>
+        <!------------------------- FOOTER ---------------------------------> 
+        <footer>
+            <div id="socialNetwork" class="d-flex flex-column-reverse">
+                <span class="mt-4"><a href=""><img src="./svg/Icon_facebook.svg" alt="Facebook" onmouseover="src='./svg/Icon_facebook_hover.svg'" onmouseout="src='./svg/Icon_facebook.svg'"></a></span>
+                <span><a href=""><img src="./svg/Icon_instagram.svg" alt="Instagram" onmouseover="src='./svg/Icon_instagram_hover.svg'" onmouseout="src='./svg/Icon_instagram.svg'"></a></span>
+            </div>
+        </footer>
+        <script src="./functions.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

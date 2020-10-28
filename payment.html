@@ -130,55 +130,41 @@
                 <div class="d-flex flex-column justify-content-between" style="height: 500px;">
                     <!--BLOCK INSTRUCTIONS AND CHOICE-->
                     <div>
-                        <p id="instructionRecap" class="w-100">Précisez les détails de votre livraison</p>
-                        <!--CHOICE-->
-                        <form class="col-12 choice mb50">
-                            <input type="radio" id="deliveryRadio" name="choice" value="deliveryRadio" onchange="displayChoiceDetails()">
-                            <label for="deliveryRadio">Livraison à domicile</label><br>
-                            <input type="radio" id="pickUpRadio" name="choice" value="pickUpRadio" onchange="displayChoiceDetails()">
-                            <label for="pickUpRadio">Récupération au restaurant</label><br>                     
-                        </form>
+                        <p id="instructionRecap" class="w-100 mb15">Vérifiez vos informations et procédez au paiement</p>
+                        <!-- RECAP INFOS -->
+                        <a href="javascript:history.back()" id="info">
+                            <div id="infoBlock" class="d-flex justify-content-between align-items-center container-fluid recap mb100">
+                                <!-- TEXT BLOCK-->
+                                <div>
+                                    <span>Livraison à domicile</span><br>
+                                    <span>Chez </span><span>Boris Boulogne</span><br>
+                                    <span>6 Allée des Bégonias</span><br>
+                                    <span>Les Jardins d'Arnouville</span><br>
+                                    <span>97170 Petit-Bourg</span>
+                                </div>
+                                <!-- TEXT BLOCK END-->
+                                <img src="./svg/Icon_edit.svg" alt="editInfos">
+                            </div>
+                        </a>
                         <!--CHOICE END-->
-                        <!--BLOCK DELIVERY-->
-                        <form action="get" id="deliveryBlock" class="deliveryDetails container-fluid">
+                        <!--PAYMENT-->
+                        <form action="get" id="paymentBlock" class="container-fluid d-flex flex-column align-items-center">
                             <div class="d-flex">
-                                <input type="text" id="date" name="date" class="inputStyle col mb15" placeholder="Date *">
-                                <input type="text" id="time" name="time" class="inputStyle col mb15 ml30" placeholder="Heure *">
-                            </div> 
-                            <div class="d-flex">
-                                <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Prénom *">
-                                <input type="text" id="tel" name="tel" class="inputStyle col mb15 ml30" placeholder="Téléphone *">
+                                <input type="text" id="numCarte" name="numCarte" class="inputStyle col mb15" placeholder="Numéro de carte *" style="text-align: center; width: 330px;">                            
                             </div>
-                            <input type="text" id="adresse" name="adresse" class="inputStyle col mb15" placeholder="Adresse *">
-                            <input type="text" id="adresse2" name="adresse2" class="inputStyle col mb15" placeholder="Complément d'adresse *">
                             <div class="d-flex">
-                                <input type="text" id="Cpostal" name="Cpostal" class="inputStyle col mb15" placeholder="Code postal *">
-                                <input type="text" id="Commune" name="Commune" class="inputStyle col mb15 ml30" placeholder="Commune *">
+                                <input type="text" id="Cpostal" name="Cpostal" class="inputStyle mb15" placeholder="Date d'expiration *" style="text-align: center; width: 150px;">
+                                <input type="text" id="Commune" name="Commune" class="inputStyle mb15 ml30" placeholder="Cryptogramme *" style="text-align: center; width: 150px;">
                             </div>
                         </form>
-                        <!--BLOCK DELIVERY END-->
-                        <!--BLOCK PICK UP-->
-                        <div id="pickUpBlock" class="deliveryDetails" style="height: 100%">
-                            <div class="d-flex flex-column align-items-center" style="height: 100%">
-                                <div>
-                                    <input type="text" id="date2" name="date2" class="inputStyle col mb15" placeholder="Date *">
-                                </div>
-                                <div>
-                                    <input type="text" id="time2" name="time2" class="inputStyle col mb15 " placeholder="Heure *">
-                                </div>
-                                <div>
-                                    <input type="text" id="fname2" name="fname" class="inputStyle col" placeholder="Prénom *">
-                                </div>
-                            </div> 
-                        </div>
-                        <!--BLOCK PICK UP END-->
+                        <!--PAYMENT END-->
                     </div>
                     <!--BLOCK INSTRUCTIONS AND CHOICE END-->
                     <!--CHOICE END-->
                     <!--BLOCK  CTAs-->
                     <div class="d-flex justify-content-center container-fluid">
                         <button class="secondaryButton col" onclick="window.location.href='javascript:history.back()'">Retour</button>
-                        <button class="primaryButton ml30 col" onclick="window.location.href='./payment.html'">Valider mes informations</button>
+                        <button class="primaryButton ml30 col" onclick="window.location.href='./paymentOK.html'">Payer</button>
                     </div>
                     <!--BLOCK CTAs END-->
                 </div>
