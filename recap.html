@@ -127,50 +127,60 @@
             <!--LEFT BLOCK END-->
             <!--RIGHT BLOCK-->
             <div id="rightSide" class="ml-5">
-                <div class="d-flex row justify-content-center">
-                    <p id="instructionRecap" class="col-12">Précisez les détails de votre livraison</p>
-                    <!--CHOICE-->
-                    <form class="col-12 choice">
-                        <!--  <div id="pickUp" onclick="displayChoiceDetails(this)">  -->
-                        <div id="delivery">
-                            <input type="radio" id="deliveryRadio" name="choice" value="deliveryRadio">
-                            <label for="deliveryRadio"><a href="#deliveryBlock">Livraison à domicile</a></label><br>
-                        </div> 
-                        <div id="pickUp">
-                            <input type="radio" id="pickUpRadio" name="choice" value="pickUpRadio">
-                            <label for="pickUpRadio"><a href="#pickUpBlock">Récupération au restaurant</a></label><br>
+                <div class="d-flex flex-column justify-content-between" style="height: 530px;">
+                    <!--BLOCK INSTRUCTIONS AND CHOICE-->
+                    <div>
+                        <p id="instructionRecap" class="w-100">Précisez les détails de votre livraison</p>
+                        <!--CHOICE-->
+                        <form class="col-12 choice mb50">
+                            <input type="radio" id="deliveryRadio" name="choice" value="deliveryRadio" onchange="displayChoiceDetails()">
+                            <label for="deliveryRadio">Livraison à domicile</label><br>
+                            <input type="radio" id="pickUpRadio" name="choice" value="pickUpRadio" onchange="displayChoiceDetails()">
+                            <label for="pickUpRadio">Récupération au restaurant</label><br>                     
+                        </form>
+                        <!--CHOICE END-->
+                        <!--BLOCK DELIVERY-->
+                        <form action="get" id="deliveryBlock" class="deliveryDetails container-fluid">
+                            <div class="d-flex">
+                                <input type="text" id="date" name="date" class="inputStyle col mb15" placeholder="Date *">
+                                <input type="text" id="time" name="time" class="inputStyle col mb15 ml30" placeholder="Heure *">
+                            </div> 
+                            <div class="d-flex">
+                                <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Prénom *">
+                                <input type="text" id="tel" name="tel" class="inputStyle col mb15 ml30" placeholder="Téléphone *">
+                            </div>
+                            <input type="text" id="adresse" name="adresse" class="inputStyle col mb15" placeholder="Adresse *">
+                            <input type="text" id="adresse2" name="adresse2" class="inputStyle col mb15" placeholder="Complément d'adresse *">
+                            <div class="d-flex">
+                                <input type="text" id="Cpostal" name="Cpostal" class="inputStyle col mb15" placeholder="Code postal *">
+                                <input type="text" id="Commune" name="Commune" class="inputStyle col mb15 ml30" placeholder="Commune *">
+                            </div>
+                        </form>
+                        <!--BLOCK DELIVERY END-->
+                        <!--BLOCK PICK UP-->
+                        <div id="pickUpBlock" class="deliveryDetails" style="height: 100%;">
+                            <div class="d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+                                <div class="col-6">
+                                    <input type="text" id="date2" name="date2" class="inputStyle col mb15" placeholder="Date *">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" id="time2" name="time2" class="inputStyle col mb15 " placeholder="Heure *">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" id="fname2" name="fname" class="inputStyle col mb15" placeholder="Prénom *">
+                                </div>
+                            </div> 
                         </div>
-                        
-                    </form>
+                        <!--BLOCK PICK UP END-->
+                    </div>
+                    <!--BLOCK INSTRUCTIONS AND CHOICE END-->
                     <!--CHOICE END-->
-                    <!--DETAILS LIVRAISON-->
-                    <div id="deliveryBlock" class="deliveryDetails">
-                        <div class="mt-5 col-12">
-                            <input type="text" id="date" name="date" class="inputStyle col-5" placeholder="Date *">
-                            <input type="text" id="time" name="time" class="inputStyle col-5  offset-1 " placeholder="Heure de livraison *">
-                        </div>
-                        <div class="mt-5 col-12" id="detailsLivraison">
-                            <input type="text" id="fname" name="fname" class="inputStyle col-5" placeholder="Prénom *">
-                            <input type="text" id="lname" name="lname" class="inputStyle col-5  offset-1 " placeholder="Numéro de téléphone *">
-                            <input type="text" id="email" name="email" class="inputStyle mt-3 col-11" placeholder="Adresse *">
-                            <input type="text" id="tel" name="tel" class="inputStyle smallInput mt-3 col-11 " placeholder="Complément d'adresse *">
-                            <input type="text" id="postalCode" name="postalCode" class="inputStyle mt-3 col-5" placeholder="Code postal *">
-                            <input type="text" id="commune" name="commune" class="inputStyle mt-3 col-5  offset-1 " placeholder="Commune *">
-                        </div>
-                        <div class="col-12 d-flex justify-content-center" style="margin-top:80px">
-                            <button class="secondaryButton mr-4 col-5" onclick="window.location.href='./book.html'">Réserver</button>
-                            <button class="primaryButton col-5" onclick="window.location.href='./order.html'">Commander</button>
-                        </div>
+                    <!--BLOCK  CTAs-->
+                    <div class="d-flex justify-content-center container-fluid">
+                        <button class="secondaryButton col" onclick="window.location.href='./book.html'">Retour</button>
+                        <button class="primaryButton ml30 col" onclick="window.location.href='./order.html'">Commander</button>
                     </div>
-                    <!--DETAILS LIVRAISON END-->
-                    <!--DETAILS PICKUP -->
-                    <div id="pickUpBlock" class="deliveryDetails col-12">
-                        <div class="d-flex container-fluid p-0 justify-content-center align-items-center mt-5">
-                            <p class="mr-3 mb-0">Récupérée par :</p>
-                            <input type="text" id="fname" name="fname" class="inputStyle col-5" placeholder="Prénom et Nom *">
-                        </div>
-                    </div>
-                    <!--DETAILS PICKUP END-->
+                    <!--BLOCK CTAs END-->
                 </div>
                 
             </div>

@@ -53,86 +53,116 @@
         <section id="content" class="d-flex align-items-center justify-content-center">
             <!--LEFT BLOCK-->
             <div id="leftSide" class="mr-2">
-                <div class="d-flex flex-column">
-                    <h1 class="mb-3">Mon panier</h1>
-                    <div id="instructionsPanier" class="instructions">
-                        <span>Cliquez sur une ligne du tableau pour l’éditer</span> <div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;" onclick="closeRemove(this)"><img src="./svg/closeAlert.svg" alt="closeAlert"></div>
+                <div class="d-flex flex-column justify-content-between" style="height:100%">
+                    <!--TOP-->
+                    <div>
+                        <!--HEAD AND INSTRUCTIONS-->
+                        <div>
+                            <h1 class="mb15">Mon panier</h1>
+                            <div id="instructionsPanier" class="instructions mb15">
+                                <span>Cliquez sur une ligne du tableau pour l’éditer</span> <div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;" onclick="closeRemove(this)"><img src="./svg/closeAlert.svg" alt="closeAlert"></div>
+                            </div>
+                        </div>
+                        <!--HEAD AND INSTRUCTIONS END-->
+                        <!--TABLE-->
+                        <div>
+                            <table class="table table-sm" style=" height: 350px; overflow: auto;">
+                                <thead style="border: none;">
+                                    <tr style="border: none;">
+                                        <th colspan="3" style="text-align: left; border: none;">Produit</th>
+                                        <th style="border: none;">Quantité</th>
+                                        <th style="border: none;">Prix</th>
+                                        <th style="border: none; visibility: hidden;"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;">Le Black</td>
+                                        <td colspan="1">1</td>
+                                        <td colspan="1">23,00 €</td>
+                                        <td colspan="1" style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;">Le DoubleMush</td>
+                                        <td colspan="1">1</td>
+                                        <td colspan="1">23,00 €</td>
+                                        <td colspan="1" style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;">Frites de patates douces</td>
+                                        <td colspan="1">1</td>
+                                        <td colspan="1">23,00 €</td>
+                                        <td colspan="1" style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;">Fried Aspargus</td>
+                                        <td colspan="1">1</td>
+                                        <td colspan="1">23,00 €</td>
+                                        <td colspan="1" style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;">Sauce BBQ Maison</td>
+                                        <td colspan="1">1</td>
+                                        <td colspan="1">0,50 €</td>
+                                        <td colspan="1" style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;">Moutarde Maison</td>
+                                        <td colspan="1">2</td>
+                                        <td colspan="1">1,00 €</td>
+                                        <td colspan="1" style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;">Kombucha Rose</td>
+                                        <td colspan="1">1</td>
+                                        <td colspan="1">3,00 €</td>
+                                        <td colspan="1" style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;">Kéfir Citron Spiruline</td>
+                                        <td colspan="1">1</td>
+                                        <td colspan="1">3,00 €</td>
+                                        <td colspan="1" style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;">Kéfir Citron Spiruline</td>
+                                        <td colspan="1">1</td>
+                                        <td colspan="1">3,00 €</td>
+                                        <td colspan="1" style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;">Kéfir Citron Spiruline</td>
+                                        <td colspan="1">1</td>
+                                        <td colspan="1">3,00 €</td>
+                                        <td colspan="1" style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                    <tr style="border-top: none; vertical-align: center;">
+                                        <td colspan="3" style="text-align: left;"><b>Total</b></td>
+                                        <td colspan="1"></td>
+                                        <td colspan="1"><b>132,00 €</b></td>
+                                        <td colspan="1" style="border-top: none; visibility: hidden;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--TABLE END-->
                     </div>
-                    <table class="table table-sm">
-                        <thead style="border: none;">
-                          <tr style="border: none;">
-                            <th colspan="3" style="text-align: left; border: none;">Produit</th>
-                            <th style="border: none;">Quantité</th>
-                            <th style="border: none;">Prix</th>
-                            <th style="border: none; visibility: hidden;"><div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;"><img src="./svg/removeLine.svg" alt="closeAlert"></div></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr style="border-top: none; vertical-align: center;">
-                            <td colspan="3" style="text-align: left;">Le Black</td>
-                            <td colspan="1" >1</td>
-                            <td colspan="1" >23,00 €</td>
-                            <td colspan="1"  style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                          </tr>
-                          <tr style="border-top: none; vertical-align: center;">
-                            <td colspan="3" style="text-align: left;">Le DoubleMush</td>
-                            <td colspan="1" >1</td>
-                            <td colspan="1" >23,00 €</td>
-                            <td colspan="1"  style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                          </tr>
-                          <tr style="border-top: none; vertical-align: center;">
-                            <td colspan="3" style="text-align: left;">Frites de patates douces</td>
-                            <td colspan="1" >1</td>
-                            <td colspan="1" >23,00 €</td>
-                            <td colspan="1"  style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                          </tr>
-                          <tr style="border-top: none; vertical-align: center;">
-                            <td colspan="3" style="text-align: left;">Fried Aspargus</td>
-                            <td colspan="1" >1</td>
-                            <td colspan="1" >23,00 €</td>
-                            <td colspan="1"  style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                          </tr>
-                          <tr style="border-top: none; vertical-align: center;">
-                            <td colspan="3" style="text-align: left;">Sauce BBQ Maison</td>
-                            <td colspan="1" >1</td>
-                            <td colspan="1" >0,50 €</td>
-                            <td colspan="1"  style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                          </tr>
-                          <tr style="border-top: none; vertical-align: center;">
-                            <td colspan="3" style="text-align: left;">Moutarde Maison</td>
-                            <td colspan="1" >2</td>
-                            <td colspan="1" >1,00 €</td>
-                            <td colspan="1"  style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                          </tr>
-                          <tr style="border-top: none; vertical-align: center;">
-                            <td colspan="3" style="text-align: left;">Kombucha Rose</td>
-                            <td colspan="1" >1</td>
-                            <td colspan="1" >3,00 €</td>
-                            <td colspan="1"  style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                          </tr>
-                          <tr style="border-top: none; vertical-align: center;">
-                            <td colspan="3" style="text-align: left;">Kéfir Citron Spiruline</td>
-                            <td colspan="1" >1</td>
-                            <td colspan="1" >3,00 €</td>
-                            <td colspan="1"  style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                          </tr>
-                          <tr style="border-top: none; vertical-align: center;">
-                            <td colspan="3" style="text-align: left;"><b>Total</b></td>
-                            <td colspan="1" ></td>
-                            <td colspan="1" ><b>132,00 €</b></td>
-                            <td colspan="1"  style="border-top: none; visibility: hidden;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <div class="d-flex justify-content-end p-0">
+                    <!--TOP END-->
+                    <!--TOTAL AND CTA-->
+                    <div class="d-flex justify-content-end p-0">
                         <button class="primaryButton mr-4 mt-3 align-self-end" onclick="window.location.href='./recap.html'" >Valider mon panier</button> 
-                    </div>                   
+                    </div> 
+                    <!--TOTAL AND CTA END-->
+                    
+                        
+                      
+                                        
                 </div>             
             </div>
             <!--LEFT BLOCK END-->
             <!--RIGHT BLOCK-->
             <div id="rightSide" class="ml-5 d-flex flex-column align-items-center justify-content-center">
-                <div id="instructionsMenu" class="instructions">
+                <div id="instructionsMenu" class="instructions mb15">
                     <span>Sélectionnez votre produit puis la quantité désirée pour l’ajouter à votre sélection</span> <div class="d-flex align-items-center" style="margin-left: 10px; cursor: pointer;" onclick="closeRemove(this)"><img src="./svg/closeAlert.svg" alt="closeAlert"></div>
                 </div>
                 <!--MENU LIST-->

@@ -24,15 +24,13 @@ function closeRemove(button){
     block.style.display="none";
 }
 
-/*
-function displayChoiceDetails(radioButton){
-    let id = radioButton.getAttribute("id");
-    id = id + "Block";
-    let vector = document.querySelectorAll(deliveryDetails);
-    for (i=0; i< vector.lenght; i++){
-        let block = document.getElementById(vector[i]);
-        block.style.display="none;"
+function displayChoiceDetails(){
+    if (document.getElementById('deliveryRadio').checked) 
+	{
+        document.getElementById('deliveryBlock').style.display="block";
+        document.getElementById('pickUpBlock').style.display="none";
+	} else {
+		document.getElementById('pickUpBlock').style.display="block";
+        document.getElementById('deliveryBlock').style.display="none";
     }
-    document.getElementById(id).style.display="none";
 }
-*/
