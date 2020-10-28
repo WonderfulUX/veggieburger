@@ -271,17 +271,16 @@ textarea{
 }
 
 
-tr,td, th{
+td, th{
     padding: 0;
     border-top: 1px solid var(--grey);
     text-align: center;
     height: 35px;
 }
 
-tbody{
-    display: block;
-    height: 300px;
-    overflow: auto;
+tr{
+    border-top: none;
+    vertical-align: center;
 }
 
 
