@@ -283,6 +283,9 @@ tr{
     vertical-align: center;
 }
 
+tbody td{
+
+}
 
 #instructionRecap{
     color: var(--orange);
