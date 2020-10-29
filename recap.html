@@ -158,86 +158,159 @@
                                 <!--TABLE ROW END-->                      
                             </div>
                             <!--TABLE BODY END-->
+                            <!--TABLE FOOTER -->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex tableRowText">
+                                    <p class="col-6 text-left"><b>Total:</b></p>
+                                    <p class="col-3"></p>
+                                    <p class="col-3"><b>32,00 €</b></p> 
+                                </div>
+                            </div>
+                            <!--TABLE FOOTER END-->  
                         </div>
                         <!--TABLE END-->
                     </div>
-                    <!--TOP END-->
-                    <!--TABLE FOOTER -->
-                    <div class="d-flex text-center align-items-center" style="width: 100%;">
-                        <div style="width: 95%;" class="d-flex tableRowText">
-                            <p class="col-6 text-left"><b>Total:</b></p>
-                            <p class="col-3"></p>
-                            <p class="col-3"><b>32,00 €</b></p> 
-                        </div>
-                    </div>
-                    <!--TABLE FOOTER END-->  
-                    <!--CTAs-->
-                    <div class="d-flex justify-content-end p-0">
-                        <button class="primaryButton mr-4 mt-3 align-self-end" onclick="window.location.href='./recap.html'" >Valider mon panier</button> 
-                    </div> 
-                    <!-- CTAs END-->                       
+                    <!--TOP END-->                   
                 </div>
                 <!-- TABLE CONTAINER END-->           
             </div>
             <!--LEFT BLOCK END-->
             <!--RIGHT BLOCK-->
             <div id="rightSide" class="ml-5">
-                <div class="d-flex flex-column justify-content-between" style="height: 500px;">
-                    <!--BLOCK INSTRUCTIONS AND CHOICE-->
-                    <div>
-                        <p id="instructionRecap" class="w-100">Précisez les détails de votre livraison</p>
-                        <!--CHOICE-->
-                        <form class="col-12 choice mb50">
-                            <input type="radio" id="deliveryRadio" name="choice" value="deliveryRadio" onchange="displayChoiceDetails()">
-                            <label for="deliveryRadio">Livraison à domicile</label><br>
-                            <input type="radio" id="pickUpRadio" name="choice" value="pickUpRadio" onchange="displayChoiceDetails()">
-                            <label for="pickUpRadio">Récupération au restaurant</label><br>                     
-                        </form>
-                        <!--CHOICE END-->
-                        <!--BLOCK DELIVERY-->
-                        <form action="get" id="deliveryBlock" class="deliveryDetails container-fluid">
-                            <div class="d-flex">
-                                <input type="text" id="date" name="date" class="inputStyle col mb15" placeholder="Date *">
-                                <input type="text" id="time" name="time" class="inputStyle col mb15 ml30" placeholder="Heure *">
-                            </div> 
-                            <div class="d-flex">
-                                <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Prénom *">
-                                <input type="text" id="tel" name="tel" class="inputStyle col mb15 ml30" placeholder="Téléphone *">
+                <!------------------------------------------- RECAP BLOCK -------------------------------------------------->
+                <div id="recapBlock">
+                    <div class="d-flex flex-column justify-content-between" style="height: 500px;">
+                        <!--BLOCK INSTRUCTIONS AND CHOICE-->
+                        <div>
+                            <p id="instructionRecap" class="w-100">Précisez les détails de votre livraison</p>
+                            <!--CHOICE-->
+                            <form class="col-12 choice mb50">
+                                <input type="radio" id="deliveryRadio" name="choice" value="deliveryRadio" onchange="displayChoiceDetails()">
+                                <label for="deliveryRadio">Livraison à domicile</label><br>
+                                <input type="radio" id="pickUpRadio" name="choice" value="pickUpRadio" onchange="displayChoiceDetails()">
+                                <label for="pickUpRadio">Récupération au restaurant</label><br>                     
+                            </form>
+                            <!--CHOICE END-->
+                            <!--BLOCK DELIVERY-->
+                            <form action="get" id="deliveryBlock" class="deliveryDetails container-fluid">
+                                <div class="d-flex">
+                                    <input type="text" id="date" name="date" class="inputStyle col mb15" placeholder="Date *">
+                                    <input type="text" id="time" name="time" class="inputStyle col mb15 ml30" placeholder="Heure *">
+                                </div> 
+                                <div class="d-flex">
+                                    <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Prénom *">
+                                    <input type="text" id="tel" name="tel" class="inputStyle col mb15 ml30" placeholder="Téléphone *">
+                                </div>
+                                <input type="text" id="adresse" name="adresse" class="inputStyle col mb15" placeholder="Adresse *">
+                                <input type="text" id="adresse2" name="adresse2" class="inputStyle col mb15" placeholder="Complément d'adresse *">
+                                <div class="d-flex">
+                                    <input type="text" id="Cpostal" name="Cpostal" class="inputStyle col mb15" placeholder="Code postal *">
+                                    <input type="text" id="Commune" name="Commune" class="inputStyle col mb15 ml30" placeholder="Commune *">
+                                </div>
+                            </form>
+                            <!--BLOCK DELIVERY END-->
+                            <!--BLOCK PICK UP-->
+                            <div id="pickUpBlock" class="deliveryDetails" style="height: 100%">
+                                <div class="d-flex flex-column align-items-center" style="height: 100%">
+                                    <div>
+                                        <input type="text" id="date2" name="date2" class="inputStyle col mb15" placeholder="Date *">
+                                    </div>
+                                    <div>
+                                        <input type="text" id="time2" name="time2" class="inputStyle col mb15 " placeholder="Heure *">
+                                    </div>
+                                    <div>
+                                        <input type="text" id="fname2" name="fname" class="inputStyle col" placeholder="Prénom *">
+                                    </div>
+                                </div> 
                             </div>
-                            <input type="text" id="adresse" name="adresse" class="inputStyle col mb15" placeholder="Adresse *">
-                            <input type="text" id="adresse2" name="adresse2" class="inputStyle col mb15" placeholder="Complément d'adresse *">
-                            <div class="d-flex">
-                                <input type="text" id="Cpostal" name="Cpostal" class="inputStyle col mb15" placeholder="Code postal *">
-                                <input type="text" id="Commune" name="Commune" class="inputStyle col mb15 ml30" placeholder="Commune *">
-                            </div>
-                        </form>
-                        <!--BLOCK DELIVERY END-->
-                        <!--BLOCK PICK UP-->
-                        <div id="pickUpBlock" class="deliveryDetails" style="height: 100%">
-                            <div class="d-flex flex-column align-items-center" style="height: 100%">
-                                <div>
-                                    <input type="text" id="date2" name="date2" class="inputStyle col mb15" placeholder="Date *">
-                                </div>
-                                <div>
-                                    <input type="text" id="time2" name="time2" class="inputStyle col mb15 " placeholder="Heure *">
-                                </div>
-                                <div>
-                                    <input type="text" id="fname2" name="fname" class="inputStyle col" placeholder="Prénom *">
-                                </div>
-                            </div> 
+                            <!--BLOCK PICK UP END-->
                         </div>
-                        <!--BLOCK PICK UP END-->
+                        <!--BLOCK INSTRUCTIONS AND CHOICE END-->
+                        <!--CHOICE END-->
+                        <!--BLOCK  CTAs-->
+                        <div class="d-flex justify-content-center container-fluid">
+                            <button class="secondaryButton col" onclick="window.location.href='javascript:history.back()'">Retour</button>
+                            <button class="primaryButton ml30 col" onclick="displayPayRecapBlocks(this)">Valider mes informations</button>
+                        </div>
+                        <!--BLOCK CTAs END-->
                     </div>
-                    <!--BLOCK INSTRUCTIONS AND CHOICE END-->
-                    <!--CHOICE END-->
-                    <!--BLOCK  CTAs-->
-                    <div class="d-flex justify-content-center container-fluid">
-                        <button class="secondaryButton col" onclick="window.location.href='javascript:history.back()'">Retour</button>
-                        <button class="primaryButton ml30 col" onclick="window.location.href='./payment.html'">Valider mes informations</button>
-                    </div>
-                    <!--BLOCK CTAs END-->
                 </div>
-                
+                <!------------------------------------------- RECAP BLOCK END-------------------------------------------------->
+                <!------------------------------------------- PAYMENT BLOCK -------------------------------------------------->
+                <div id="paymentBlock">
+                    <div class="d-flex flex-column justify-content-between" style="height: 500px;">
+                        <!--BLOCK INSTRUCTIONS AND CHOICE-->
+                        <div>
+                            <p id="instructionRecap" class="w-100 mb15">Vérifiez vos informations et procédez au paiement</p>
+                            <!-- RECAP INFOS -->
+                            <a href="" id="info">
+                                <div id="infoBlock" class="d-flex justify-content-between align-items-center container-fluid recap mb30" onclick="">
+                                    <!-- TEXT BLOCK-->
+                                    <div>
+                                        <span>Livraison à domicile</span><br>
+                                        <span>Chez </span><span>Boris Boulogne</span><br>
+                                        <span>6 Allée des Bégonias</span><br>
+                                        <span>Les Jardins d'Arnouville</span><br>
+                                        <span>97170 Petit-Bourg</span>
+                                    </div>
+                                    <!-- TEXT BLOCK END-->
+                                    <img src="./svg/Icon_edit.svg" alt="editInfos">
+                                </div>
+                            </a>
+                            <!--CHOICE END-->
+                            <!--PAYMENT-->
+                            <form action="get" id="paymentBlock" class="container-fluid d-flex flex-column align-items-center">
+                                <!--NUM CARTE-->
+                                <div class="d-flex flex-column align-items-center">
+                                    <div>
+                                        <label for="numCarte" class="m-0"> Numéro de carte</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" id="numCarte" name="numCarte" class="d-block inputStyle col mb15" placeholder="ex : 4975 4565 0406 5895" style="text-align: center; width: 330px;">                            
+                                    </div>
+                                </div>
+                                <!--NUM CARTE END-->
+                                <div class="d-flex">
+                                    <!--CODE POSTAL-->
+                                    <div class="d-flex flex-column align-items-center mb30">
+                                        <div>
+                                            <label for="expir">Date d'expiration</label>
+                                        </div>
+                                        <div>
+                                            <input type="text" id="expir" name="expir" class="inputStyle" placeholder="ex : 03/23" style="text-align: center; width: 150px;">
+                                        </div>
+                                    </div>
+                                    <!--CODE POSTAL END-->
+                                    <!--COMMUNE-->
+                                    <div class="d-flex flex-column align-items-center ml30 mb30">
+                                        <div>
+                                            <label for="crypto">Cryptogramme</label>
+                                        </div>
+                                        <div>
+                                            <input type="text" id="crypto" name="crypto" class="inputStyle" placeholder="ex : 741" style="text-align: center; width: 150px;">
+                                        </div>
+                                    </div>
+                                    <!--COMMUNE END-->
+                                </div>
+                            </form>
+                            <!--PAYMENT END-->
+                            <div class="d-flex justify-content-center">
+                                <input type="checkbox" id="cgv" name="cgv">
+                                <label for="cgv" style="font-size: 12px; margin-left: 10px; text-decoration: underline;">Accepter les conditions générales de vente</label>
+                            </div>
+                            
+                        </div>
+                        <!--BLOCK INSTRUCTIONS AND CHOICE END-->
+                        <!--CHOICE END-->
+                        <!--BLOCK  CTAs-->
+                        <div class="d-flex justify-content-center container-fluid">
+                            <button class="secondaryButton col" onclick="displayPayRecapBlocks(this)">Retour</button>
+                            <button class="primaryButton ml30 col" onclick="window.location.href='./paymentOK.html'">Payer</button>
+                        </div>
+                        <!--BLOCK CTAs END-->
+                    </div>
+                </div>    
+                <!------------------------------------------- PAYMENT BLOCK END-------------------------------------------------->
             </div>
             <!--RIGHT BLOCK END-->
         </section>

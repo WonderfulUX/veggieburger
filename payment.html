@@ -158,37 +158,32 @@
                                 <!--TABLE ROW END-->                      
                             </div>
                             <!--TABLE BODY END-->
+                            <!--TABLE FOOTER -->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex tableRowText">
+                                    <p class="col-6 text-left"><b>Total:</b></p>
+                                    <p class="col-3"></p>
+                                    <p class="col-3"><b>32,00 €</b></p> 
+                                </div>
+                            </div>
+                            <!--TABLE FOOTER END--> 
                         </div>
                         <!--TABLE END-->
                     </div>
-                    <!--TOP END-->
-                    <!--TABLE FOOTER -->
-                    <div class="d-flex text-center align-items-center" style="width: 100%;">
-                        <div style="width: 95%;" class="d-flex tableRowText">
-                            <p class="col-6 text-left"><b>Total:</b></p>
-                            <p class="col-3"></p>
-                            <p class="col-3"><b>32,00 €</b></p> 
-                        </div>
-                    </div>
-                    <!--TABLE FOOTER END-->  
-                    <!--CTAs-->
-                    <div class="d-flex justify-content-end p-0">
-                        <button class="primaryButton mr-4 mt-3 align-self-end" onclick="window.location.href='./recap.html'" >Valider mon panier</button> 
-                    </div> 
-                    <!-- CTAs END-->                       
+                    <!--TOP END-->                     
                 </div>
                 <!-- TABLE CONTAINER END-->            
             </div>
             <!--LEFT BLOCK END-->
             <!--RIGHT BLOCK-->
             <div id="rightSide" class="ml-5">
-                <div class="d-flex flex-column justify-content-between" style="height: 500px;">
+                <div id="paymentBlock" class="d-flex flex-column justify-content-between" style="height: 500px;">
                     <!--BLOCK INSTRUCTIONS AND CHOICE-->
                     <div>
                         <p id="instructionRecap" class="w-100 mb15">Vérifiez vos informations et procédez au paiement</p>
                         <!-- RECAP INFOS -->
                         <a href="javascript:history.back()" id="info">
-                            <div id="infoBlock" class="d-flex justify-content-between align-items-center container-fluid recap mb100">
+                            <div id="infoBlock" class="d-flex justify-content-between align-items-center container-fluid recap mb30">
                                 <!-- TEXT BLOCK-->
                                 <div>
                                     <span>Livraison à domicile</span><br>
@@ -204,15 +199,45 @@
                         <!--CHOICE END-->
                         <!--PAYMENT-->
                         <form action="get" id="paymentBlock" class="container-fluid d-flex flex-column align-items-center">
-                            <div class="d-flex">
-                                <input type="text" id="numCarte" name="numCarte" class="inputStyle col mb15" placeholder="Numéro de carte *" style="text-align: center; width: 330px;">                            
+                            <!--NUM CARTE-->
+                            <div class="d-flex flex-column align-items-center">
+                                <div>
+                                    <label for="numCarte" class="m-0"> Numéro de carte</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="numCarte" name="numCarte" class="d-block inputStyle col mb15" placeholder="ex : 4975 4565 0406 5895" style="text-align: center; width: 330px;">                            
+                                </div>
                             </div>
+                            <!--NUM CARTE END-->
                             <div class="d-flex">
-                                <input type="text" id="Cpostal" name="Cpostal" class="inputStyle mb15" placeholder="Date d'expiration *" style="text-align: center; width: 150px;">
-                                <input type="text" id="Commune" name="Commune" class="inputStyle mb15 ml30" placeholder="Cryptogramme *" style="text-align: center; width: 150px;">
+                                <!--CODE POSTAL-->
+                                <div class="d-flex flex-column align-items-center mb30">
+                                    <div>
+                                        <label for="expir">Date d'expiration</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" id="expir" name="expir" class="inputStyle" placeholder="03/23" style="text-align: center; width: 150px;">
+                                    </div>
+                                </div>
+                                <!--CODE POSTAL END-->
+                                <!--COMMUNE-->
+                                <div class="d-flex flex-column align-items-center ml30 mb30">
+                                    <div>
+                                        <label for="crypto">Cryptogramme</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" id="crypto" name="crypto" class="inputStyle" placeholder="741" style="text-align: center; width: 150px;">
+                                    </div>
+                                </div>
+                                <!--COMMUNE END-->
                             </div>
                         </form>
                         <!--PAYMENT END-->
+                        <div class="d-flex justify-content-center">
+                            <input type="checkbox" id="cgv" name="cgv">
+                            <label for="cgv" style="font-size: 12px; margin-left: 10px; text-decoration: underline;">Accepter les conditions générales de vente</label>
+                        </div>
+                        
                     </div>
                     <!--BLOCK INSTRUCTIONS AND CHOICE END-->
                     <!--CHOICE END-->
