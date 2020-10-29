@@ -69,6 +69,11 @@ function minus(){
     
 }
 
+function waitReset()
+{
+ setTimeout(resetQuantity, 1000);
+}
+
 function resetQuantity(){
     document.querySelector("#quantity span").innerText = 1;
 }

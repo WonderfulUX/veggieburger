@@ -189,7 +189,7 @@
             <div class="modal fade" id="modalAddToCart" tabindex="-1" role="dialog" aria-labelledby="addToCart" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
-                    <div class="modal-body">
+                    <div class="modal-body" style="padding: 30px 20px;">
                         <!-- MODAL HEAD -->
                         <div class="modalHead mb30">
                             Ajustez la quantité souhaité
@@ -216,8 +216,8 @@
                         <!-- MESSAGE END -->
                         <!-- CTAs -->
                         <div class=" d-flex justify-content-center">
-                            <button class="secondaryButton" data-dismiss="modal" onclick="resetQuantity()">Annuler</button>
-                            <button class="primaryButton ml30" data-dismiss="modal" onclick="resetQuantity()">Ajouter au panier</button>
+                            <button class="secondaryButton" data-dismiss="modal" onclick="waitReset()">Annuler</button>
+                            <button class="primaryButton ml30" data-dismiss="modal" onclick="waitReset()">Ajouter au panier</button>
                         </div>
                         <!-- CTAs END -->
                     </div>
