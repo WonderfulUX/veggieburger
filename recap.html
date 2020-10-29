@@ -243,20 +243,18 @@
                         <div>
                             <p id="instructionRecap" class="w-100 mb15">Vérifiez vos informations et procédez au paiement</p>
                             <!-- RECAP INFOS -->
-                            <a href="" id="info">
-                                <div id="infoBlock" class="d-flex justify-content-between align-items-center container-fluid recap mb30" onclick="">
-                                    <!-- TEXT BLOCK-->
-                                    <div>
-                                        <span>Livraison à domicile</span><br>
-                                        <span>Chez </span><span>Boris Boulogne</span><br>
-                                        <span>6 Allée des Bégonias</span><br>
-                                        <span>Les Jardins d'Arnouville</span><br>
-                                        <span>97170 Petit-Bourg</span>
-                                    </div>
-                                    <!-- TEXT BLOCK END-->
-                                    <img src="./svg/Icon_edit.svg" alt="editInfos">
+                            <div id="infoBlock" style="cursor: pointer;" class="d-flex justify-content-between align-items-center container-fluid recap mb30" onclick="displayPayRecapBlocks(this)">
+                                <!-- TEXT BLOCK-->
+                                <div>
+                                    <span>Livraison à domicile</span><br>
+                                    <span>Chez </span><span>Boris Boulogne</span><br>
+                                    <span>6 Allée des Bégonias</span><br>
+                                    <span>Les Jardins d'Arnouville</span><br>
+                                    <span>97170 Petit-Bourg</span>
                                 </div>
-                            </a>
+                                <!-- TEXT BLOCK END-->
+                                <img src="./svg/Icon_edit.svg" alt="editInfos">
+                            </div>
                             <!--CHOICE END-->
                             <!--PAYMENT-->
                             <form action="get" id="paymentBlock" class="container-fluid d-flex flex-column align-items-center">
