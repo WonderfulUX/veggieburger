@@ -281,10 +281,26 @@ td, th{
 tr{
     border-top: none;
     vertical-align: center;
+    width: 100%;
 }
 
-tbody td{
+#table p{
+    height: 35px;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    display: inline-block;
+}
 
+.tableRowText{
+    border-top: 0.5px solid var(--grey);
+}
+.headRowText{
+    border-bottom: 1px solid var(--grey);
+    font-weight: bold;
+}
+
+.close{
+    width: 20px;
 }
 
 #instructionRecap{

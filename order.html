@@ -53,7 +53,7 @@
         <section id="content" class="d-flex align-items-center justify-content-center">
             <!--LEFT BLOCK-->
             <div id="leftSide" class="mr-2">
-                <!-- TABLE CONNTAINER -->  
+                <!-- TABLE CONTAINER -->  
                 <div class="d-flex flex-column justify-content-between" style="height:100%; width: 100%;">
                     <!--TOP-->
                     <div>
@@ -66,94 +66,115 @@
                         </div>
                         <!--HEAD AND INSTRUCTIONS END-->
                         <!--TABLE-->
-                        <div style="width: 100%;">
-                            <table id="tableHead">
-                                <thead style="border: none;">
-                                    <tr style="border: none;">
-                                        <th style="text-align: left; border: none;">Produit</th>
-                                        <th style="border: none;">Quantité</th>
-                                        <th style="border: none;">Prix</th>
-                                        <th style="border: none; visibility: hidden;"><img src="./svg/removeLine.svg" alt="closeAlert"></th>
-                                    </tr>
-                                </thead>
-                            </table>
-                            <table class="table table-sm w-100" style="height: 300px; overflow: auto; display: block;">
-                                <tbody style="overflow: auto; width: 100%; height: 300px;">
-                                    <tr>
-                                        <td style="text-align: left;">Le Black</td>
-                                        <td>1</td>
-                                        <td>7,00 €</td>
-                                        <td style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">Le DoubleMush</td>
-                                        <td>1</td>
-                                        <td>9,50 €</td>
-                                        <td style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">Frites de patates douces</td>
-                                        <td>1</td>
-                                        <td>3,50 €</td>
-                                        <td style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">Fried Aspargus</td>
-                                        <td>1</td>
-                                        <td>5,00 €</td>
-                                        <td style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">Sauce BBQ Maison</td>
-                                        <td>1</td>
-                                        <td>0,50 €</td>
-                                        <td style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">Moutarde Maison</td>
-                                        <td>2</td>
-                                        <td>1,00 €</td>
-                                        <td style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">Kombucha Rose</td>
-                                        <td>1</td>
-                                        <td>3,00 €</td>
-                                        <td style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">Kéfir Citron Spiruline</td>
-                                        <td>1</td>
-                                        <td>3,00 €</td>
-                                        <td style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">Kéfir Citron Spiruline</td>
-                                        <td>1</td>
-                                        <td>3,00 €</td>
-                                        <td style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">Kéfir Citron Spiruline</td>
-                                        <td>1</td>
-                                        <td>3,00 €</td>
-                                        <td style="border-top: none;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                                <tfoot>
-                                    <tr>
-                                        <td style="text-align: left;"><b>Total</b></td>
-                                        <td></td>
-                                        <td><b>132,00 €</b></td>
-                                        <td style="border-top: none; visibility: hidden;"><img src="./svg/removeLine.svg" alt="closeAlert"></td>
-                                    </tr>
-                                </tfoot>
-                            
+                        <div style="width: 100%;" id="table">
+                            <!--TABLE HEAD-->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex">
+                                    <p class="col-6 text-left">Produit</p>
+                                    <p class="col-3">Quantité</p>
+                                    <p class="col-3">Prix</p> 
+                                </div>
+                                <img src="./svg/removeLine.svg" alt="closeAlert" style="width:10%; height: 16px; visibility: hidden;">
+                            </div>
+                            <!--TABLE HEAD END-->
+                            <!--TABLE BODY -->
+                            <div id="tableBody" style="height: 300px; overflow: auto; width: 100%;">
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Le black</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">7,00 €</p> 
+                                    </div>
+                                    <img src="./svg/removeLine.svg" alt="closeAlert" style="width:10%; height: 16px;">
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Le DoucleMush</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">9,50 €</p> 
+                                    </div>
+                                    <img src="./svg/removeLine.svg" alt="closeAlert" style="width:10%; height: 16px;">
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Frites de patates douces</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">3,50 €</p> 
+                                    </div>
+                                    <img src="./svg/removeLine.svg" alt="closeAlert" style="width:10%; height: 16px;">
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Fried aspargus</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">5,00 €</p> 
+                                    </div>
+                                    <img src="./svg/removeLine.svg" alt="closeAlert" style="width:10%; height: 16px;">
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Sauce BBQ maison</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">0,50 €</p> 
+                                    </div>
+                                    <img src="./svg/removeLine.svg" alt="closeAlert" style="width:10%; height: 16px;">
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Moutarde maison</p>
+                                        <p class="col-3">2</p>
+                                        <p class="col-3">1,00 €</p> 
+                                    </div>
+                                    <img src="./svg/removeLine.svg" alt="closeAlert" style="width:10%; height: 16px;">
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Kombucha rose</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">2,50 €</p> 
+                                    </div>
+                                    <img src="./svg/removeLine.svg" alt="closeAlert" style="width:10%; height: 16px;">
+                                </div>
+                                <!--TABLE ROW END--> 
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Kéfir Citon Spiruline</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">3,00 €</p> 
+                                    </div>
+                                    <img src="./svg/removeLine.svg" alt="closeAlert" style="width:10%; height: 16px;">
+                                </div>
+                                <!--TABLE ROW END-->                      
+                            </div>
+                            <!--TABLE BODY END-->
                         </div>
                         <!--TABLE END-->
                     </div>
                     <!--TOP END-->
+                    <!--TABLE FOOTER -->
+                    <div class="d-flex text-center align-items-center" style="width: 100%;">
+                        <div style="width: 95%;" class="d-flex tableRowText">
+                            <p class="col-6 text-left"><b>Total:</b></p>
+                            <p class="col-3"></p>
+                            <p class="col-3"><b>32,00 €</b></p> 
+                        </div>
+                        <img src="./svg/removeLine.svg" alt="closeAlert" style="width:10%; height: 16px; visibility: hidden;">
+                    </div>
+                    <!--TABLE FOOTER END-->  
                     <!--CTAs-->
                     <div class="d-flex justify-content-end p-0">
                         <button class="primaryButton mr-4 mt-3 align-self-end" onclick="window.location.href='./recap.html'" >Valider mon panier</button> 
