@@ -45,6 +45,30 @@ function displayPayRecapBlocks(button){
         document.getElementById("paymentBlock").style.display="none";
         document.getElementById("recapBlock").style.display="block";        
     }
-    
+}
 
+function addToCart(menuItem){
+    let code =menuItem.innerHTML;
+    document.getElementById("selectedItem").innerHTML = code;
+}
+
+function plus(){
+    let field = document.querySelector("#quantity span").innerText;
+    document.querySelector("#quantity span").innerText = parseInt(field)+1;
+}
+
+function minus(){
+    let field = document.querySelector("#quantity span").innerText;
+    if (field==0)
+    {
+        ocument.querySelector("#quantity span").innerText =0;
+    }
+    else{
+        document.querySelector("#quantity span").innerText = parseInt(field)-1;
+    }
+    
+}
+
+function resetQuantity(){
+    document.querySelector("#quantity span").innerText = 1;
 }

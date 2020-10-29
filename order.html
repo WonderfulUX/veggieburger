@@ -185,6 +185,46 @@
                 <!-- TABLE CONTAINER END-->            
             </div>
             <!--LEFT BLOCK END-->
+            <!--------------------------------- MODAL ADD ITEM --------------------------------->
+            <div class="modal fade" id="modalAddToCart" tabindex="-1" role="dialog" aria-labelledby="addToCart" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- MODAL HEAD -->
+                        <div class="modalHead mb30">
+                            Ajustez la quantité souhaité
+                        </div>
+                        <!--  MODAL HEAD END -->
+                        <!-- SELECTED ITEM -->
+                        <div id="selectedItem" class="mb30 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart">
+                            <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4 class="h6">Le veggie</h4> <span>6,00 €</span>
+                            </div>
+                            <p>Aubergine, courgette, oignon rouge, poivron rouge, tomate, thym, basilic, hummus, et roquette</p>
+                        </div>
+                        <!-- SELECTED ITEM -->
+                        <!-- QUANTITY -->
+                        <div id="quantity" class="d-flex justify-content-center mb30 align-items-center">
+                            <img src="./svg/minusButton.svg" alt="minus" style="cursor: pointer;" onclick="minus()">
+                            <span style="font-size: 1.3rem;" class="ml15">1</span>
+                            <img src="./svg/plusButton.svg" alt="plus" class="ml15" style="cursor: pointer;" onclick="plus()">
+                        </div>
+                        <!-- QUANTITY END-->
+                        <!-- MESSAGE -->
+                        <textarea id="w3review" name="w3review" class="inputStyle mb30 col-12" placeholder="Message" style="height: 100px;"></textarea>
+                        <!-- MESSAGE END -->
+                        <!-- CTAs -->
+                        <div class=" d-flex justify-content-center">
+                            <button class="secondaryButton" data-dismiss="modal" onclick="resetQuantity()">Annuler</button>
+                            <button class="primaryButton ml30" data-dismiss="modal" onclick="resetQuantity()">Ajouter au panier</button>
+                        </div>
+                        <!-- CTAs END -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--------------------------------- MODAL ADD ITEM END--------------------------------->
             <!--RIGHT BLOCK-->
             <div id="rightSide" class="ml-5 d-flex flex-column align-items-center justify-content-center">
                 <div id="instructionsMenu" class="instructions mb15">
@@ -202,7 +242,7 @@
                         </div>
                         <!--LIST HEADER END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le veggie</h4> <span>6,00 €</span>
@@ -211,7 +251,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le Red</h4> <span>6,50 €</span>
@@ -220,7 +260,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le Black</h4> <span>7,00 €</span>
@@ -229,7 +269,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le TruffledMush</h4> <span>7,50 €</span>
@@ -238,7 +278,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_5.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le Jackfruit</h4> <span>8,00 €</span>
@@ -247,7 +287,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_6.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le SpicyLents</h4> <span>8,50 €</span>
@@ -256,7 +296,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le DoubleMush</h4> <span>9,00 €</span>
@@ -265,7 +305,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_8.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le JerkHalloumi</h4> <span>9,50 €</span>
@@ -274,7 +314,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_9.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le MushHalloumi</h4> <span>10,00 €</span>
@@ -283,7 +323,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_10.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le Green</h4> <span>10,50 €</span>
@@ -303,7 +343,7 @@
                         </div>
                         <!--LIST HEADER END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Les frites classiques</h4> <span>3,00 €</span>
@@ -312,7 +352,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Les frites de patate douce</h4> <span>3,50 €</span>
@@ -321,7 +361,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Les Kale Crisps</h4> <span>4,00 €</span>
@@ -330,7 +370,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Les zucchini crisps</h4> <span>4,00 €</span>
@@ -339,7 +379,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_5.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Les fried pickles</h4> <span>4,00 €</span>
@@ -348,7 +388,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_6.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Les fried pickles</h4> <span>4,50 €</span>
@@ -357,7 +397,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Les beetroot crisps</h4> <span>4,50 €</span>
@@ -366,7 +406,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Side_8.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Les fried Aspargus</h4> <span>5,00 €</span>
@@ -386,7 +426,7 @@
                         </div>
                         <!--LIST HEADER END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Sauce_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Le Ketchup maison</h4> <span>0,50 €</span>
@@ -395,7 +435,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Sauce_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">La mayonnaise maison</h4> <span>0,50 €</span>
@@ -404,7 +444,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Sauce_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">La sauce BBQ maison</h4> <span>0,50 €</span>
@@ -413,7 +453,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Sauce_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">La moutarde maison</h4> <span>0,50 €</span>
@@ -433,7 +473,7 @@
                         </div>
                         <!--LIST HEADER END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Kombucha Original</h4> <span>2,50 €</span>
@@ -442,7 +482,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Kombucha Rose</h4> <span>2,50 €</span>
@@ -451,7 +491,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Kombucha Orange</h4> <span>2,50 €</span>
@@ -460,7 +500,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Kombucha Jaune</h4> <span>2,50 €</span>
@@ -469,7 +509,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_5.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Kéfir Citron Spiruline</h4> <span>3,00 €</span>
@@ -478,7 +518,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_6.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Kéfir Coco Citron</h4> <span>3,00 €</span>
@@ -487,7 +527,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Kéfir Hibiscus Citron</h4> <span>3,00 €</span>
@@ -496,7 +536,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Boisson_8.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Kéfir Pomme Menthe</h4> <span>3,00 €</span>
@@ -516,7 +556,7 @@
                         </div>
                         <!--LIST HEADER END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Dessert_1.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Pudding graines de chia</h4> <span>5,00 €</span>
@@ -525,7 +565,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Dessert_2.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Crème végétale vanille</h4> <span>6,00 €</span>
@@ -534,7 +574,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Dessert_3.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Gâteau végétal au citron</h4> <span>7,00 €</span>
@@ -543,7 +583,7 @@
                         </div>
                         <!--LIST ITEM END-->
                         <!--LIST ITEM-->
-                        <div class="mb-4 menuItem pr-2">
+                        <div class="mb-4 menuItem order pr-2" data-toggle="modal" data-target="#modalAddToCart" onclick="addToCart(this)">
                             <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Dessert_4.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
                             <div class="d-flex justify-content-between mb-3">
                                 <h4 class="h6">Panacotta Maracudja</h4> <span>8,00 €</span>

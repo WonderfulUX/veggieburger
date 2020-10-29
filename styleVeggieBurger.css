@@ -343,6 +343,10 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea
 .largeInput{
     width: 435px;
 }
+
+.ml15{
+    margin-left: 15px;
+}
 .ml30{
     margin-left: 30px;
 }
@@ -383,4 +387,10 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea
 
 #paymentBlock{
     display: none;  
+}
+
+.modalHead{
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid var(--orange);
 }
