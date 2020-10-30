@@ -499,7 +499,7 @@ textarea{
         height: 500px;
     }
 
-    #table p{
+    #table p, .tableRowText p{
         padding: 2px;
     }
 
