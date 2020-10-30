@@ -20,81 +20,14 @@
 
 body{
     font-family: bodyFont;
-    font-size: 0.95rem;
+    font-size: 14px;
     letter-spacing: 0.8px;
     color: var(--black);
 }
 
-ol, ul{
-    list-style: none;
-    padding-left: 0;
-}
-
-#laCarte li{
-    font-size: 1.2rem;
-    margin: 30px 0;
-}
-.primaryButton{
-    width: 180px;
-    height: 50px;
-    border-radius: 30px;
-    border: none;
-    background-color:  var(--orange);
-    color: white;
-}
-
-.selectedPage{
-    font-weight: bold;
-    color: var(--orange);
-}
-
-.secondaryButton{
-    width: 180px;
-    height: 50px;
-    border: solid 2px var(--orange);
-    border-radius: 30px;
-    background-color: white;
-    color:  var(--orange);
-}
-
-button:active, button:focus, input[type=submit]:active, input[type=submit]:focus{
-    outline: none;
-}
-
-button:hover, input[type=submit]:hover{
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) ;
-    transition: all 0.25s;
-}
-
-.deco{
-    width: 100%;
-    height: 30%;
-}
-
-h1{
-    font-family: titlesFont;
-    letter-spacing: 0;
-    font-size: 3rem;
-}
-
-#loc1 h2, #loc2 h2, #loc3 h2{
-    color: var(--orange);    
-}
-
-a{
-    text-decoration: none;
-    color: var(--green);
-}
-
-a:hover{
-    text-decoration: none;
-    color: var(--orange);
-    font-weight: bold;
-}
-
 header{
     position: fixed;
-    height: 80px;
+    height: 100px;
     color: var(--green);
     background-color: white;
     padding-top: 30px;
@@ -106,54 +39,57 @@ footer{
     left: 50px;
 }
 #content{
-    padding-top: 10%;
+    padding-top: 12%;
     width: 100%;
     z-index: -100;
     height: 100%;
 }
 
 #leftSide, #rightSide{
-    height: 580px;
-    width: 35%;
+    height: 550px;
+    width: 37%;
 }
 
-@media screen and (min-width: 1000px) and (max-height: 720px){
-    #leftSide, #rightSide{
-        height: 550px;
-    }
+ol, ul{
+    list-style: none;
+    padding-left: 0;
 }
 
-@media screen and (min-width: 1000px) and (min-height: 800px){
-    #leftSide, #rightSide{
-        height: 700px;
-    }
-    .galleryPic{
-        width: 200px;
-        height: 200px;
-    }
+#laCarte li{
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+h1{
+    font-family: titlesFont;
+    letter-spacing: 0;
+    font-size: 45px;
+}
+
+.h6{
+    font-size: 16px;
+}
+
+#logoBig{
+    height: 100px;
+}
+#logoLocationContainer{
+    height: 70px;
+    min-width: 110px;
+    text-align: center;
+}
+
+#loc1 h2, #loc2 h2, #loc3 h2{
+    color: var(--orange);    
+}
+
+a{
+    text-decoration: none;
+    color: var(--green);
 }
 
 .presText{
-    font-size: 1.2rem;
-}
-
-#leftSide h2:hover{
-    color: var(--orange);
-    cursor: pointer;
-}
-
-.galleryPic{
-    width: 120px;
-    height: 120px;
-    border-radius: 10px;
-}
-
-.picTitle{
-    height:30px
-}
-
-.carouselBlockText{
-    text-align: center;
+    font-size: 18px;
 }
 
 .carouselBlockItem {
@@ -176,22 +112,125 @@ footer{
     background-color: var(--orange);
 }
 
+.primaryButton{
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color:  var(--orange);
+    color: white;
+}
+
+.secondaryButton{
+    width: 180px;
+    height: 50px;
+    border: solid 2px var(--orange);
+    border-radius: 30px;
+    background-color: white;
+    color:  var(--orange);
+}
+
+.selectedPage{
+    font-weight: bold;
+    color: var(--orange);
+}
+
+#mainAction img[alt=pastille]{
+    position: relative;
+    left: 62px;
+    bottom: 8px;
+}
+
+#table img[alt=removeLine]{
+    height: 16px;
+}
+
+button:active, button:focus, input[type=submit]:active, input[type=submit]:focus{
+    outline: none;
+}
+
+button:hover, input[type=submit]:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) ;
+    transition: all 0.25s;
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: bold;
+}
+
+#leftSide h2:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.deco{
+    width: 100%;
+    height: 30%;
+}
+
+.recap{
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25) ;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+#info:hover{
+    color: inherit;
+    font-weight: inherit;
+}
+
+#infoBlock:hover{
+    box-shadow: 0 0 5px var(--orange);
+}
+
+#paymentBlock{
+    display: none;  
+}
+
+.deliveryDetails:not(:target){
+    display:none;
+}
+
+.deliveryDetails:target{
+    display:block;
+}
+
+.modalHead{
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid var(--orange);
+}
+
 .carousel-item{
     margin-bottom: 20px;
 }
 
-.inputStyle{
-    height: 35px;
-    border-radius: 5px;
-    border: solid 1.5px var(--orange);
+.menuSubList:not(:target){
+    display:none;
 }
 
-input[type=checkbox]{
-    background-color: solid 1.5px var(--orange);
+.menuSubList:target{
+    display:block;
 }
 
-textarea{
-    resize: none;
+.galleryPic{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.smallerText, .instructions{
+    font-size: 11px;
+}
+
+.picTitle{
+    height:30px
+}
+
+.carouselBlockText{
+    text-align: center;
 }
 
 .menuItem{
@@ -204,22 +243,14 @@ textarea{
     color: var(--orange);
 }
 
-.menuSubList:not(:target){
-    display:none;
-}
-
-.menuSubList:target {
-    display:block;
-}
-
 #restoID{
     height: 30px;
     cursor: pointer;
 
 }
 
-#restoID *{
-    font-size: 12px;
+.smallerText, #restoID *{
+    font-size: 11px;
 }
 
 #locChange{
@@ -264,7 +295,6 @@ textarea{
 
 .instructions{
     color: var(--orange);
-    font-size: 12px;
     border-radius: 5px;
     background-color: var(--lightOrange);
     width: 100%;
@@ -276,20 +306,6 @@ textarea{
 .instructions > *{
     padding: 8px;
     height: 100%;
-}
-
-
-td, th{
-    padding: 0;
-    border-top: 1px solid var(--grey);
-    text-align: center;
-    height: 35px;
-}
-
-tr{
-    border-top: none;
-    vertical-align: center;
-    width: 100%;
 }
 
 #table p{
@@ -322,16 +338,7 @@ tr{
     cursor: pointer;
 }
 
-.deliveryDetails:not(:target){
-    display:none;
-}
-
-.deliveryDetails:target{
-    display:block;
-}
-
 input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus{
-    /*background-color: var(--aWhite);*/
     outline: none;
     box-shadow: 0 0 5px var(--orange);
 }
@@ -339,9 +346,22 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea
 .smallInput{
     width: 200px;
 }
-
 .largeInput{
     width: 435px;
+}
+
+.inputStyle{
+    height: 35px;
+    border-radius: 5px;
+    border: solid 1.5px var(--orange);
+}
+
+input[type=checkbox]{
+    background-color: solid 1.5px var(--orange);
+}
+
+textarea{
+    resize: none;
 }
 
 .ml15{
@@ -370,27 +390,120 @@ input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea
     margin-bottom: 100px;
 }
 
-.recap{
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25) ;
-    padding: 10px 15px;
-    border-radius: 10px;
+@media screen and (min-width: 1000px) and (max-height: 720px){
+    #leftSide, #rightSide{
+        height: 550px;
+    }
 }
 
-#info:hover{
-    color: inherit;
-    font-weight: inherit;
+@media screen and (min-width: 1000px) and (min-height: 800px){
+    #leftSide, #rightSide{
+        height: 700px;
+    }
+    .galleryPic{
+        width: 200px;
+        height: 200px;
+    }
 }
 
-#infoBlock:hover{
-    box-shadow: 0 0 5px var(--orange);
+@media screen and (max-width: 1300px){
+    body{
+        font-size: 13px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .h4{
+        font-size: 18px;
+    }
+
+    .h6{
+        font-size: 15px;
+    }
+
+    .presText{
+        font-size: 14px;
+    }
+
+    .inputStyle{
+        height: 30px;
+    }
+    .primaryButton, .secondaryButton{
+        width: 150px;
+        height: 45px;
+    }
+    .galleryPic{
+        width: 100px;
+        height: 100px;
+    }
+    #logoBig{
+        height: 90px;
+    }
+
+    #logo{
+        height: 60px;
+    }
+
+    #logoLocationContainer{
+        height: 60px;
+        min-width: 90px;
+    }
+
+    .smallerText, .instructions, #restoID *{
+        font-size: 10px;
+    }
+
+    #leftSide{
+        width: 35%;
+    }
+
+    #leftSide, #rightSide{
+        height: 530px;
+    }
+    
+    #content{
+        padding-top: 15%;
+    }
+
+    #mainAction img[alt=infos], #mainAction img[alt=contact]{
+        height: 18px;
+    }
+    
+    #mainAction img[alt=panier]{
+        height: 22px;
+    }
+
+    #mainAction img[alt=panier]{
+        height: 22px;
+    }
+
+    #mainAction img[alt=pastille]{
+        position: relative;
+        left: 60px;
+        bottom: 7px;
+    }
+
+    #table img[alt=removeTableLine]{
+        height: 12px;
+    }
+
+    img[alt=editInfos]{
+        height: 18px;
+    }
 }
 
-#paymentBlock{
-    display: none;  
-}
+@media screen and (max-width: 1200px){
+    #leftSide, #rightSide{
+        height: 500px;
+    }
 
-.modalHead{
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid var(--orange);
+    #table p{
+        padding: 2px;
+    }
+
+    #content{
+        padding-top: 17%;
+    }
 }

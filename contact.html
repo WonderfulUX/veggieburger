@@ -13,8 +13,8 @@
             <div id="headerContainer" class="d-flex align-items-center">
                 <!-- LOGO AND LOCATION -->
                 <div class="mr-5 d-inline-flex flex-column align-items-center">
-                    <div style="height:70px; min-width: 110px; text-align: center;">
-                        <a href="./index.html"><img id="logo" src="./svg/LogoVeggieBurger.svg" style="height:70px;"></a>
+                    <div id="logoLocationContainer">
+                        <a href="./index.html"><img id="logo" src="./svg/LogoVeggieBurger.svg"></a>
                     </div>
                     <div id="restoID" class="mt-4 d-flex align-items-center dropdown">
                         <div class="dropdown-toggle" id="actualLoc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Baie-Mahault</div>
@@ -40,6 +40,7 @@
                     <!-- MENU LIST END-->
                     <!-- CART INFO CONTACT --> 
                     <div id="mainAction" class="d-inline-block">
+                        <span><img src="./svg/Icon_Pastille.svg" alt="pastille" style="visibility: hidden;"></span>
                         <span class="ml-4"><a href="./cart.html"><img src="./svg/Icon_panier.svg" alt="panier" onmouseover="src='./svg/Icon_panier_hover.svg'" onmouseout="src='./svg/Icon_panier.svg'"></a></span>
                         <span class="ml-4"><a href="./infos.html"><img src="./svg/Icon_info.svg" alt="infos" onmouseover="src='./svg/Icon_info_hover.svg'" onmouseout="src='./svg/Icon_info.svg'"></a></span>
                         <span class="ml-4"><a href="./contact.html"><img src="./svg/Icon_contact_hover.svg" alt="contact"></a></span>
@@ -78,7 +79,7 @@
             <!--LEFT BLOCK END-->
             <!--RIGHT BLOCK-->
             <div id="rightSide" class="ml-5 d-flex flex-column align-items-center justify-content-center">
-                <img src="./svg/LogoVeggieBurger.svg" alt="logoBIG" height="100px">
+                <img src="./svg/LogoVeggieBurger.svg" alt="logoBig" id="logoBig">
                 <p class="presText mt-5">Le meilleur du Burger vegan en Guadeloupe</p>
             </div>
             <!--RIGHT BLOCK END-->

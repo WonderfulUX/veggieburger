@@ -36,8 +36,7 @@ function displayChoiceDetails(){
 }
 
 function displayPayRecapBlocks(button){
-    if (button.innerText =="Valider mes informations" || button.getAttribute("id") == "info"){
-       // if (button.innerText =="Valider mes informations"){
+    if (button.innerText =="Valider" || button.getAttribute("id") == "info"){
         document.getElementById("recapBlock").style.display="none";
         document.getElementById("paymentBlock").style.display="block";
     }
