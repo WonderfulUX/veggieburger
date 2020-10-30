@@ -465,6 +465,7 @@ textarea{
     
     #content{
         padding-top: 15%;
+        padding-left: 2%;
     }
 
     #mainAction img[alt=infos], #mainAction img[alt=contact]{
