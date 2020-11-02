@@ -60,8 +60,8 @@
                 <div class="d-flex justify-content-between align-items-center" id="mobileHeader">
                     <img src="./svg/Icon_mobileMenu.svg" alt="mobileMenu">
                 
-                    <div id="restoID" class="mt-4 d-flex align-items-center dropdown">
-                        <div class="dropdown-toggle d-flex align-items-center" id="actualLoc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Baie-Mahault</div>
+                    <div id="restoID" class="d-flex align-items-center dropdown">
+                        <div class="dropdown-toggle d-flex align-items-center" id="actualLocMob" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Baie-Mahault</div>
                         <div class="dropdown-menu rounded" aria-labelledby="dropdownMenuButton">
                             <span class="dropdown-item" onclick="changeLoc(this)">Abymes</span>
                             <span class="dropdown-item" onclick="changeLoc(this)">Baie-Mahault</span>
@@ -109,19 +109,70 @@
             </div>
             <!--RIGHT BLOCK END-->
         </section>
-        <!------- CONTENT DESKTOP --------->
+        <!------- CONTENT MOBILE --------->
         <section id="mobileContent">
             <!--HOME SCREEN AND CTAs-->
             <div>
                 <!--HOME IMAGE-->
-                <div class="w-100" style="height: 600px; background-image: url(./images/Illu_Home.jpg); background-size: cover; background-position: center;">
+                <div class="w-100" style="height: 500px; background-image: url(./images/Illu_Home.jpg); background-size: cover; background-position: center;">
                     <img src="./images/maskMobileHome.png" alt="maskMobileHome" style="height: 100%; width: 100%;">
                 </div>
                 <!--HOME IMAGE END-->
                 <!--CTASs AND LOGO-->
+                <div class="d-flex flex-column mb100">
+                    <img src="./svg/LogoVeggieBurger.svg" alt="logoMobile" class="mb100">
+                    <p class="text-center mb50 presText">Le meilleur du Burger Vegan en Guadeloupe <br>
+                        Produit 100% locaux pour des mêts de qualité</p>
+                    <div class="d-flex justify-content-center">
+                        <button class="primaryButton mr30" onclick="window.location.href='./order.html'">Commander</button>
+                        <button class="secondaryButton" onclick="window.location.href='./book.html'">Réserver</button>
+                    </div>
+                </div>
                 <!--CTASs AND LOGO END-->
             </div>
             <!--HOME SCREEN AND CTAs END-->
+            <!--LA CARTE-->
+            <div id="bgMobileMenu">
+                <div class="bgMask">
+                    <h2>La carte</h2>
+                    <!--LIST ITEM-->
+                    <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <h4 class="h6">Le DoubleMush</h4> <span>9,00 €</span>
+                    </div>
+                    <p>Champignons double, sauce à l’ail, cornichons, roquette, et tomate séchées</p>
+                    <!--LIST ITEM END-->
+                    <!--LIST ITEM-->
+                    <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <h4 class="h6">Le DoubleMush</h4> <span>9,00 €</span>
+                    </div>
+                    <p>Champignons double, sauce à l’ail, cornichons, roquette, et tomate séchées</p>
+                    <!--LIST ITEM END-->
+                    <!--LIST ITEM-->
+                    <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <h4 class="h6">Le DoubleMush</h4> <span>9,00 €</span>
+                    </div>
+                    <p>Champignons double, sauce à l’ail, cornichons, roquette, et tomate séchées</p>
+                    <!--LIST ITEM END-->
+                    <!--LIST ITEM-->
+                    <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <h4 class="h6">Le DoubleMush</h4> <span>9,00 €</span>
+                    </div>
+                    <p>Champignons double, sauce à l’ail, cornichons, roquette, et tomate séchées</p>
+                    <!--LIST ITEM END-->
+                    <!--LIST ITEM-->
+                    <div class="float-left mr-3" style="width: 120px; height: 120px; background-image: url(./images/Burger_7.jpg); background-position: center; background-size: cover; border-radius: 10px;"></div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <h4 class="h6">Le DoubleMush</h4> <span>9,00 €</span>
+                    </div>
+                    <p>Champignons double, sauce à l’ail, cornichons, roquette, et tomate séchées</p>
+                    <!--LIST ITEM END-->
+                </div>
+            </div>
+            <!--LA CARTE END-->
         </section>
         <!------------------------- FOOTER --------------------------------->
         <footer>

@@ -403,6 +403,10 @@ textarea{
     margin-bottom: 100px;
 }
 
+img[alt=logoMobile]{
+    height: 100px;
+}
+
 @media screen and (max-height: 720px){
     #leftSide, #rightSide{
         height: 550px;
@@ -579,5 +583,39 @@ textarea{
         position: relative;
         left: 60px;
         bottom: 7px;
+    }
+
+    .primaryButton, .secondaryButton{
+        width: 200px;
+        height: 50px;
+    }
+    body{
+        font-size: initial;
+    }
+
+    .presText{
+        font-size: 18px;
+    }
+
+    #restoID *{
+        font-size: 12px;
+    }
+
+    h2{
+        font-family: titlesFont;
+        letter-spacing: 0;
+        font-size: 45px;
+    }
+
+    #bgMobileMenu{
+        background-image: url(./images/Illu_booking.jpg);
+        width: 100%;
+    }
+    .bgMask{
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

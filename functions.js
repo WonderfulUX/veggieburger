@@ -1,7 +1,10 @@
-var actualLocation = document.getElementById('actualLoc');
-
-function changeLoc(newLoc) {
+ 
+ 
+ function changeLoc(newLoc) {
     let newLocValue = newLoc.innerText;
+    let actualLocation = document.getElementById('actualLocMob');
+    actualLocation.innerText=newLocValue;
+    actualLocation = document.getElementById('actualLoc');
     actualLocation.innerText=newLocValue;
 }
 
