@@ -33,16 +33,29 @@ header{
     padding-top: 30px;
 }
 
+.mobileDisplay{
+    display: none;
+}
+
 footer{
     position: fixed;
     bottom: 50px;
     left: 50px;
 }
+
 #content{
     padding-top: 12%;
+    padding-left: 3%;
     width: 100%;
     z-index: -100;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobileContent{
+    display: none;
 }
 
 #leftSide, #rightSide{
@@ -390,19 +403,19 @@ textarea{
     margin-bottom: 100px;
 }
 
-@media screen and (min-width: 1000px) and (max-height: 720px){
+@media screen and (max-height: 720px){
     #leftSide, #rightSide{
         height: 550px;
     }
 }
 
-@media screen and (min-width: 1000px) and (min-height: 800px){
+@media screen and (min-height: 800px){
     #leftSide, #rightSide{
         height: 700px;
     }
     .galleryPic{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -464,8 +477,7 @@ textarea{
     }
     
     #content{
-        padding-top: 15%;
-        padding-left: 2%;
+        padding-top: 13%;
     }
 
     #mainAction img[alt=infos], #mainAction img[alt=contact]{
@@ -505,6 +517,67 @@ textarea{
     }
 
     #content{
-        padding-top: 17%;
+        padding-top: 15%;
+    }
+
+    body{
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    .h4{
+        font-size: 16px;
+    }
+
+    .h6{
+        font-size: 13px;
+    }
+
+    .presText{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #content{
+        display: none;
+    }
+
+    #mobileContent{
+        display: block;
+        padding-top: 70px;
+    }
+
+    .desktopDisplay{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .mobileDisplay{
+        display: block;
+    }
+
+    header{
+        padding-top: 0;
+    }
+
+    #mobileHeader, header{
+        height: 70px;
+    }
+
+    #actualLoc{
+        height: 50px;
+    }
+
+    #mobileHeader img[alt=pastille]{
+        position: relative;
+        left: 60px;
+        bottom: 7px;
     }
 }
