@@ -590,6 +590,11 @@ img[alt=logoMobile]{
         height: 70px;
     }
 
+    .imgMenu{
+        width: 130px;
+        height: 130px;
+    }
+
     #actualLoc{
         height: 50px;
     }
@@ -678,6 +683,11 @@ img[alt=logoMobile]{
         height: 300px;
     }
 
+    .imgMenu{
+        width: 120px;
+        height: 120px;
+    }
+
     img[alt=logoMobile]{
         height: 80px;
     }
@@ -731,6 +741,12 @@ img[alt=logoMobile]{
     #mobileHomeImg{
         height: 200px;
     }
+
+    .imgMenu{
+        width: 100px;
+        height: 100px;
+    }
+
     img[alt=logoMobile]{
         height: 60px;
     }
