@@ -60,7 +60,7 @@
                 <div class="d-flex justify-content-between align-items-center" id="mobileHeader">
                     <img src="./svg/Icon_mobileMenu.svg" alt="mobileMenu">
                 
-                    <div id="restoID" class="d-flex align-items-center dropdown">
+                    <div id="restoID" class="d-flex align-items-center dropdown" style="padding-left: 50px;">
                         <div class="dropdown-toggle d-flex align-items-center" id="actualLocMob" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Baie-Mahault</div>
                         <div class="dropdown-menu rounded" aria-labelledby="dropdownMenuButton">
                             <span class="dropdown-item" onclick="changeLoc(this)">Abymes</span>
@@ -114,7 +114,7 @@
             <!--HOME SCREEN AND CTAs-->
             <div>
                 <!--HOME IMAGE-->
-                <div class="w-100" style="height: 500px; background-image: url(./images/Illu_Home.jpg); background-size: cover; background-position: center;">
+                <div id="mobileHomeImg" class="w-100" style="background-image: url(./images/Illu_Home.jpg); background-size: cover; background-position: center;">
                     <img src="./images/maskMobileHome.png" alt="maskMobileHome" style="height: 100%; width: 100%;">
                 </div>
                 <!--HOME IMAGE END-->
@@ -506,9 +506,9 @@
             <!-- ABOUT END-->
             <!-- GALERIE -->
             <div>
-                <h2 class="text-center mb100">Galerie Photo</h2>
+                <h2 class="text-center mb150">Galerie Photo</h2>
                 <!-- CAROUSEL CONTAINER-->
-                <div class="text-center mb100" style="width: 550px; margin: 0 auto 100px;">
+                <div class="text-center mobileSectionContent" style="margin: 0 auto 200px;">
                     <!-- CAROUSEL-->
                     <div id="mobileCarousel" class="carousel slide" data-ride="carousel" >
                         <ol class="carousel-indicators mb-0">
@@ -640,14 +640,28 @@
                 <!-- CAROUSEL CONTAINER END-->
             </div>
             <!-- GALERIE END-->
-            <!-- CONTACT -->
-            <div class="mobileSectionContent text-center" style="padding-top: 200px;">
-                <h2 class="mb100">Nous contacter</h2>
-                <div class="mb50">
-                    <p><strong>Fixe :</strong> <span class="ml-2">0590123456</span> <br>
-                    <strong>Mobile :</strong><span class="ml-2">0690978465</span></p>
+            <!-- SOCIAL NETWORK -->
+            <div class="mobileSectionContent">
+                <p id="followUs" class="text-center mb30">Nous suivre</p>
+                <div class="d-block text-center">
+                    <img src="./svg/Icon_instagram_hover.svg" alt="instaMobile" style="height: 35px;"><span class="ml30"><img src="./svg/Icon_facebook_hover.svg" alt="instaMobile" style="height: 35px;"></span>
                 </div>
-                <form action="get" class="mt-4 container-fluid p-0" style="width: 600px;">
+            </div>
+            <!-- SOCIAL NETWORK END -->
+            <!-- CONTACT -->
+            <div class="mobileSectionContent text-center mb150" style="padding-top: 200px;">
+                <h2 class="mb100">Nous contacter</h2>
+                <div class="mb50" style="width: 180px;">
+                    <div class="d-flex justify-content-between w-100">
+                        <strong>Fixe :</strong>
+                        <span>0690978465</span>
+                    </div>
+                    <div class="d-flex justify-content-between w-100">
+                        <strong>Mobile :</strong>
+                        <span>0590123456</span>
+                    </div>
+                </div>
+                <form action="get" class="mt-4 container-fluid p-0">
                     <div class="d-flex">
                         <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Prénom *">
                         <input type="text" id="lname" name="lname" class="inputStyle col mb15 ml30" placeholder="Nom *">
@@ -657,7 +671,7 @@
                         <input type="text" id="lname" name="lname" class="inputStyle col mb15 ml30" placeholder="Téléphone *">
                     </div> 
 
-                    <textarea id="w3review" name="w3review" class="inputStyle mb30 col-12" placeholder="Message" style="height: 100px;"></textarea>
+                    <textarea id="w3review" name="w3review" class="inputStyle mb30 col-12" placeholder="Message" style="height: 200px;"></textarea>
                     <div class="d-flex justify-content-end">
                         <input type="submit" value="Envoyer" class="primaryButton">
                     </div> 
@@ -665,6 +679,50 @@
             </div>
             <!-- CONTACT END-->
             <!-- INFOS -->
+            <div id="mobileAbout" class="bgMobileSection" style="background-image: url(./images/Illu_about.jpg);">
+                <div class="bgMask">
+                    <h2 class="text-center" style="padding-top: 100px;">Infos</h2>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center mobileSectionContent">
+                <div class="mb30" id="loc1Mob">
+                    <h3>Abymes</h3>
+                    <p class="mb-0"><b>Rue Loulou Orthez<br>97139 Abymes</b></p>
+                    <div class="mb-0 pl-0 d-flex justify-content-between openingHours w-100">
+                        <span>Lundi au vendredi :</span>
+                        <span>10h30 à 20h30</span>
+                    </div>
+                    <div class="mb-0 pl-0 d-flex justify-content-between openingHours w-100">
+                        <span>Le weekend :</span>
+                        <span>10h00 à 21h30</span>
+                    </div>
+                </div>
+                <div class="mb30" id="loc2Mob">
+                    <h3>Baie-Mahault</h3>
+                    <p class="mb-0"><b>Galerie de Houelbourg<br>97122 Baie-Mahault</b></p>
+                    <div class="mb-0 pl-0 d-flex justify-content-between openingHours w-100">
+                        <span>Lundi au vendredi :</span>
+                        <span>11h00 à 21h00</span>
+                    </div>
+                    <div class="mb-0 pl-0 d-flex justify-content-between openingHours w-100">
+                        <span>Le weekend :</span>
+                        <span>10h30 à 22h00</span>
+                    </div>
+                </div>
+                <div class="mb100" id="loc3Mob">
+                    <h3>Baie-Mahault</h3>
+                    <p class="mb-0"><b>8 Place de la Victoirez<br>97110 Pointe-à-Pitre</b></p>
+                    <div class="mb-0 pl-0 d-flex justify-content-between openingHours w-100">
+                        <span>Lundi au vendredi :</span>
+                        <span>11h00 à 21h00</span>
+                    </div>
+                    <div class="mb-0 pl-0 d-flex justify-content-between openingHours w-100">
+                        <span>Le weekend :</span>
+                        <span>11h00 à 22h30</span>
+                    </div>
+                </div>
+                <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d30643.944760378294!2d-61.55509722067288!3d16.24647928137289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x8c1344294a641aa5%3A0xaa4b1f6b0067dda1!2sLes%20Galeries%20de%20Houelbourg%2C%20Baie%20Mahault%2C%20Guadeloupe!3m2!1d16.2400372!2d-61.567515799999995!4m5!1s0x8c1348814c26855b%3A0x1f28afd108f730ca!2sRue%20Loulou%20Orthez%2C%20Les%20Abymes%2C%20Guadeloupe!3m2!1d16.274460599999998!2d-61.5080434!4m5!1s0x8c134f5d16ce1fed%3A0xd87a8e94ac867d4!2sRoute%20De%20Montauban%2C%20Le%20Gosier%2C%20Guadeloupe!3m2!1d16.215829499999998!2d-61.5033057!5e0!3m2!1sen!2sfr!4v1603316345661!5m2!1sen!2sfr" width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
             <!-- INFOS END-->
         </section>
         <!------------------------- FOOTER --------------------------------->

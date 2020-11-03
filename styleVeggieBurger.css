@@ -38,6 +38,10 @@ header{
     display: none;
 }
 
+#mobileHomeImg{
+    height: 500px;
+}
+
 footer{
     position: fixed;
     bottom: 50px;
@@ -87,6 +91,7 @@ h1{
 #logoBig{
     height: 100px;
 }
+
 #logoLocationContainer{
     height: 70px;
     min-width: 110px;
@@ -347,10 +352,9 @@ a:hover{
     width: 20px;
 }
 
-#instructionRecap{
+#instructionRecap, #followUs{
     color: var(--orange);
 }
-
 
 .choice *:hover{
     color: var(--black);
@@ -600,6 +604,7 @@ img[alt=logoMobile]{
         width: 200px;
         height: 50px;
     }
+
     body{
         font-size: initial;
     }
@@ -618,6 +623,27 @@ img[alt=logoMobile]{
         font-size: 45px;
     }
 
+    .mobileSectionContent > div{
+        width: 100%;
+    }
+
+    .mobileSectionContent h3{
+        color: var(--orange);
+        font-size: 18px;
+    }
+
+    .mobileSectionContent h4{
+        font-size: 16px;
+    }
+
+    .descProduit{
+        font-size: 13px;
+    }
+
+    .inputStyle{
+        height: 40px;
+    }
+
     .bgMobileSection{
         width: 100%;
         height: 300px;
@@ -631,7 +657,7 @@ img[alt=logoMobile]{
         height: 300px;
     }
     .mobileSectionContent{
-        width: 80%;
+        width: 650px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -641,20 +667,110 @@ img[alt=logoMobile]{
         top: -50px;
         margin-bottom: 100px;
     }
+}
 
-    .mobileSectionContent > div{
-        width: 100%;
+@media screen and (max-width: 700px){
+    .mobileSectionContent{
+        width: 450px;
+    }
+
+    #mobileHomeImg{
+        height: 300px;
+    }
+
+    img[alt=logoMobile]{
+        height: 80px;
+    }
+
+    .primaryButton, .secondaryButton{
+        width: 180px;
+        height: 45px;
+    }
+
+    body{
+        font-size: 14px;
+    }
+
+    .presText{
+        font-size: 16px;
+    }
+
+    #restoID *{
+        font-size: 11px;
+    }
+
+    h2{
+        letter-spacing: 0;
+        font-size: 35px;
     }
 
     .mobileSectionContent h3{
-        color: var(--orange);
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .mobileSectionContent h4{
-        font-size: 16px;
+        font-size: 14px;
     }
+    
     .descProduit{
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    .galleryPicMobile{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .mobileSectionContent{
+        width: 330px;
+    }
+
+    #mobileHomeImg{
+        height: 200px;
+    }
+    img[alt=logoMobile]{
+        height: 60px;
+    }
+
+    .primaryButton, .secondaryButton{
+        width: 150px;
+        height: 40px;
+    }
+
+    .galleryPicMobile{
+        width: 120px;
+        height: 120px;
+    }
+
+    body{
+        font-size: 12px;
+    }
+
+    .presText{
+        font-size: 14px;
+    }
+
+    #restoID *{
+        font-size: 10px;
+    }
+
+    h2{
+        letter-spacing: 0;
+        font-size: 25px;
+    }
+
+    .mobileSectionContent h3{
+        font-size: 14px;
+    }
+
+    .mobileSectionContent h4{
+        font-size: 12px;
+    }
+    
+    .descProduit{
+        font-size: 10px;
     }
 }
