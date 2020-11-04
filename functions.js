@@ -79,3 +79,24 @@ function waitReset()
 function resetQuantity(){
     document.querySelector("#quantity span").innerText = 1;
 }
+
+function mobileMenuShow(){
+    document.querySelector(".mobileMenuBlock").style.zIndex= "200";
+    document.querySelector(".mobileMenuBlock").style.opacity= "1";
+    setTimeout(mobileMenuContentShow, 300);
+}
+
+function mobileMenuContentShow(){
+    document.querySelector(".mobileMenuContainer").style.opacity= "1";
+}
+
+function mobileMenuHide(){
+    document.querySelector(".mobileMenuContainer").style.opacity= "0";
+    document.querySelector(".mobileMenuBlock").style.opacity= "0";
+    setTimeout(mobileMenuBlockHide, 300);
+}
+
+function mobileMenuBlockHide(){
+    document.querySelector(".mobileMenuBlock").style.zIndex= "-200";
+    document.querySelector(".mobileMenuBlock").style.transition= "opacity 300ms";
+}

@@ -18,6 +18,10 @@
     src: url(./fonts/Asap-Regular.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: bodyFont;
     font-size: 14px;
@@ -59,8 +63,51 @@ footer{
     justify-content: center;
 }
 
+.mobileMenuBlock{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -200;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.mobileMenuContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 40px 30px 0;
+    width: 300px;
+    max-width: 500px;
+    background-color: white;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.mobileMenuClose{
+    display: block;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mobileMenuList *{
+    height: 50px;
+    text-align: center;
+
+}
+
 #mobileContent{
     display: none;
+    padding-top: 70px;
 }
 
 #leftSide, #rightSide{
@@ -352,7 +399,7 @@ a:hover{
     width: 20px;
 }
 
-#instructionRecap, #followUs{
+#instructionRecap, #followUs p{
     color: var(--orange);
 }
 
@@ -672,11 +719,32 @@ img[alt=logoMobile]{
         top: -50px;
         margin-bottom: 100px;
     }
+
+    #mobileContactForm input{
+        width: 50%;
+    }
+    #mobileContactForm textarea{
+        width: 100%;
+        height: 200px;
+    }
+
+    .mb_adapt{
+        margin-bottom: 24px;
+    }
+
+    .bgMask h2{
+        padding-top: 100px;
+    }
 }
 
 @media screen and (max-width: 700px){
     .mobileSectionContent{
         width: 450px;
+        top: -100px;
+    }
+
+    .menuItem{
+        height: 125px;
     }
 
     #mobileHomeImg{
@@ -731,11 +799,25 @@ img[alt=logoMobile]{
         height: 150px;
     }
 
+    .mb_adapt{
+        margin-bottom: 20px;
+    }
+
+    .bgMask h2{
+        padding-top: 80px;
+    }
+
 }
 
 @media screen and (max-width: 500px){
     .mobileSectionContent{
         width: 330px;
+        top: -120px;
+        margin-bottom: 50px;
+    }
+
+    .menuItem{
+        height: 100px;
     }
 
     #mobileHomeImg{
@@ -743,8 +825,8 @@ img[alt=logoMobile]{
     }
 
     .imgMenu{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     img[alt=logoMobile]{
@@ -775,7 +857,7 @@ img[alt=logoMobile]{
 
     h2{
         letter-spacing: 0;
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .mobileSectionContent h3{
@@ -788,5 +870,33 @@ img[alt=logoMobile]{
     
     .descProduit{
         font-size: 10px;
+    }
+
+    .formLine{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #mobileContactForm input{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #mobileContactForm textarea{
+       height: 150px;
+    }
+
+    .mb_adapt{
+        margin-bottom: 15px;
+    }
+    .mb100{
+        margin-bottom: 70px;
+    }
+    .mb50{
+        margin-bottom: 30px;
+    }
+
+    .mb150{
+        margin-bottom: 100px;
     }
 }
