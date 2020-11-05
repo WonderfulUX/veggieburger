@@ -10,48 +10,99 @@
     <body>
         <!------------------------- HEADER --------------------------------->
         <header class="container-fluid">
-            <div id="headerContainer" class="d-flex align-items-center">
-                <!-- LOGO AND LOCATION -->
-                <div class="mr-5 d-inline-flex flex-column align-items-center">
-                    <div id="logoLocationContainer">
-                        <a href="./index.html"><img id="logo" src="./svg/LogoVeggieBurger.svg"></a>
+            <!------- HEADER DESKTOP --------->
+            <div class="desktopDisplay">
+                <div id="headerContainer" class="d-flex align-items-center">
+                    <!-- LOGO AND LOCATION -->
+                    <div class="mr-5 d-inline-flex flex-column align-items-center">
+                        <div id="logoLocationContainer">
+                            <a href="./index.html"><img id="logo" src="./svg/LogoVeggieBurger.svg"></a>
+                        </div>
+                        <div id="restoID" class="mt-4 d-flex align-items-center dropdown">
+                            <div class="dropdown-toggle" id="actualLoc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Baie-Mahault</div>
+                            <div class="dropdown-menu rounded" aria-labelledby="dropdownMenuButton">
+                                <span class="dropdown-item" onclick="changeLoc(this)">Abymes</span>
+                                <span class="dropdown-item" onclick="changeLoc(this)">Baie-Mahault</span>
+                                <span class="dropdown-item" onclick="changeLoc(this)">Pointe-à-Pitre</span>
+                            </div>
+                        </div>
                     </div>
-                    <div id="restoID" class="mt-4 d-flex align-items-center dropdown">
-                        <div class="dropdown-toggle" id="actualLoc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Baie-Mahault</div>
+                    <!-- LOGO AND LOCATION END-->
+                    <!-- HEADER LINKS -->
+                    <div id="headerLinks" style="margin-bottom: 52px;" class="container-fluid d-flex align-items-center justify-content-between pl-0">
+                        <!-- MENU LIST -->
+                        <div id="menu" class="d-inline-block">
+                            <div>
+                                <span class="mr-4"><a href="./menu.html#Burger">La carte</a></span>
+                                <span class="mr-4"><a href="./order.html">Commander</a></span>
+                                <span class="mr-4"><a href="./book.html">Réserver</a></span>
+                                <span class="mr-4"><a href="./gallery.html">Galerie</a></span>
+                                <span class="mr-4"><a href="./about.html">Notre vision</a></span>
+                                <span class="mr-4"><a href="">Livre d'or</a></span>
+                            </div>
+                        </div>
+                        <!-- MENU LIST END-->
+                        <!-- CART INFO CONTACT --> 
+                        <div id="mainAction" class="d-inline-block">
+                            <span><img src="./svg/Icon_Pastille.svg" alt="pastille" style="visibility: hidden;"></span>
+                            <span class="ml-4"><a href="./cart.html"><img src="./svg/Icon_panier.svg" alt="panier" onmouseover="src='./svg/Icon_panier_hover.svg'" onmouseout="src='./svg/Icon_panier.svg'"></a></span>
+                            <span class="ml-4"><a href="./infos.html"><img src="./svg/Icon_info.svg" alt="infos" onmouseover="src='./svg/Icon_info_hover.svg'" onmouseout="src='./svg/Icon_info.svg'"></a></span>
+                            <span class="ml-4"><a href="./contact.html"><img src="./svg/Icon_contact.svg" alt="contact" onmouseover="src='./svg/Icon_contact_hover.svg'" onmouseout="src='./svg/Icon_contact.svg'"></a></span>
+                        </div>
+                        <!-- CART INFO CONTACT END--> 
+                    </div> 
+                    <!-- HEADER LINKS -->  
+                </div>
+            </div>
+            <!------- HEADER DESKTOP END--------->
+            <!------- HEADER MOBILE --------->
+            <div class="mobileDisplay">
+                <div class="d-flex justify-content-between align-items-center" id="mobileHeader">
+                    <div class="d-flex align-items-center" style="height: 100%; cursor: pointer;" onclick="mobileMenuShow()">
+                        <img src="./svg/Icon_mobileMenu.svg" alt="mobileMenu">
+                    </div>
+                    <div id="restoID" class="d-flex align-items-center dropdown" style="padding-left: 50px;">
+                        <div class="dropdown-toggle d-flex align-items-center" id="actualLocMob" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Baie-Mahault</div>
                         <div class="dropdown-menu rounded" aria-labelledby="dropdownMenuButton">
                             <span class="dropdown-item" onclick="changeLoc(this)">Abymes</span>
                             <span class="dropdown-item" onclick="changeLoc(this)">Baie-Mahault</span>
                             <span class="dropdown-item" onclick="changeLoc(this)">Pointe-à-Pitre</span>
-                          </div>
+                        </div>
                     </div>
-                </div>
-                <!-- LOGO AND LOCATION END-->
-                <!-- HEADER LINKS -->
-                <div id="headerLinks" style="margin-bottom: 52px;" class="container-fluid d-flex align-items-center justify-content-between pl-0">
-                    <!-- MENU LIST -->
-                    <div id="menu" class="d-inline-block">
-                        <span class="mr-4"><a href="./menu.html#Burger">La carte</a></span>
-                        <span class="mr-4"><a href="./order.html">Commander</a></span>
-                        <span class="mr-4"><a href="./book.html">Réserver</a></span>
-                        <span class="mr-4"><a href="./gallery.html" class="selectedPage">Galerie</a></span>
-                        <span class="mr-4"><a href="./about.html">Notre vision</a></span>
-                        <span class="mr-4"><a href="">Livre d'or</a></span>
-                    </div>
-                    <!-- MENU LIST END-->
-                    <!-- CART INFO CONTACT --> 
-                    <div id="mainAction" class="d-inline-block">
+                    <div class="d-flex align-items-center" style="height: 100%; cursor: pointer;">
                         <span><img src="./svg/Icon_Pastille.svg" alt="pastille" style="visibility: hidden;"></span>
                         <span class="ml-4"><a href="./cart.html"><img src="./svg/Icon_panier.svg" alt="panier" onmouseover="src='./svg/Icon_panier_hover.svg'" onmouseout="src='./svg/Icon_panier.svg'"></a></span>
-                        <span class="ml-4"><a href="./infos.html"><img src="./svg/Icon_info.svg" alt="infos" onmouseover="src='./svg/Icon_info_hover.svg'" onmouseout="src='./svg/Icon_info.svg'"></a></span>
-                        <span class="ml-4"><a href="./contact.html"><img src="./svg/Icon_contact.svg" alt="contact" onmouseover="src='./svg/Icon_contact_hover.svg'" onmouseout="src='./svg/Icon_contact.svg'"></a></span>
                     </div>
-                    <!-- CART INFO CONTACT END--> 
-                </div> 
-                <!-- HEADER LINKS -->  
+                </div>                
             </div>
+            <!------- HEADER MOBILE END --------->
         </header>
+        <!------- MENU MOBILE --------->
+        <div class="mobileMenuBlock" onclick="mobileMenuHide()">
+            <div class="mobileMenuContainer">
+                <div class="mobileMenuHeader">
+                    <h2>Menu</h2>
+                </div>
+                <ul class="mobileMenuList mb-0">
+                    <li onclick="mobileMenuHide()"><a href="./index.html">Accueil</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#mobileMenu">La carte</a></li>
+                    <li onclick="mobileMenuHide()">Commander</li>
+                    <li onclick="mobileMenuHide()">Réserver</li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#mobileAbout">Notre vision</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#mobileGallery">Galerie</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#followUs">Nous suivre</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#contactUs">Nous contacter</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#mobileInfos">Infos</a></li>
+                </ul>
+                <div class="mobileMenuClose" onclick="mobileMenuHide()">
+                    <img src="./svg/closeMenu.svg" alt="closeMenu" onclick="mobileMenuHide()">
+                </div>
+            </div>
+        </div>
+        <!------- MENU MOBILE END --------->
         <!------------------------- CONTENT --------------------------------->
-        <section id="content" class="d-flex align-items-center justify-content-center">
+        <!------- CONTENT DESKTOP --------->
+        <section id="content">
             <!--LEFT BLOCK-->
             <div id="leftSide" class="mr-2 d-flex flex-column" style="background-image: url(); background-repeat: no-repeat; background-position: center; background-size: contain;">
                 <!--DECO TOP-->
@@ -276,6 +327,18 @@
             </div>
             <!-- RIGHT BLOCK END -->
         </section>
+        <!------- CONTENT DESKTOP END --------->
+        <!------- CONTENT MOBILE --------->
+        <section id="mobileContent" class="p-0">
+            <div class="d-flex align-items-center justify-content-center" style="height: 100vh; padding: 0 20px;">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="mb100">Galerie Photo</h2>
+                    <p class="mb50 text-center">Cette section a été optimisée pour mobile</p>
+                    <button class="primaryButton" onclick="window.location.href='./index.html#mobileGallery'">Retour Accueil</button>
+                </div>
+            </div>
+        </section>
+        <!------- CONTENT MOBILE END--------->
         <!------------------------- FOOTER ---------------------------------> 
         <footer>
             <div id="socialNetwork" class="d-flex flex-column-reverse">

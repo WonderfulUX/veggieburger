@@ -45,7 +45,7 @@
                         <!-- CART INFO CONTACT --> 
                         <div id="mainAction" class="d-inline-block">
                             <span><img src="./svg/Icon_Pastille.svg" alt="pastille" style="visibility: hidden;"></span>
-                            <span class="ml-4"><a href="./cart.html"><img src="./svg/Icon_panier.svg" alt="panier" onmouseover="src='./svg/Icon_panier_hover.svg'" onmouseout="src='./svg/Icon_panier.svg'"></a></span>
+                            <span class="ml-4"><a href="./cart.html"><img src="./svg/Icon_panier_hover.svg" alt="panier"></a></span>
                             <span class="ml-4"><a href="./infos.html"><img src="./svg/Icon_info.svg" alt="infos" onmouseover="src='./svg/Icon_info_hover.svg'" onmouseout="src='./svg/Icon_info.svg'"></a></span>
                             <span class="ml-4"><a href="./contact.html"><img src="./svg/Icon_contact.svg" alt="contact" onmouseover="src='./svg/Icon_contact_hover.svg'" onmouseout="src='./svg/Icon_contact.svg'"></a></span>
                         </div>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="d-flex align-items-center" style="height: 100%; cursor: pointer;">
                         <span><img src="./svg/Icon_Pastille.svg" alt="pastille" style="visibility: hidden;"></span>
-                        <span class="ml-4"><a href="./cart.html"><img src="./svg/Icon_panier.svg" alt="panier" onmouseover="src='./svg/Icon_panier_hover.svg'" onmouseout="src='./svg/Icon_panier.svg'"></a></span>
+                        <span class="ml-4"><a href="./cart.html"><img src="./svg/Icon_panier_hover.svg" alt="panier" onmouseover="src='./svg/Icon_panier_hover.svg'" onmouseout="src='./svg/Icon_panier.svg'"></a></span>
                     </div>
                 </div>                
             </div>
@@ -85,14 +85,14 @@
                 </div>
                 <ul class="mobileMenuList mb-0">
                     <li onclick="mobileMenuHide()"><a href="./index.html">Accueil</a></li>
-                    <li onclick="mobileMenuHide()"><a href="#mobileMenu">La carte</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#mobileMenu">La carte</a></li>
                     <li onclick="mobileMenuHide()">Commander</li>
                     <li onclick="mobileMenuHide()">Réserver</li>
-                    <li onclick="mobileMenuHide()"><a href="#mobileAbout">Notre vision</a></li>
-                    <li onclick="mobileMenuHide()"><a href="#mobileGallery">Galerie</a></li>
-                    <li onclick="mobileMenuHide()"><a href="#followUs">Nous suivre</a></li>
-                    <li onclick="mobileMenuHide()"><a href="#contactUs">Nous contacter</a></li>
-                    <li onclick="mobileMenuHide()"><a href="#mobileInfos">Infos</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#mobileAbout">Notre vision</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#mobileGallery">Galerie</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#followUs">Nous suivre</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#contactUs">Nous contacter</a></li>
+                    <li onclick="mobileMenuHide()"><a href="./index.html#mobileInfos">Infos</a></li>
                 </ul>
                 <div class="mobileMenuClose" onclick="mobileMenuHide()">
                     <img src="./svg/closeMenu.svg" alt="closeMenu" onclick="mobileMenuHide()">
@@ -101,13 +101,26 @@
         </div>
         <!------- MENU MOBILE END --------->
         <!------------------------- CONTENT --------------------------------->   
-        <section id="content" class="d-flex justify-content-center">
+        <!------- CONTENT DESKTOP --------->
+        <section id="content">
             <div id="leftSide" class="d-flex flex-column align-items-center justify-content-center w-100">
                 <h1 class="mb100">Mon panier</h1>
                 <p class="mb50 text-center"> Votre panier est vide pour le moment. Peut-être souhaitez-vous commander ?</p>
                 <button class="primaryButton" onclick="window.location.href='./order.html'">Commander</button>
             </div>
         </section>
+        <!------- CONTENT DESKTOP END--------->
+        <!------- CONTENT MOBILE --------->
+        <section id="mobileContent" class="p-0">
+            <div class="d-flex align-items-center justify-content-center" style="height: 100vh; padding: 0 20px;">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="mb100">Mon panier</h2>
+                    <p class="mb50 text-center"> Votre panier est vide pour le moment. Peut-être souhaitez-vous commander ?</p>
+                    <button class="primaryButton" onclick="window.location.href='./order.html'">Commander</button>
+                </div>
+            </div>
+        </section>
+        <!------- CONTENT MOBILE END--------->
         <!------------------------- FOOTER ---------------------------------> 
         <footer>
             <div id="socialNetwork" class="d-flex flex-column-reverse">

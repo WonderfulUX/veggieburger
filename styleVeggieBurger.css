@@ -485,7 +485,7 @@ img[alt=logoMobile]{
     }
 }
 
-@media screen and (min-height: 800px){
+@media screen and (min-height: 900px){
     #leftSide, #rightSide{
         height: 700px;
     }
@@ -749,7 +749,13 @@ img[alt=logoMobile]{
     .bgMask h2{
         padding-top: 100px;
     }
+
+    .dropdown-item{
+        height: 40px;
+        padding: 12px 24px;
+    }
 }
+
 
 @media screen and (max-width: 700px){
     .mobileSectionContent{
@@ -899,16 +905,6 @@ img[alt=logoMobile]{
     
     .descProduit{
         font-size: 10px;
-    }
-
-    .formLine{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #mobileContactForm input{
-        width: 100%;
-        margin-left: 0;
     }
 
     #mobileContactForm textarea{
