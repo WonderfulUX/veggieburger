@@ -109,6 +109,18 @@ img[alt=closeMenu]{
     height: 25px;
 }
 
+.menuImg{
+    width: 130px;
+    height: 130px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.imgMenuDesc{
+    margin-left: 0;
+}
+
 .mobileMenuList div{
     height: 50px;
     text-align: center;
@@ -316,14 +328,14 @@ a:hover{
     text-align: center;
 }
 
-.menuItem{
-    height: 135px;
-}
-
 #menuList .menuItem:hover{
     cursor: pointer;
     border-radius: 5px;
     color: var(--orange);
+}
+
+.menuItem{
+    height: 150px;
 }
 
 #restoID{
@@ -360,15 +372,20 @@ a:hover{
     transition: all 0.3s;
 }
 
+#actualLocMob:hover{
+    color: var(--orange);
+}
+
 #actualLoc:hover{
     border-radius: 5px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-    
+    color: var(--orange);
 }
 
 .dropdown-item:hover{
     color: var(--orange);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .dropdown-item:active{
@@ -484,6 +501,10 @@ img[alt=logoMobile]{
     height: 100px;
 }
 
+.clickable{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+} 
+
 @media screen and (max-height: 720px){
     #leftSide, #rightSide{
         height: 550px;
@@ -573,18 +594,18 @@ img[alt=logoMobile]{
         height: 22px;
     }
 
-    #mainAction img[alt=pastille]{
-        position: relative;
-        left: 60px;
-        bottom: 7px;
-    }
-
     #table img[alt=removeTableLine]{
         height: 12px;
     }
 
     img[alt=editInfos]{
         height: 18px;
+    }
+
+    #mainAction img[alt=pastille]{
+        position: relative;
+        left: 58px;
+        bottom: 7px;
     }
 }
 
@@ -627,6 +648,16 @@ img[alt=logoMobile]{
         display: none;
     }
 
+    .instructions{
+        font-size: 12px;
+    }
+
+    #mobileHeader img[alt=pastille]{
+        position: relative;
+        left: 33px;
+        bottom: 7px;
+    }
+
     .mobileMenuBlock{
         visibility: visible;
     }
@@ -657,19 +688,8 @@ img[alt=logoMobile]{
         height: 70px;
     }
 
-    .imgMenu{
-        width: 130px;
-        height: 130px;
-    }
-
     #actualLoc{
         height: 50px;
-    }
-
-    #mobileHeader img[alt=pastille]{
-        position: relative;
-        left: 60px;
-        bottom: 7px;
     }
 
     .primaryButton, .secondaryButton{
@@ -760,6 +780,12 @@ img[alt=logoMobile]{
         height: 40px;
         padding: 12px 24px;
     }
+
+    .clickable{
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25) ;
+        border-radius: 10px;
+        padding: 10px;
+    }
 }
 
 
@@ -767,6 +793,10 @@ img[alt=logoMobile]{
     .mobileSectionContent{
         width: 450px;
         top: -100px;
+    }
+
+    .instructions{
+        font-size: 11px;
     }
 
     .mobileMenuContainer{
@@ -780,14 +810,14 @@ img[alt=logoMobile]{
     }
 
     .menuItem{
-        height: 125px;
+        height: 140px;
     }
 
     #mobileHomeImg{
         height: 300px;
     }
 
-    .imgMenu{
+    .menuImg{
         width: 120px;
         height: 120px;
     }
@@ -851,6 +881,10 @@ img[alt=logoMobile]{
         top: -120px;
         margin-bottom: 50px;
     }
+    .instructions{
+        font-size: 10px;
+    }
+
 
     .mobileMenuContainer{
         width: 300px;
@@ -861,12 +895,12 @@ img[alt=logoMobile]{
     .menuItem{
         height: 100px;
     }
-
+    
     #mobileHomeImg{
         height: 200px;
     }
 
-    .imgMenu{
+    .menuImg{
         width: 80px;
         height: 80px;
     }

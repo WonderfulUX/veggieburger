@@ -20,7 +20,7 @@
                         </div>
                         <div id="restoID" class="mt-4 d-flex align-items-center dropdown">
                             <div class="dropdown-toggle" id="actualLoc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="list">Baie-Mahault</div>
-                            <div class="dropdown-menu rounded" aria-labelledby="actualLocMob">
+                            <div class="dropdown-menu rounded" aria-labelledby="actualLoc">
                                 <span class="dropdown-item" onclick="changeLoc(this)">Abymes</span>
                                 <span class="dropdown-item" onclick="changeLoc(this)">Baie-Mahault</span>
                                 <span class="dropdown-item" onclick="changeLoc(this)">Pointe-à-Pitre</span>
@@ -35,7 +35,7 @@
                             <div>
                                 <span class="mr-4"><a href="./menu.html#Burger">La carte</a></span>
                                 <span class="mr-4"><a href="./order.html">Commander</a></span>
-                                <span class="mr-4"><a href="./book.html">Réserver</a></span>
+                                <span class="mr-4"><a href="./book.html" class="selectedPage">Réserver</a></span>
                                 <span class="mr-4"><a href="./gallery.html">Galerie</a></span>
                                 <span class="mr-4"><a href="./about.html">Notre vision</a></span>
                                 <span class="mr-4"><a href="">Livre d'or</a></span>
@@ -59,7 +59,7 @@
             <div class="mobileDisplay">
                 <div class="d-flex justify-content-between align-items-center" id="mobileHeader">
                     <div class="d-flex align-items-center" style="height: 100%; cursor: pointer;" onclick="mobileMenuShow()">
-                        <img src="./svg/Icon_mobileMenu.svg" alt="mobileMenu">
+                        <img src="./svg/Icon_mobileMenu.svg" alt="mobileMenu" onmouseover="src='./svg/Icon_mobileMenu_hover.svg'" onmouseout="src='./svg/Icon_mobileMenu.svg'">
                     </div>
                     <div id="restoIDm" class="d-flex align-items-center dropdown" style="padding-left: 50px;">
                         <div class="dropdown-toggle d-flex align-items-center" id="actualLocMob" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="list">Baie-Mahault</div>
@@ -69,9 +69,9 @@
                             <span class="dropdown-item" onclick="changeLoc(this)">Pointe-à-Pitre</span>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center" style="height: 100%; cursor: pointer;">
+                    <div class="d-flex align-items-center" style="height: 100%; cursor: pointer; width: 40px;">
                         <span><img src="./svg/Icon_Pastille.svg" alt="pastille" style="visibility: hidden;"></span>
-                        <span class="ml-4"><a href="./cart.html"><img src="./svg/Icon_panier.svg" alt="panier" onmouseover="src='./svg/Icon_panier_hover.svg'" onmouseout="src='./svg/Icon_panier.svg'"></a></span>
+                        <span><a href="./cart.html"><img src="./svg/Icon_panier.svg" alt="panier" onmouseover="src='./svg/Icon_panier_hover.svg'" onmouseout="src='./svg/Icon_panier.svg'"></a></span>
                     </div>
                 </div>                
             </div>
