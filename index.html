@@ -78,12 +78,13 @@
             <!------- HEADER MOBILE END --------->
         </header>
         <!------- MENU MOBILE --------->
-        <div class="mobileMenuBlock">
+        <div class="mobileMenuBlock" onclick="mobileMenuHide()">
             <div class="mobileMenuContainer">
-                <div class="mobileMenuClose" onclick="mobileMenuHide()">
-                    <img src="./svg/closeAlert.svg" alt="closeMenu" style="height: 20px;" onclick="mobileMenuHide()">
+                <div class="mobileMenuHeader">
+                    <h2>Menu</h2>
                 </div>
-                <ul class="mobileMenuList">
+                <ul class="mobileMenuList mb-0">
+                    <li onclick="mobileMenuHide()"><a href="./index.html">Accueil</a></li>
                     <li onclick="mobileMenuHide()"><a href="#mobileMenu">La carte</a></li>
                     <li onclick="mobileMenuHide()">Commander</li>
                     <li onclick="mobileMenuHide()">Réserver</li>
@@ -93,6 +94,9 @@
                     <li onclick="mobileMenuHide()"><a href="#contactUs">Nous contacter</a></li>
                     <li onclick="mobileMenuHide()"><a href="#mobileInfos">Infos</a></li>
                 </ul>
+                <div class="mobileMenuClose" onclick="mobileMenuHide()">
+                    <img src="./svg/closeMenu.svg" alt="closeMenu" onclick="mobileMenuHide()">
+                </div>
             </div>
         </div>
         <!------- MENU MOBILE END --------->

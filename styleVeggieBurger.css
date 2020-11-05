@@ -64,6 +64,7 @@ footer{
 }
 
 .mobileMenuBlock{
+    visibility: hidden;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -78,16 +79,21 @@ footer{
 
 .mobileMenuContainer{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
-    padding: 40px 30px 0;
-    width: 300px;
+    padding: 10px 30px ;
+    width: 600px;
+    height: 700px;
     max-width: 500px;
     background-color: white;
     align-items: center;
     opacity: 0;
     transition: opacity 300ms;
+}
+
+.mobileMenuHeader{
+    color: var(--orange);
 }
 
 .mobileMenuClose{
@@ -97,6 +103,10 @@ footer{
     height: 40px;
     text-align: center;
     cursor: pointer;
+}
+
+img[alt=closeMenu]{
+    height: 25px;
 }
 
 .mobileMenuList *{
@@ -612,6 +622,10 @@ img[alt=logoMobile]{
         display: none;
     }
 
+    .mobileMenuBlock{
+        visibility: visible;
+    }
+
     #mobileContent{
         display: block;
         padding-top: 70px;
@@ -743,6 +757,15 @@ img[alt=logoMobile]{
         top: -100px;
     }
 
+    .mobileMenuContainer{
+        height: 600px;
+        width: 450px;
+    }
+
+    .mobileMenuList *{
+        height: 40px;
+    }
+
     .menuItem{
         height: 125px;
     }
@@ -814,6 +837,12 @@ img[alt=logoMobile]{
         width: 330px;
         top: -120px;
         margin-bottom: 50px;
+    }
+
+    .mobileMenuContainer{
+        width: 300px;
+        height: 550px;
+        padding: 5px 20px;
     }
 
     .menuItem{
