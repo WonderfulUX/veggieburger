@@ -109,9 +109,10 @@ img[alt=closeMenu]{
     height: 25px;
 }
 
-.mobileMenuList *{
+.mobileMenuList div{
     height: 50px;
     text-align: center;
+    line-height: 50px;
 
 }
 
@@ -768,8 +769,9 @@ img[alt=logoMobile]{
         width: 450px;
     }
 
-    .mobileMenuList *{
+    .mobileMenuList div{
         height: 40px;
+        line-height: 40px;
     }
 
     .menuItem{
