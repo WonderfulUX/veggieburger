@@ -329,10 +329,14 @@ a:hover{
 #restoID{
     height: 30px;
     cursor: pointer;
-
 }
 
-.smallerText, #restoID *{
+#actualLocMob{
+    height: 60px;
+    cursor: pointer;
+}
+
+.smallerText, #restoID *, #restoIDm *{
     font-size: 11px;
 }
 
@@ -646,6 +650,7 @@ img[alt=logoMobile]{
 
     header{
         padding-top: 0;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25) ;
     }
 
     #mobileHeader, header{
@@ -925,5 +930,17 @@ img[alt=logoMobile]{
 
     .mb150{
         margin-bottom: 100px;
+    }
+
+    #mobileHeader, header{
+        height: 50px;
+    }
+
+    #actualLocMob{
+        height: 45px;
+    }
+
+    #mobileContent{
+        padding-top: 50px;
     }
 }
