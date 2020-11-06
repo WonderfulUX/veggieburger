@@ -339,7 +339,6 @@
                                 <input type="checkbox" id="cgv" name="cgv">
                                 <label for="cgv" style="font-size: 12px; margin-left: 10px; text-decoration: underline;">Accepter les conditions générales de vente</label>
                             </div>
-                            
                         </div>
                         <!--BLOCK INSTRUCTIONS AND CHOICE END-->
                         <!--CHOICE END-->
@@ -360,11 +359,12 @@
         <section id="mobileContent">
             <!--TOP -->
             <div class="mobileSectionContent text-center" style="padding-top: 150px;">
-                <!--------------------- RECAP BLOCK1 MOBILE --------------------------->
-                <div id="recapBlock1">
-                    <!--TABLE AND INFOS-->
-                    <div>
-                        <h2 class="mb50">Récapitulatif</h2>
+                <!--------------------- RECAP FULL MOBILE --------------------------->
+                <div id="recapBlockMob">
+                    <h2 class="mb100">Récapitulatif</h2>
+                    <!--BLOCK RECAP ORDER AND DETAILS END-->
+                    <div id="block1">
+                        <p id="instructionRecap" class="w-100 text-left mb30">1 - Vérifiez votre panier</p>
                         <!--TABLE-->
                         <div style="width: 100%;" id="table">
                             <!--TABLE HEAD-->
@@ -385,8 +385,7 @@
                                         <p class="col-6 text-left">Le black</p>
                                         <p class="col-3">1</p>
                                         <p class="col-3">7,00 €</p> 
-                                    </div>    
-                                    <img src="./svg/removeLine.svg" alt="removeTableLine">   
+                                    </div> 
                                 </div>
                                 <!--TABLE ROW END-->
                                 <!--TABLE ROW -->
@@ -395,8 +394,7 @@
                                         <p class="col-6 text-left">Le DoucleMush</p>
                                         <p class="col-3">1</p>
                                         <p class="col-3">9,50 €</p> 
-                                    </div>
-                                    <img src="./svg/removeLine.svg" alt="removeTableLine">         
+                                    </div>        
                                 </div>
                                 <!--TABLE ROW END-->
                                 <!--TABLE ROW -->
@@ -405,8 +403,7 @@
                                         <p class="col-6 text-left">Frites de patates douces</p>
                                         <p class="col-3">1</p>
                                         <p class="col-3">3,50 €</p> 
-                                    </div> 
-                                    <img src="./svg/removeLine.svg" alt="removeTableLine">         
+                                    </div>         
                                 </div>
                                 <!--TABLE ROW END-->
                                 <!--TABLE ROW -->
@@ -415,8 +412,7 @@
                                         <p class="col-6 text-left">Fried aspargus</p>
                                         <p class="col-3">1</p>
                                         <p class="col-3">5,00 €</p> 
-                                    </div>
-                                    <img src="./svg/removeLine.svg" alt="removeTableLine">       
+                                    </div>      
                                 </div>
                                 <!--TABLE ROW END-->
                                 <!--TABLE ROW -->
@@ -426,7 +422,6 @@
                                         <p class="col-3">1</p>
                                         <p class="col-3">0,50 €</p> 
                                     </div>    
-                                    <img src="./svg/removeLine.svg" alt="removeTableLine">      
                                 </div>
                                 <!--TABLE ROW END-->
                                 <!--TABLE ROW -->
@@ -435,8 +430,7 @@
                                         <p class="col-6 text-left">Moutarde maison</p>
                                         <p class="col-3">2</p>
                                         <p class="col-3">1,00 €</p> 
-                                    </div>
-                                    <img src="./svg/removeLine.svg" alt="removeTableLine">      
+                                    </div>     
                                 </div>
                                 <!--TABLE ROW END-->
                                 <!--TABLE ROW -->
@@ -445,8 +439,7 @@
                                         <p class="col-6 text-left">Kombucha rose</p>
                                         <p class="col-3">1</p>
                                         <p class="col-3">2,50 €</p> 
-                                    </div>
-                                    <img src="./svg/removeLine.svg" alt="removeTableLine">     
+                                    </div>    
                                 </div>
                                 <!--TABLE ROW END--> 
                                 <!--TABLE ROW -->
@@ -455,8 +448,7 @@
                                         <p class="col-6 text-left">Kéfir Citon Spiruline</p>
                                         <p class="col-3">1</p>
                                         <p class="col-3">3,00 €</p> 
-                                    </div> 
-                                    <img src="./svg/removeLine.svg" alt="removeTableLine">         
+                                    </div>         
                                 </div>
                                 <!--TABLE ROW END-->                      
                             </div>
@@ -473,11 +465,11 @@
                         </div>
                         <!--TABLE END-->
                         <!--INFOS CLIENT-->
-                        <div class="mobileSectionContent" style="padding-top: 150px;">
+                        <div id="enterDetails" class="mobileSectionContent" style="padding-top: 150px;">
                             <div class="d-flex flex-column">
                                 <!--BLOCK INSTRUCTIONS AND CHOICE-->
                                 <div>
-                                    <p id="instructionRecap" class="w-100 text-left mb30">Précisez les détails de votre livraison</p>
+                                    <p id="instructionRecap" class="w-100 text-left mb30">2 - Précisez les détails de votre livraison</p>
                                     <!--CHOICE-->
                                     <form class="col-12 choice mb50 text-left ">
                                         <input type="radio" id="deliveryRadioMob" name="choice" value="deliveryRadioMob" onchange="displayChoiceDetails()">
@@ -525,28 +517,33 @@
                             </div>
                         </div>
                         <!--INFOS CLIENT END-->
+                        <!--CTAs BLOCK 1 -->
+                        <div class="w-100 d-flex" style="position: fixed; bottom: 0; width:100%; z-index: 100;">
+                            <button class="secondaryButton w-50" onclick="javascript:history.back()" style="border-radius: 0;">Retour</button>
+                            <button class="primaryButton w-50" onclick="window.location.href='./book.html'" style="border-radius: 0;">Payer</button>
+                        </div>
+                        <!--CTAs BLOCK 1 END-->
                     </div>
-                    <!--TABLE AND INFOS-->
-                </div>
-            </div>
-            <!--------------------- RECAP BLOCK1 MOBILE END --------------------------->
-            <!--BOTTOM -->
-            <div class="w-100 d-flex" style="position: fixed; bottom: 0; width:100%; z-index: 100;">
-                <button class="secondaryButton w-50" onclick="javascript:history.back()" style="border-radius: 0;">Retour</button>
-                <button class="primaryButton w-50" onclick="window.location.href='./book.html'" style="border-radius: 0;">Valider</button>
-            </div>
-            <!--BOTTOM END-->
-            <!--------------------- RECAP BLOCK2 MOBILE --------------------------->
-            <!--PAYMENT BLOCK-->
-            <div id="paymentBlockMob" class="mobileSectionContent" style="padding-top: 150px;">
-                <div class="d-flex flex-column text-center">
-                    <!--BLOCK INSTRUCTIONS AND CHOICE-->
-                    <h2 class="mb50">Règlement</h2>
-                    <div>
-                        <p id="instructionRecap" class="w-100 mb100">Vérifiez vos informations et procédez au paiement</p>
+                    <!--BLOCK RECAP ORDER AND DETAILS END-->
+                    <!--BLOCK RECAPINFOS AND PAYMENT-->
+                    <div id="block2">
+                        <p id="instructionRecap" class="w-100 mb30 text-left">3 - Vérifiez vos informations et procédez au paiement</p>
+                        <!-- RECAP INFOS -->
+                        <div id="infoBlockMob" style="cursor: pointer;" class="d-flex justify-content-between align-items-center container-fluid recap mb100 text-left" onclick="window.location.href='#enterDetails'">
+                            <!-- TEXT BLOCK-->
+                            <div>
+                                <span>Livraison à domicile</span><br>
+                                <span>Chez </span><span>Boris Boulogne</span><br>
+                                <span>6 Allée des Bégonias</span><br>
+                                <span>Les Jardins d'Arnouville</span><br>
+                                <span>97170 Petit-Bourg</span>
+                            </div>
+                            <!-- TEXT BLOCK END-->
+                            <img src="./svg/Icon_edit.svg" alt="editInfos">
+                        </div>
                         <!--CHOICE END-->
                         <!--PAYMENT-->
-                        <form action="get" id="paymentBlock" class="container-fluid d-flex flex-column align-items-center">
+                        <form action="get" id="paymentBlockMob" class="container-fluid d-flex flex-column align-items-center">
                             <!--NUM CARTE-->
                             <div class="d-flex flex-column align-items-center">
                                 <div>
@@ -581,8 +578,17 @@
                             </div>
                         </form>
                         <!--PAYMENT END-->
+                        <div class="d-flex justify-content-center">
+                            <input type="checkbox" id="cgv" name="cgv">
+                            <label for="cgv" style="font-size: 12px; margin-left: 10px; text-decoration: underline;">Accepter les conditions générales de vente</label>
+                        </div>
                     </div>
-                        
+                    <!--BLOCK RECAPINFOS AND PAYMENT-->
+                    <!--TABLE AND INFOS-->
+                </div>
+                <!--------------------- RECAP FULL MOBILE --------------------------->
+            </div>
+            <!--------------------- RECAP FULL END --------------------------->
         </section>
         <!------- CONTENT MOBILE END--------->
         <!------------------------- FOOTER ---------------------------------> 
