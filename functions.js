@@ -36,6 +36,16 @@ function displayChoiceDetails(){
 		document.getElementById('pickUpBlock').style.display="block";
         document.getElementById('deliveryBlock').style.display="none";
     }
+
+    if (document.getElementById('deliveryRadioMob').checked) 
+	{
+        document.getElementById('deliveryBlockMob').style.display="block";
+        document.getElementById('pickUpBlockMob').style.display="none";
+	} else {
+		document.getElementById('pickUpBlockMob').style.display="block";
+        document.getElementById('deliveryBlockMob').style.display="none";
+    }
+
 }
 
 function displayPayRecapBlocks(button){
