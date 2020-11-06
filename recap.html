@@ -345,7 +345,7 @@
                         <!--BLOCK  CTAs-->
                         <div class="d-flex justify-content-center container-fluid">
                             <button class="secondaryButton col" onclick="displayPayRecapBlocks(this)">Retour</button>
-                            <button class="primaryButton ml30 col" onclick="window.location.href='./paymentOK.html'">Payer</button>
+                            <button class="primaryButton ml30 col" onclick="window.location.href='./paymentSuccess.html'">Payer</button>
                         </div>
                         <!--BLOCK CTAs END-->
                     </div>
@@ -356,239 +356,252 @@
         </section>
         <!------- CONTENT DESKTOP END--------->
         <!------- CONTENT MOBILE --------->
-        <section id="mobileContent">
-            <!--TOP -->
-            <div class="mobileSectionContent text-center" style="padding-top: 150px;">
-                <!--------------------- RECAP FULL MOBILE --------------------------->
-                <div id="recapBlockMob">
-                    <h2 class="mb100">Récapitulatif</h2>
-                    <!--BLOCK RECAP ORDER AND DETAILS END-->
-                    <div id="block1">
-                        <p id="instructionRecap" class="w-100 text-left mb30">1 - Vérifiez votre panier</p>
-                        <!--TABLE-->
-                        <div style="width: 100%;" id="table">
-                            <!--TABLE HEAD-->
-                            <div class="d-flex text-center align-items-center" style="width: 100%;">
-                                <div style="width: 95%;" class="d-flex">
-                                    <p class="col-6 text-left">Produit</p>
-                                    <p class="col-3">Quantité</p>
-                                    <p class="col-3">Prix</p> 
-                                </div>
-                                <img src="./svg/removeLine.svg" alt="removeTableLine" style="visibility: hidden;">
+        <section id="mobileContent" class=".pt150adapt">
+            <!--------------------- RECAP FULL MOBILE --------------------------->
+            <!--BLOCK 1 RECAP ORDER AND DETAILS END-->
+            <div id="block1" class="deliveryDetails" >
+                <h2 class="mb100adapt text-center">Récapitulatif</h2>
+                <!--BLOCK 1 CONTENT-->
+                <div id="block1Content" class="mobileSectionContent" style="top: 0;">
+                    <p id="instructionRecap" class="w-100 text-left mb30">1 - Vérifiez votre panier</p>
+                    <!--TABLE-->
+                    <div style="width: 100%;" id="table">
+                        <!--TABLE HEAD-->
+                        <div class="d-flex text-center align-items-center" style="width: 100%;">
+                            <div style="width: 95%;" class="d-flex">
+                                <p class="col-6 text-left">Produit</p>
+                                <p class="col-3">Quantité</p>
+                                <p class="col-3">Prix</p> 
                             </div>
-                            <!--TABLE HEAD END-->
-                            <!--TABLE BODY -->
-                            <div id="tableBody" style="height: 300px; overflow: auto; width: 100%;">
-                                <!--TABLE ROW -->
-                                <div class="d-flex text-center align-items-center" style="width: 100%;">
-                                    <div style="width: 95%;" class="d-flex tableRowText">
-                                        <p class="col-6 text-left">Le black</p>
-                                        <p class="col-3">1</p>
-                                        <p class="col-3">7,00 €</p> 
-                                    </div> 
-                                </div>
-                                <!--TABLE ROW END-->
-                                <!--TABLE ROW -->
-                                <div class="d-flex text-center align-items-center" style="width: 100%;">
-                                    <div style="width: 95%;" class="d-flex tableRowText">
-                                        <p class="col-6 text-left">Le DoucleMush</p>
-                                        <p class="col-3">1</p>
-                                        <p class="col-3">9,50 €</p> 
-                                    </div>        
-                                </div>
-                                <!--TABLE ROW END-->
-                                <!--TABLE ROW -->
-                                <div class="d-flex text-center align-items-center" style="width: 100%;">
-                                    <div style="width: 95%;" class="d-flex tableRowText">
-                                        <p class="col-6 text-left">Frites de patates douces</p>
-                                        <p class="col-3">1</p>
-                                        <p class="col-3">3,50 €</p> 
-                                    </div>         
-                                </div>
-                                <!--TABLE ROW END-->
-                                <!--TABLE ROW -->
-                                <div class="d-flex text-center align-items-center" style="width: 100%;">
-                                    <div style="width: 95%;" class="d-flex tableRowText">
-                                        <p class="col-6 text-left">Fried aspargus</p>
-                                        <p class="col-3">1</p>
-                                        <p class="col-3">5,00 €</p> 
-                                    </div>      
-                                </div>
-                                <!--TABLE ROW END-->
-                                <!--TABLE ROW -->
-                                <div class="d-flex text-center align-items-center" style="width: 100%;">
-                                    <div style="width: 95%;" class="d-flex tableRowText">
-                                        <p class="col-6 text-left">Sauce BBQ maison</p>
-                                        <p class="col-3">1</p>
-                                        <p class="col-3">0,50 €</p> 
-                                    </div>    
-                                </div>
-                                <!--TABLE ROW END-->
-                                <!--TABLE ROW -->
-                                <div class="d-flex text-center align-items-center" style="width: 100%;">
-                                    <div style="width: 95%;" class="d-flex tableRowText">
-                                        <p class="col-6 text-left">Moutarde maison</p>
-                                        <p class="col-3">2</p>
-                                        <p class="col-3">1,00 €</p> 
-                                    </div>     
-                                </div>
-                                <!--TABLE ROW END-->
-                                <!--TABLE ROW -->
-                                <div class="d-flex text-center align-items-center" style="width: 100%;">
-                                    <div style="width: 95%;" class="d-flex tableRowText">
-                                        <p class="col-6 text-left">Kombucha rose</p>
-                                        <p class="col-3">1</p>
-                                        <p class="col-3">2,50 €</p> 
-                                    </div>    
-                                </div>
-                                <!--TABLE ROW END--> 
-                                <!--TABLE ROW -->
-                                <div class="d-flex text-center align-items-center" style="width: 100%;">
-                                    <div style="width: 95%;" class="d-flex tableRowText">
-                                        <p class="col-6 text-left">Kéfir Citon Spiruline</p>
-                                        <p class="col-3">1</p>
-                                        <p class="col-3">3,00 €</p> 
-                                    </div>         
-                                </div>
-                                <!--TABLE ROW END-->                      
-                            </div>
-                            <!--TABLE BODY END-->
-                            <!--TABLE FOOTER -->
+                            <img src="./svg/removeLine.svg" alt="removeTableLine" style="visibility: hidden;">
+                        </div>
+                        <!--TABLE HEAD END-->
+                        <!--TABLE BODY -->
+                        <div id="tableBody" style="height: 300px; overflow: auto; width: 100%;">
+                            <!--TABLE ROW -->
                             <div class="d-flex text-center align-items-center" style="width: 100%;">
                                 <div style="width: 95%;" class="d-flex tableRowText">
-                                    <p class="col-6 text-left"><b>Total:</b></p>
-                                    <p class="col-3"></p>
-                                    <p class="col-3"><b>32,00 €</b></p> 
-                                </div>
+                                    <p class="col-6 text-left">Le black</p>
+                                    <p class="col-3">1</p>
+                                    <p class="col-3">7,00 €</p> 
+                                </div> 
                             </div>
-                            <!--TABLE FOOTER END-->  
+                            <!--TABLE ROW END-->
+                            <!--TABLE ROW -->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex tableRowText">
+                                    <p class="col-6 text-left">Le DoucleMush</p>
+                                    <p class="col-3">1</p>
+                                    <p class="col-3">9,50 €</p> 
+                                </div>        
+                            </div>
+                            <!--TABLE ROW END-->
+                            <!--TABLE ROW -->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex tableRowText">
+                                    <p class="col-6 text-left">Frites de patates douces</p>
+                                    <p class="col-3">1</p>
+                                    <p class="col-3">3,50 €</p> 
+                                </div>         
+                            </div>
+                            <!--TABLE ROW END-->
+                            <!--TABLE ROW -->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex tableRowText">
+                                    <p class="col-6 text-left">Fried aspargus</p>
+                                    <p class="col-3">1</p>
+                                    <p class="col-3">5,00 €</p> 
+                                </div>      
+                            </div>
+                            <!--TABLE ROW END-->
+                            <!--TABLE ROW -->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex tableRowText">
+                                    <p class="col-6 text-left">Sauce BBQ maison</p>
+                                    <p class="col-3">1</p>
+                                    <p class="col-3">0,50 €</p> 
+                                </div>    
+                            </div>
+                            <!--TABLE ROW END-->
+                            <!--TABLE ROW -->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex tableRowText">
+                                    <p class="col-6 text-left">Moutarde maison</p>
+                                    <p class="col-3">2</p>
+                                    <p class="col-3">1,00 €</p> 
+                                </div>     
+                            </div>
+                            <!--TABLE ROW END-->
+                            <!--TABLE ROW -->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex tableRowText">
+                                    <p class="col-6 text-left">Kombucha rose</p>
+                                    <p class="col-3">1</p>
+                                    <p class="col-3">2,50 €</p> 
+                                </div>    
+                            </div>
+                            <!--TABLE ROW END--> 
+                            <!--TABLE ROW -->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex tableRowText">
+                                    <p class="col-6 text-left">Kéfir Citon Spiruline</p>
+                                    <p class="col-3">1</p>
+                                    <p class="col-3">3,00 €</p> 
+                                </div>         
+                            </div>
+                            <!--TABLE ROW END-->                      
                         </div>
-                        <!--TABLE END-->
-                        <!--INFOS CLIENT-->
-                        <div id="enterDetails" class="mobileSectionContent" style="padding-top: 150px;">
-                            <div class="d-flex flex-column">
-                                <!--BLOCK INSTRUCTIONS AND CHOICE-->
-                                <div>
-                                    <p id="instructionRecap" class="w-100 text-left mb30">2 - Précisez les détails de votre livraison</p>
-                                    <!--CHOICE-->
-                                    <form class="col-12 choice mb50 text-left ">
-                                        <input type="radio" id="deliveryRadioMob" name="choice" value="deliveryRadioMob" onchange="displayChoiceDetails()">
-                                        <label for="deliveryRadioMob">Livraison à domicile</label><br>
-                                        <input type="radio" id="pickUpRadioMob" name="choice" value="pickUpRadioMob" onchange="displayChoiceDetails()">
-                                        <label for="pickUpRadioMob">Récupération au restaurant</label><br>                     
-                                    </form>
-                                    <!--CHOICE END-->
-                                    <!--BLOCK DELIVERY-->
-                                    <form action="get" id="deliveryBlockMob" class="deliveryDetails container-fluid">
-                                        <div class="d-flex">
-                                            <input type="text" id="date" name="date" class="inputStyle col mb15" placeholder="Date *">
-                                            <input type="text" id="time" name="time" class="inputStyle col mb15 ml30" placeholder="Heure *">
-                                        </div> 
-                                        <div class="d-flex">
-                                            <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Prénom *">
-                                            <input type="text" id="tel" name="tel" class="inputStyle col mb15 ml30" placeholder="Téléphone *">
-                                        </div>
-                                        <input type="text" id="adresse" name="adresse" class="inputStyle col mb15" placeholder="Adresse *">
-                                        <input type="text" id="adresse2" name="adresse2" class="inputStyle col mb15" placeholder="Complément d'adresse *">
-                                        <div class="d-flex">
-                                            <input type="text" id="Cpostal" name="Cpostal" class="inputStyle col mb15" placeholder="Code postal *">
-                                            <input type="text" id="Commune" name="Commune" class="inputStyle col mb15 ml30" placeholder="Commune *">
-                                        </div>
-                                    </form>
-                                    <!--BLOCK DELIVERY END-->
-                                    <!--BLOCK PICK UP-->
-                                    <div id="pickUpBlockMob" class="deliveryDetails" style="height: 100%">
-                                        <div class="d-flex flex-column align-items-center" style="height: 100%">
-                                            <div>
-                                                <input type="text" id="date2" name="date2" class="inputStyle col mb15" placeholder="Date *">
-                                            </div>
-                                            <div>
-                                                <input type="text" id="time2" name="time2" class="inputStyle col mb15 " placeholder="Heure *">
-                                            </div>
-                                            <div>
-                                                <input type="text" id="fname2" name="fname" class="inputStyle col" placeholder="Prénom *">
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <!--BLOCK PICK UP END-->
-                                </div>
-                                <!--BLOCK INSTRUCTIONS AND CHOICE END-->
-                                <!--CHOICE END-->
+                        <!--TABLE BODY END-->
+                        <!--TABLE FOOTER -->
+                        <div class="d-flex text-center align-items-center" style="width: 100%;">
+                            <div style="width: 95%;" class="d-flex tableRowText">
+                                <p class="col-6 text-left"><b>Total:</b></p>
+                                <p class="col-3"></p>
+                                <p class="col-3"><b>32,00 €</b></p> 
                             </div>
                         </div>
-                        <!--INFOS CLIENT END-->
-                        <!--CTAs BLOCK 1 -->
-                        <div class="w-100 d-flex" style="position: fixed; bottom: 0; width:100%; z-index: 100;">
-                            <button class="secondaryButton w-50" onclick="javascript:history.back()" style="border-radius: 0;">Retour</button>
-                            <button class="primaryButton w-50" onclick="window.location.href='./book.html'" style="border-radius: 0;">Payer</button>
-                        </div>
-                        <!--CTAs BLOCK 1 END-->
+                        <!--TABLE FOOTER END-->  
                     </div>
-                    <!--BLOCK RECAP ORDER AND DETAILS END-->
-                    <!--BLOCK RECAPINFOS AND PAYMENT-->
-                    <div id="block2">
-                        <p id="instructionRecap" class="w-100 mb30 text-left">3 - Vérifiez vos informations et procédez au paiement</p>
-                        <!-- RECAP INFOS -->
-                        <div id="infoBlockMob" style="cursor: pointer;" class="d-flex justify-content-between align-items-center container-fluid recap mb100 text-left" onclick="window.location.href='#enterDetails'">
-                            <!-- TEXT BLOCK-->
+                    <!--TABLE END-->
+                    <!--INFOS CLIENT-->
+                    <div id="enterDetails" style="padding-top: 150px;">
+                        <div class="d-flex flex-column">
+                            <!--BLOCK INSTRUCTIONS AND CHOICE-->
                             <div>
-                                <span>Livraison à domicile</span><br>
-                                <span>Chez </span><span>Boris Boulogne</span><br>
-                                <span>6 Allée des Bégonias</span><br>
-                                <span>Les Jardins d'Arnouville</span><br>
-                                <span>97170 Petit-Bourg</span>
+                                <p id="instructionRecap" class="w-100 text-left mb30">2 - Précisez les détails de votre livraison</p>
+                                <!--CHOICE-->
+                                <form class="col-12 choice mb50 text-left ">
+                                    <input type="radio" id="deliveryRadioMob" name="choice" value="deliveryRadioMob" onchange="displayChoiceDetails()">
+                                    <label for="deliveryRadioMob">Livraison à domicile</label><br>
+                                    <input type="radio" id="pickUpRadioMob" name="choice" value="pickUpRadioMob" onchange="displayChoiceDetails()">
+                                    <label for="pickUpRadioMob">Récupération au restaurant</label><br>                     
+                                </form>
+                                <!--CHOICE END-->
+                                <!--BLOCK DELIVERY-->
+                                <form action="get" id="deliveryBlockMob" class="deliveryDetails container-fluid">
+                                    <div class="d-flex">
+                                        <input type="text" id="date" name="date" class="inputStyle col mb15" placeholder="Date *">
+                                        <input type="text" id="time" name="time" class="inputStyle col mb15 ml30" placeholder="Heure *">
+                                    </div> 
+                                    <div class="d-flex">
+                                        <input type="text" id="fname" name="fname" class="inputStyle col mb15" placeholder="Prénom *">
+                                        <input type="text" id="tel" name="tel" class="inputStyle col mb15 ml30" placeholder="Téléphone *">
+                                    </div>
+                                    <input type="text" id="adresse" name="adresse" class="inputStyle col mb15" placeholder="Adresse *">
+                                    <input type="text" id="adresse2" name="adresse2" class="inputStyle col mb15" placeholder="Complément d'adresse *">
+                                    <div class="d-flex">
+                                        <input type="text" id="Cpostal" name="Cpostal" class="inputStyle col mb15" placeholder="Code postal *">
+                                        <input type="text" id="Commune" name="Commune" class="inputStyle col mb15 ml30" placeholder="Commune *">
+                                    </div>
+                                </form>
+                                <!--BLOCK DELIVERY END-->
+                                <!--BLOCK PICK UP-->
+                                <div id="pickUpBlockMob" class="deliveryDetails" style="height: 100%">
+                                    <div class="d-flex flex-column align-items-center" style="height: 100%">
+                                        <div>
+                                            <input type="text" id="date2" name="date2" class="inputStyle col mb15" placeholder="Date *">
+                                        </div>
+                                        <div>
+                                            <input type="text" id="time2" name="time2" class="inputStyle col mb15 " placeholder="Heure *">
+                                        </div>
+                                        <div>
+                                            <input type="text" id="fname2" name="fname" class="inputStyle col" placeholder="Prénom *">
+                                        </div>
+                                    </div> 
+                                </div>
+                                <!--BLOCK PICK UP END-->
                             </div>
-                            <!-- TEXT BLOCK END-->
-                            <img src="./svg/Icon_edit.svg" alt="editInfos">
-                        </div>
-                        <!--CHOICE END-->
-                        <!--PAYMENT-->
-                        <form action="get" id="paymentBlockMob" class="container-fluid d-flex flex-column align-items-center">
-                            <!--NUM CARTE-->
-                            <div class="d-flex flex-column align-items-center">
-                                <div>
-                                    <label for="numCarte" class="m-0"> Numéro de carte</label>
-                                </div>
-                                <div>
-                                    <input type="text" id="numCarte" name="numCarte" class="d-block inputStyle col mb15" placeholder="ex : 4975 4565 0406 5895" style="text-align: center; width: 330px;">                            
-                                </div>
-                            </div>
-                            <!--NUM CARTE END-->
-                            <div class="d-flex">
-                                <!--CODE POSTAL-->
-                                <div class="d-flex flex-column align-items-center mb30">
-                                    <div>
-                                        <label for="expir">Date d'expiration</label>
-                                    </div>
-                                    <div>
-                                        <input type="text" id="expir" name="expir" class="inputStyle" placeholder="ex : 03/23" style="text-align: center; width: 150px;">
-                                    </div>
-                                </div>
-                                <!--CODE POSTAL END-->
-                                <!--COMMUNE-->
-                                <div class="d-flex flex-column align-items-center ml30 mb30">
-                                    <div>
-                                        <label for="crypto">Cryptogramme</label>
-                                    </div>
-                                    <div>
-                                        <input type="text" id="crypto" name="crypto" class="inputStyle" placeholder="ex : 741" style="text-align: center; width: 150px;">
-                                    </div>
-                                </div>
-                                <!--COMMUNE END-->
-                            </div>
-                        </form>
-                        <!--PAYMENT END-->
-                        <div class="d-flex justify-content-center">
-                            <input type="checkbox" id="cgv" name="cgv">
-                            <label for="cgv" style="font-size: 12px; margin-left: 10px; text-decoration: underline;">Accepter les conditions générales de vente</label>
+                            <!--BLOCK INSTRUCTIONS AND CHOICE END-->
+                            <!--CHOICE END-->
                         </div>
                     </div>
-                    <!--BLOCK RECAPINFOS AND PAYMENT-->
-                    <!--TABLE AND INFOS-->
+                    <!--INFOS CLIENT END-->
                 </div>
-                <!--------------------- RECAP FULL MOBILE --------------------------->
+                <!--BLOCK 1 CONTENT END-->
+                <!--CTAs BLOCK 1 -->
+                <div class="w-100 d-flex" style="position: fixed; bottom: 0; width:100%; z-index: 100;">
+                    <button class="secondaryButton w-50" onclick="javascript:history.back()" style="border-radius: 0;">Retour</button>
+                    <button class="primaryButton w-50" onclick="window.location.href='./recap.html#block2'" style="border-radius: 0;">Valider</button>
+                </div>
+                <!--CTAs BLOCK 1 END-->
             </div>
-            <!--------------------- RECAP FULL END --------------------------->
+            <!--BLOCK 1 RECAP ORDER AND DETAILS END-->
+            <!--BLOCK RECAPINFOS AND PAYMENT-->
+            <div id="block2" class="deliveryDetails p150adapt">
+                <h2 class="mb100adapt text-center">Récapitulatif</h2>
+                <!--BLOCK 2 CONTENT -->
+                <div id="block2Content" class="mobileSectionContent" style="top: 0;">
+                    <p id="instructionRecap" class="w-100 mb30 text-left">3 - Vérifiez vos informations et procédez au paiement</p>
+                    <!-- RECAP INFOS -->
+                    <div id="infoBlockMob" style="cursor: pointer;" class="d-flex justify-content-between align-items-center container-fluid recap mb100 text-left" onclick="javascript:history.back()">
+                        <!-- TEXT BLOCK-->
+                        <div>
+                            <span>Livraison à domicile</span><br>
+                            <span>Chez </span><span>Boris Boulogne</span><br>
+                            <span>6 Allée des Bégonias</span><br>
+                            <span>Les Jardins d'Arnouville</span><br>
+                            <span>97170 Petit-Bourg</span>
+                        </div>
+                        <!-- TEXT BLOCK END-->
+                        <img src="./svg/Icon_edit.svg" alt="editInfos">
+                    </div>
+                    <!--CHOICE END-->
+                    <!--PAYMENT-->
+                    <form action="get" id="paymentBlockMob" class="container-fluid d-flex flex-column align-items-center">
+                        <!--NUM CARTE-->
+                        <div class="d-flex flex-column align-items-center">
+                            <div>
+                                <label for="numCarte" class="m-0"> Numéro de carte</label>
+                            </div>
+                            <div>
+                                <input type="text" id="numCarte" name="numCarte" class="d-block inputStyle col mb15" placeholder="ex : 4975 4565 0406 5895" style="text-align: center; width: 330px;">                            
+                            </div>
+                        </div>
+                        <!--NUM CARTE END-->
+                        <div class="d-flex">
+                            <!--CODE POSTAL-->
+                            <div class="d-flex flex-column align-items-center mb30">
+                                <div>
+                                    <label for="expir">Date d'expiration</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="expir" name="expir" class="inputStyle" placeholder="ex : 03/23" style="text-align: center; width: 150px;">
+                                </div>
+                            </div>
+                            <!--CODE POSTAL END-->
+                            <!--COMMUNE-->
+                            <div class="d-flex flex-column align-items-center ml30 mb30">
+                                <div>
+                                    <label for="crypto">Cryptogramme</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="crypto" name="crypto" class="inputStyle" placeholder="ex : 741" style="text-align: center; width: 150px;">
+                                </div>
+                            </div>
+                            <!--COMMUNE END-->
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center">
+                        <input type="checkbox" id="cgv" name="cgv">
+                        <label for="cgv" style="font-size: 12px; margin-left: 10px; text-decoration: underline;">Accepter les conditions générales de vente</label>
+                    </div>
+                    <!--PAYMENT END-->
+                </div>
+                <!--BLOCK 2 CONTENT END-->
+                <!--CTAs BLOCK 2 -->
+                <div class="w-100 d-flex" style="position: fixed; bottom: 0; width:100%; z-index: 100;">
+                    <button class="secondaryButton w-50" onclick="javascript:history.back()" style="border-radius: 0;">Retour</button>
+                    <button class="primaryButton w-50" onclick="window.location.href='./paymentSuccess.html'" style="border-radius: 0;">Payer</button>
+                </div>
+                <!--CTAs BLOCK 2 END-->
+                    
+                    
+            </div>
+            <!--BLOCK RECAPINFOS AND PAYMENT-->
+            <!--TABLE AND INFOS-->
+            <!--------------------- RECAP FULL MOBILE --------------------------->
+            </div>
+            <!--------------------- RECAP FULL MOBILE END--------------------------->
         </section>
         <!------- CONTENT MOBILE END--------->
         <!------------------------- FOOTER ---------------------------------> 

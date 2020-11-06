@@ -510,6 +510,7 @@ img[alt=logoMobile]{
     box-shadow: 0 0 8px 0 var(--orange);
 } 
 
+
 @media screen and (max-height: 720px){
     #leftSide, #rightSide{
         height: 550px;
@@ -657,6 +658,10 @@ img[alt=logoMobile]{
         font-size: 12px;
     }
 
+    .mb100adapt{
+        margin-bottom: 100px;
+    }
+
     #mobileHeader img[alt=pastille]{
         position: relative;
         left: 33px;
@@ -800,6 +805,10 @@ img[alt=logoMobile]{
         top: -100px;
     }
 
+    .mb100adapt{
+        margin-bottom: 50px;
+    }
+
     .instructions{
         font-size: 11px;
     }
@@ -886,8 +895,13 @@ img[alt=logoMobile]{
         top: -120px;
         margin-bottom: 50px;
     }
+
     .instructions{
         font-size: 10px;
+    }
+
+    .mb100adapt{
+        margin-bottom: 30px;
     }
 
 
@@ -982,4 +996,5 @@ img[alt=logoMobile]{
     #mobileContent{
         padding-top: 50px;
     }
+
 }
