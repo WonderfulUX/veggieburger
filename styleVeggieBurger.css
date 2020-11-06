@@ -503,6 +503,11 @@ img[alt=logoMobile]{
 
 .clickable{
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.clickable:hover{
+    box-shadow: 0 0 8px 0 var(--orange);
 } 
 
 @media screen and (max-height: 720px){
@@ -895,7 +900,7 @@ img[alt=logoMobile]{
     .menuItem{
         height: 100px;
     }
-    
+
     #mobileHomeImg{
         height: 200px;
     }
