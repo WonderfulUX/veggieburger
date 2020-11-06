@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Veggie Burger</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="styleVeggieBurger.css">        
+    </head>
+    <body>
+        <!------------------------- HEADER --------------------------------->
+        <header class="container-fluid">
+            <!------- HEADER DESKTOP --------->
+            <div class="desktopDisplay">
+                <div id="headerContainer" class="d-flex align-items-center">
+                    <!-- LOGO AND LOCATION -->
+                    <div class="mr-5 d-inline-flex flex-column align-items-center">
+                        <div id="logoLocationContainer">
+                            <a href="./index.html"><img id="logo" src="./svg/LogoVeggieBurger.svg" alt="logo"></a>
+                        </div>
+                        <div id="restoID" class="mt-4 d-flex align-items-center dropdown">
+                            <div class="dropdown-toggle" id="actualLoc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="list">Baie-Mahault</div>
+                            <div class="dropdown-menu rounded" aria-labelledby="actualLoc">
+                                <span class="dropdown-item" onclick="changeLoc(this)">Abymes</span>
+                                <span class="dropdown-item" onclick="changeLoc(this)">Baie-Mahault</span>
+                                <span class="dropdown-item" onclick="changeLoc(this)">Pointe-à-Pitre</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- LOGO AND LOCATION END-->
+                    <!-- HEADER LINKS -->
+                    <div id="headerLinks" style="margin-bottom: 52px;" class="container-fluid d-flex align-items-center justify-content-between pl-0">
+                        <!-- MENU LIST -->
+                        <div id="menu" class="d-inline-block">
+                            <div>
+                                <span class="mr-4"><a href="./menu.html#Burger">La carte</a></span>
+                                <span class="mr-4"><a href="./order.html">Commander</a></span>
+                                <span class="mr-4"><a href="./book.html">Réserver</a></span>
+                                <span class="mr-4"><a href="./gallery.html">Galerie</a></span>
+                                <span class="mr-4"><a href="./about.html">Notre vision</a></span>
+                                <span class="mr-4"><a href="">Livre d'or</a></span>
+                            </div>
+                        </div>
+                        <!-- MENU LIST END-->
+                        <!-- CART INFO CONTACT --> 
+                        <div id="mainAction" class="d-inline-block">
+                            <span><img src="./svg/Icon_Pastille.svg" alt="pastille"></span>
+                            <span class="ml-4"><a href=""><img src="./svg/Icon_panier_hover.svg" alt="panier"></a></span>
+                            <span class="ml-4"><a href="./infos.html"><img src="./svg/Icon_info.svg" alt="infos" onmouseover="src='./svg/Icon_info_hover.svg'" onmouseout="src='./svg/Icon_info.svg'"></a></span>
+                            <span class="ml-4"><a href="./contact.html"><img src="./svg/Icon_contact.svg" alt="contact" onmouseover="src='./svg/Icon_contact_hover.svg'" onmouseout="src='./svg/Icon_contact.svg'"></a></span>
+                        </div>
+                        <!-- CART INFO CONTACT END--> 
+                    </div> 
+                    <!-- HEADER LINKS -->  
+                </div>
+            </div>
+            <!------- HEADER DESKTOP END--------->
+            <!------- HEADER MOBILE --------->
+            <div class="mobileDisplay">
+                <div class="d-flex justify-content-between align-items-center" id="mobileHeader">
+                    <div class="d-flex align-items-center" style="height: 100%; cursor: pointer;" onclick="mobileMenuShow()">
+                        <img src="./svg/Icon_mobileMenu.svg" alt="mobileMenu" onmouseover="src='./svg/Icon_mobileMenu_hover.svg'" onmouseout="src='./svg/Icon_mobileMenu.svg'">
+                    </div>
+                    <div id="restoIDm" class="d-flex align-items-center dropdown" style="padding-left: 50px;">
+                        <div class="dropdown-toggle d-flex align-items-center" id="actualLocMob" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="list">Baie-Mahault</div>
+                        <div class="dropdown-menu rounded" aria-labelledby="actualLocMob">
+                            <span class="dropdown-item" onclick="changeLoc(this)">Abymes</span>
+                            <span class="dropdown-item" onclick="changeLoc(this)">Baie-Mahault</span>
+                            <span class="dropdown-item" onclick="changeLoc(this)">Pointe-à-Pitre</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center" style="height: 100%; cursor: pointer; width: 40px;">
+                        <span><img src="./svg/Icon_Pastille.svg" alt="pastille"></span>
+                        <span><a href="./cart.html"><img src="./svg/Icon_panier_hover.svg" alt="panier"></a></span>
+                    </div>
+                </div>                
+            </div>
+            <!------- HEADER MOBILE END --------->
+        </header>
+        <!------- MENU MOBILE --------->
+        <div class="mobileMenuBlock" onclick="mobileMenuHide()">
+            <div class="mobileMenuContainer">
+                <div class="mobileMenuHeader">
+                    <h2>Menu</h2>
+                </div>
+                <div class="mobileMenuList mb-0">
+                    <a href="./index.html"><div onclick="mobileMenuHide()">Accueil</div></a>
+                    <a href="./index.html#mobileMenu"><div onclick="mobileMenuHide()">La carte</div></a>
+                    <a href="./order.html"><div onclick="mobileMenuHide()">Commander</div></a>
+                    <a href="./book.html"><div onclick="mobileMenuHide()">Réserver</div></a>
+                    <a href="./index.html#mobileAbout"><div onclick="mobileMenuHide()">Notre vision</div></a>
+                    <a href="./index.html#mobileGallery"><div onclick="mobileMenuHide()">Galerie</div></a>
+                    <a href="./index.html#followUs"><div onclick="mobileMenuHide()">Nous suivre</div></a>
+                    <a href="./index.html#contactUs"><div onclick="mobileMenuHide()">Nous contacter</div></a>
+                    <a href="./index.html#mobileInfos"><div onclick="mobileMenuHide()">Infos</div></a>
+                </div>
+                <div class="mobileMenuClose" onclick="mobileMenuHide()">
+                    <img src="./svg/closeMenu.svg" alt="closeMenu" onclick="mobileMenuHide()">
+                </div>
+            </div>
+        </div>
+        <!------- MENU MOBILE END --------->
+        <!------------------------- CONTENT --------------------------------->
+        <!------- CONTENT DESKTOP --------->
+        <section id="content">
+            <!--LEFT BLOCK-->
+            <div id="leftSide" class="mr-2">
+                <!-- TABLE CONTAINER -->  
+                <div class="d-flex flex-column justify-content-between" style="height:100%; width: 100%;">
+                    <!--TOP-->
+                    <div>
+                        <!--HEAD AND INSTRUCTIONS-->
+                        <div>
+                            <h1 class="mb15">Mon panier</h1>
+                        </div>
+                        <!--HEAD AND INSTRUCTIONS END-->
+                        <!--TABLE-->
+                        <div style="width: 100%;" id="table">
+                            <!--TABLE HEAD-->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex">
+                                    <p class="col-6 text-left">Produit</p>
+                                    <p class="col-3">Quantité</p>
+                                    <p class="col-3">Prix</p> 
+                                </div>
+                            </div>
+                            <!--TABLE HEAD END-->
+                            <!--TABLE BODY -->
+                            <div id="tableBody" style="height: 300px; overflow: auto; width: 100%;">
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Le black</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">7,00 €</p> 
+                                    </div>       
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Le DoucleMush</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">9,50 €</p> 
+                                    </div>       
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Frites de patates douces</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">3,50 €</p> 
+                                    </div>       
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Fried aspargus</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">5,00 €</p> 
+                                    </div>       
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Sauce BBQ maison</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">0,50 €</p> 
+                                    </div>       
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Moutarde maison</p>
+                                        <p class="col-3">2</p>
+                                        <p class="col-3">1,00 €</p> 
+                                    </div>       
+                                </div>
+                                <!--TABLE ROW END-->
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Kombucha rose</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">2,50 €</p> 
+                                    </div>       
+                                </div>
+                                <!--TABLE ROW END--> 
+                                <!--TABLE ROW -->
+                                <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                    <div style="width: 95%;" class="d-flex tableRowText">
+                                        <p class="col-6 text-left">Kéfir Citon Spiruline</p>
+                                        <p class="col-3">1</p>
+                                        <p class="col-3">3,00 €</p> 
+                                    </div>       
+                                </div>
+                                <!--TABLE ROW END-->                      
+                            </div>
+                            <!--TABLE BODY END-->
+                            <!--TABLE FOOTER -->
+                            <div class="d-flex text-center align-items-center" style="width: 100%;">
+                                <div style="width: 95%;" class="d-flex tableRowText">
+                                    <p class="col-6 text-left"><b>Total:</b></p>
+                                    <p class="col-3"></p>
+                                    <p class="col-3"><b>32,00 €</b></p> 
+                                </div>
+                            </div>
+                            <!--TABLE FOOTER END-->  
+                        </div>
+                        <!--TABLE END-->
+                        <!--CTAs-->
+                        <div class="d-flex justify-content-end p-0">
+                            <button class="primaryButton mr-4 mt-3 align-self-end" onclick="window.location.href='./recap.html'" >Valider mon panier</button> 
+                        </div> 
+                        <!-- CTAs END-->
+                    </div>
+                    <!--TOP END-->                   
+                </div>
+                <!-- TABLE CONTAINER END-->           
+            </div>
+            <!--LEFT BLOCK END-->
+            <!--RIGHT BLOCK-->
+            <div id="rightSide" class="ml-5 d-flex flex-column align-items-center justify-content-center">
+                <img src="./svg/LogoVeggieBurger.svg" alt="logoBig" id="logoBig">
+                <p class="presText mt-5">Le meilleur du Burger vegan en Guadeloupe</p>
+            </div>
+            <!--RIGHT BLOCK END-->
+        </section>
+        <!------- CONTENT DESKTOP END--------->
+        <!------- CONTENT MOBILE --------->
+        <section id="mobileContent">
+            <!--TOP -->
+            <div class="mobileSectionContent text-center" style="padding-top: 150px;">
+                <!--TOP END-->
+                <!--HEAD AND INSTRUCTIONS-->
+                <h2 class="mb50">Mon Panier</h2>
+                <!--HEAD AND INSTRUCTIONS END-->
+                <!--TABLE-->
+                <div style="width: 100%;" id="table">
+                    <!--TABLE HEAD-->
+                    <div class="d-flex text-center align-items-center" style="width: 100%;">
+                        <div style="width: 95%;" class="d-flex">
+                            <p class="col-6 text-left">Produit</p>
+                            <p class="col-3">Quantité</p>
+                            <p class="col-3">Prix</p> 
+                        </div>
+                        <img src="./svg/removeLine.svg" alt="removeTableLine" style="visibility: hidden;">
+                    </div>
+                    <!--TABLE HEAD END-->
+                    <!--TABLE BODY -->
+                    <div id="tableBody" style="height: 300px; overflow: auto; width: 100%;">
+                        <!--TABLE ROW -->
+                        <div class="d-flex text-center align-items-center" style="width: 100%;">
+                            <div style="width: 95%;" class="d-flex tableRowText">
+                                <p class="col-6 text-left">Le black</p>
+                                <p class="col-3">1</p>
+                                <p class="col-3">7,00 €</p> 
+                            </div>    
+                            <img src="./svg/removeLine.svg" alt="removeTableLine">   
+                        </div>
+                        <!--TABLE ROW END-->
+                        <!--TABLE ROW -->
+                        <div class="d-flex text-center align-items-center" style="width: 100%;">
+                            <div style="width: 95%;" class="d-flex tableRowText">
+                                <p class="col-6 text-left">Le DoucleMush</p>
+                                <p class="col-3">1</p>
+                                <p class="col-3">9,50 €</p> 
+                            </div>
+                            <img src="./svg/removeLine.svg" alt="removeTableLine">         
+                        </div>
+                        <!--TABLE ROW END-->
+                        <!--TABLE ROW -->
+                        <div class="d-flex text-center align-items-center" style="width: 100%;">
+                            <div style="width: 95%;" class="d-flex tableRowText">
+                                <p class="col-6 text-left">Frites de patates douces</p>
+                                <p class="col-3">1</p>
+                                <p class="col-3">3,50 €</p> 
+                            </div> 
+                            <img src="./svg/removeLine.svg" alt="removeTableLine">         
+                        </div>
+                        <!--TABLE ROW END-->
+                        <!--TABLE ROW -->
+                        <div class="d-flex text-center align-items-center" style="width: 100%;">
+                            <div style="width: 95%;" class="d-flex tableRowText">
+                                <p class="col-6 text-left">Fried aspargus</p>
+                                <p class="col-3">1</p>
+                                <p class="col-3">5,00 €</p> 
+                            </div>
+                            <img src="./svg/removeLine.svg" alt="removeTableLine">       
+                        </div>
+                        <!--TABLE ROW END-->
+                        <!--TABLE ROW -->
+                        <div class="d-flex text-center align-items-center" style="width: 100%;">
+                            <div style="width: 95%;" class="d-flex tableRowText">
+                                <p class="col-6 text-left">Sauce BBQ maison</p>
+                                <p class="col-3">1</p>
+                                <p class="col-3">0,50 €</p> 
+                            </div>    
+                            <img src="./svg/removeLine.svg" alt="removeTableLine">      
+                        </div>
+                        <!--TABLE ROW END-->
+                        <!--TABLE ROW -->
+                        <div class="d-flex text-center align-items-center" style="width: 100%;">
+                            <div style="width: 95%;" class="d-flex tableRowText">
+                                <p class="col-6 text-left">Moutarde maison</p>
+                                <p class="col-3">2</p>
+                                <p class="col-3">1,00 €</p> 
+                            </div>
+                            <img src="./svg/removeLine.svg" alt="removeTableLine">      
+                        </div>
+                        <!--TABLE ROW END-->
+                        <!--TABLE ROW -->
+                        <div class="d-flex text-center align-items-center" style="width: 100%;">
+                            <div style="width: 95%;" class="d-flex tableRowText">
+                                <p class="col-6 text-left">Kombucha rose</p>
+                                <p class="col-3">1</p>
+                                <p class="col-3">2,50 €</p> 
+                            </div>
+                            <img src="./svg/removeLine.svg" alt="removeTableLine">     
+                        </div>
+                        <!--TABLE ROW END--> 
+                        <!--TABLE ROW -->
+                        <div class="d-flex text-center align-items-center" style="width: 100%;">
+                            <div style="width: 95%;" class="d-flex tableRowText">
+                                <p class="col-6 text-left">Kéfir Citon Spiruline</p>
+                                <p class="col-3">1</p>
+                                <p class="col-3">3,00 €</p> 
+                            </div> 
+                            <img src="./svg/removeLine.svg" alt="removeTableLine">         
+                        </div>
+                        <!--TABLE ROW END-->                      
+                    </div>
+                    <!--TABLE BODY END-->
+                    <!--TABLE FOOTER -->
+                    <div class="d-flex text-center align-items-center" style="width: 100%;">
+                        <div style="width: 95%;" class="d-flex tableRowText">
+                            <p class="col-6 text-left"><b>Total:</b></p>
+                            <p class="col-3"></p>
+                            <p class="col-3"><b>32,00 €</b></p> 
+                        </div>
+                    </div>
+                    <!--TABLE FOOTER END-->  
+                </div>
+                <!--TABLE END-->
+            </div>
+            <!--TOP END-->
+            <!--BOTTOM -->
+            <div class="w-100 d-flex" style="position: fixed; bottom: 0; width:100%; z-index: 100;">
+                <button class="secondaryButton w-50" onclick="javascript:history.back()" style="border-radius: 0;">Retour</button>
+                <button class="primaryButton w-50" onclick="window.location.href='./recap.html'" style="border-radius: 0;">Valider mon panier</button>
+            </div>
+            <!--BOTTOM END-->
+        </section>
+        <!------- CONTENT MOBILE END--------->
+        <!------------------------- FOOTER ---------------------------------> 
+        <footer>
+            <div id="socialNetwork" class="d-flex flex-column-reverse">
+                <span class="mt-4"><a href=""><img src="./svg/Icon_facebook.svg" alt="Facebook" onmouseover="src='./svg/Icon_facebook_hover.svg'" onmouseout="src='./svg/Icon_facebook.svg'"></a></span>
+                <span><a href=""><img src="./svg/Icon_instagram.svg" alt="Instagram" onmouseover="src='./svg/Icon_instagram_hover.svg'" onmouseout="src='./svg/Icon_instagram.svg'"></a></span>
+            </div>
+        </footer>
+        <script src="./functions.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
