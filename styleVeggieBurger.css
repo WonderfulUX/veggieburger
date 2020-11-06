@@ -353,6 +353,10 @@ a:hover{
     cursor: pointer;
 }
 
+#restoIDm{
+    padding-left: 20px;
+}
+
 .smallerText, #restoID *, #restoIDm *{
     font-size: 11px;
 }
