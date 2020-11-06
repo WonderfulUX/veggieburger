@@ -133,6 +133,11 @@ img[alt=closeMenu]{
     padding-top: 70px;
 }
 
+#mobileContent2{
+    display: none;
+    padding-top: 150px;
+}
+
 #leftSide, #rightSide{
     height: 550px;
     width: 37%;
@@ -431,7 +436,7 @@ a:hover{
     width: 20px;
 }
 
-#instructionRecap, #followUs p{
+.instructionRecap, #followUs p{
     color: var(--orange);
 }
 
@@ -674,7 +679,10 @@ img[alt=logoMobile]{
 
     #mobileContent{
         display: block;
-        padding-top: 70px;
+    }
+
+    #mobileContent2{
+        display: block;
     }
 
     .desktopDisplay{
@@ -995,6 +1003,10 @@ img[alt=logoMobile]{
 
     #mobileContent{
         padding-top: 50px;
+    }
+
+    #mobileContent2{
+        padding-top: 100px;
     }
 
 }

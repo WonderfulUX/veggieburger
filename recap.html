@@ -225,7 +225,7 @@
                     <div class="d-flex flex-column justify-content-between" style="height: 500px;">
                         <!--BLOCK INSTRUCTIONS AND CHOICE-->
                         <div>
-                            <p id="instructionRecap" class="w-100">Précisez les détails de votre livraison</p>
+                            <p class="w-100">Précisez les détails de votre livraison</p>
                             <!--CHOICE-->
                             <form class="col-12 choice mb50">
                                 <input type="radio" id="deliveryRadio" name="choice" value="deliveryRadio" onchange="displayChoiceDetails()">
@@ -284,7 +284,7 @@
                     <div class="d-flex flex-column justify-content-between" style="height: 500px;">
                         <!--BLOCK INSTRUCTIONS AND CHOICE-->
                         <div>
-                            <p id="instructionRecap" class="w-100 mb15">Vérifiez vos informations et procédez au paiement</p>
+                            <p class="instructionRecap w-100 mb15">Vérifiez vos informations et procédez au paiement</p>
                             <!-- RECAP INFOS -->
                             <div id="infoBlock" style="cursor: pointer;" class="d-flex justify-content-between align-items-center container-fluid recap mb30" onclick="displayPayRecapBlocks(this)">
                                 <!-- TEXT BLOCK-->
@@ -356,14 +356,14 @@
         </section>
         <!------- CONTENT DESKTOP END--------->
         <!------- CONTENT MOBILE --------->
-        <section id="mobileContent" class=".pt150adapt">
+        <section id="mobileContent2">
             <!--------------------- RECAP FULL MOBILE --------------------------->
             <!--BLOCK 1 RECAP ORDER AND DETAILS END-->
-            <div id="block1" class="deliveryDetails" >
+            <div id="block1">
                 <h2 class="mb100adapt text-center">Récapitulatif</h2>
                 <!--BLOCK 1 CONTENT-->
                 <div id="block1Content" class="mobileSectionContent" style="top: 0;">
-                    <p id="instructionRecap" class="w-100 text-left mb30">1 - Vérifiez votre panier</p>
+                    <p class="instructionRecap w-100 text-left mb30">1 - Vérifiez votre panier</p>
                     <!--TABLE-->
                     <div style="width: 100%;" id="table">
                         <!--TABLE HEAD-->
@@ -468,7 +468,7 @@
                         <div class="d-flex flex-column">
                             <!--BLOCK INSTRUCTIONS AND CHOICE-->
                             <div>
-                                <p id="instructionRecap" class="w-100 text-left mb30">2 - Précisez les détails de votre livraison</p>
+                                <p class="instructionRecap w-100 text-left mb30">2 - Précisez les détails de votre livraison</p>
                                 <!--CHOICE-->
                                 <form class="col-12 choice mb50 text-left ">
                                     <input type="radio" id="deliveryRadioMob" name="choice" value="deliveryRadioMob" onchange="displayChoiceDetails()">
@@ -527,13 +527,12 @@
             </div>
             <!--BLOCK 1 RECAP ORDER AND DETAILS END-->
             <!--BLOCK RECAPINFOS AND PAYMENT-->
-            <div id="block2" class="deliveryDetails p150adapt">
-                <h2 class="mb100adapt text-center">Récapitulatif</h2>
+            <div id="block2" class="deliveryDetails">
                 <!--BLOCK 2 CONTENT -->
                 <div id="block2Content" class="mobileSectionContent" style="top: 0;">
-                    <p id="instructionRecap" class="w-100 mb30 text-left">3 - Vérifiez vos informations et procédez au paiement</p>
+                    <p id="step2" class="instructionRecap w-100 mb30 text-left">3 - Vérifiez vos informations et procédez au paiement</p>
                     <!-- RECAP INFOS -->
-                    <div id="infoBlockMob" style="cursor: pointer;" class="d-flex justify-content-between align-items-center container-fluid recap mb100 text-left" onclick="javascript:history.back()">
+                    <div id="infoBlockMob" style="cursor: pointer;" class="d-flex justify-content-between align-items-center container-fluid recap mb100 text-left" onclick="window.location.href='#step2'">
                         <!-- TEXT BLOCK-->
                         <div>
                             <span>Livraison à domicile</span><br>
@@ -581,7 +580,7 @@
                             <!--COMMUNE END-->
                         </div>
                     </form>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center mb100adapt">
                         <input type="checkbox" id="cgv" name="cgv">
                         <label for="cgv" style="font-size: 12px; margin-left: 10px; text-decoration: underline;">Accepter les conditions générales de vente</label>
                     </div>
@@ -590,7 +589,7 @@
                 <!--BLOCK 2 CONTENT END-->
                 <!--CTAs BLOCK 2 -->
                 <div class="w-100 d-flex" style="position: fixed; bottom: 0; width:100%; z-index: 100;">
-                    <button class="secondaryButton w-50" onclick="javascript:history.back()" style="border-radius: 0;">Retour</button>
+                    <button class="secondaryButton w-50" onclick="window.location.href='./recap.html#step2'" style="border-radius: 0;">Retour</button>
                     <button class="primaryButton w-50" onclick="window.location.href='./paymentSuccess.html'" style="border-radius: 0;">Payer</button>
                 </div>
                 <!--CTAs BLOCK 2 END-->
