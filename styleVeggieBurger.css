@@ -252,7 +252,6 @@ button:hover, input[type=submit]:hover{
 a:hover{
     text-decoration: none;
     color: var(--orange);
-    font-weight: bold;
 }
 
 #leftSide h2:hover{
