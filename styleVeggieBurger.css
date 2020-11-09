@@ -31,6 +31,7 @@ body{
 
 header{
     position: fixed;
+    top: 0;
     height: 100px;
     color: var(--green);
     background-color: white;
@@ -53,7 +54,7 @@ footer{
 }
 
 #content{
-    padding-top: 12%;
+    margin-top: 11%;
     padding-left: 3%;
     width: 100%;
     z-index: -100;
@@ -594,7 +595,7 @@ img[alt=logoMobile]{
     }
     
     #content{
-        padding-top: 13%;
+        margin-top: 12%;
     }
 
     #mainAction img[alt=infos], #mainAction img[alt=contact]{
@@ -634,7 +635,7 @@ img[alt=logoMobile]{
     }
 
     #content{
-        padding-top: 15%;
+        margin-top: 13%;
     }
 
     body{
@@ -807,6 +808,10 @@ img[alt=logoMobile]{
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25) ;
         border-radius: 10px;
         padding: 10px;
+    }
+
+    #block2 > .mobileSectionContent{
+        top:100px;
     }
 }
 
@@ -1011,6 +1016,10 @@ img[alt=logoMobile]{
 
     #mobileContent2{
         padding-top: 100px;
+    }
+
+    #block2 > .mobileSectionContent{
+        top:70px;
     }
 
 }
